@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI × BioMed Paper Radar</title>
+  <meta name="description" content="追踪人工智能 × 生物医药 / 流行病学 / 生物信息学相关期刊与预印本发表趋势。" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">AI × BioMed / Epidemiology / Bioinformatics</p>
+      <h1>AI × BioMed Paper Radar</h1>
+      <p class="subtitle">追踪高质量期刊、预印本和主题检索源中的 AI 生物医学研究趋势与热点。</p>
+    </div>
+    <div class="header-actions">
+      <button id="themeToggle" class="ghost-btn">切换主题</button>
+      <a class="primary-btn" href="data/articles.json" target="_blank" rel="noreferrer">查看数据</a>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <section class="panel">
+        <h2>检索与筛选</h2>
+        <label>
+          关键词
+          <input id="searchInput" placeholder="LLM, single-cell, epidemiology..." />
+        </label>
+        <label>
+          期刊 / 来源
+          <select id="journalFilter">
+            <option value="">全部来源</option>
+          </select>
+        </label>
+        <label>
+          主题标签
+          <select id="tagFilter">
+            <option value="">全部标签</option>
+          </select>
+        </label>
+        <label>
+          时间范围
+          <select id="dateFilter">
+            <option value="all">全部</option>
+            <option value="7">近 7 天</option>
+            <option value="30" selected>近 30 天</option>
+            <option value="90">近 90 天</option>
+          </select>
+        </label>
+        <label class="checkbox-row">
+          <input id="onlyFavorites" type="checkbox" />
+          只看收藏
+        </label>
+        <button id="resetBtn" class="ghost-btn wide">重置筛选</button>
+      </section>
+
+      <section class="panel">
+        <h2>热门标签</h2>
+        <div id="tagCloud" class="tag-cloud"></div>
+      </section>
+
+      <section class="panel">
+        <h2>数据说明</h2>
+        <p class="small">默认展示示例数据。运行 <code>python scripts/update_feeds.py</code> 后会从 RSS/Atom 源更新。</p>
+      </section>
+    </aside>
+
+    <section class="content">
+      <section class="stats-grid">
+        <div class="stat-card">
+          <span id="totalCount">0</span>
+          <p>当前文章</p>
+        </div>
+        <div class="stat-card">
+          <span id="journalCount">0</span>
+          <p>来源数量</p>
+        </div>
+        <div class="stat-card">
+          <span id="tagCount">0</span>
+          <p>活跃标签</p>
+        </div>
+        <div class="stat-card">
+          <span id="latestDate">—</span>
+          <p>最新日期</p>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-title-row">
+          <h2>趋势概览</h2>
+          <span id="trendCaption" class="small"></span>
+        </div>
+        <div id="trendBars" class="trend-bars"></div>
+      </section>
+
+      <section class="panel">
+        <div class="section-title-row">
+          <h2>论文列表</h2>
+          <div class="sort-row">
+            <label>
+              排序
+              <select id="sortMode">
+                <option value="date_desc">最新优先</option>
+                <option value="date_asc">最早优先</option>
+                <option value="title_asc">标题 A-Z</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div id="articles" class="article-list"></div>
+        <p id="emptyState" class="empty">没有匹配的论文。可以放宽关键词、标签或日期筛选。</p>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built for AI × Biomedical literature monitoring. Static-first, RSS-powered, GitHub Pages ready.</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
