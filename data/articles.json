@@ -1,6 +1,1994 @@
 {
-  "generated_at": "2026-08-03T06:32:28.093568Z",
+  "generated_at": "2026-08-04T06:02:30.780857Z",
   "articles": [
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Uncertainty-Aware Simulation-Based Inference for Operations Research with Large Language Models",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00019v1 Announce Type: new Abstract: Deploying large language models (LLMs) for operations research (OR) tasks remains challenging because correctness depends on a coherent modeling process, not merely a correct final answer. Standard autoregressive generation operates on a myopic policy, which sometimes fails to anticipate whether a partial formulation can be validly extended into a globally consistent optimization model. Consequently, locally plausible steps may propagate into catastrophic downstream formulation or solver code errors. To address this, we propose an uncertainty-aware, training-free inference framework for OR mathematical modeling. Without updating model parameters, our method evaluates intermediate candidate steps using short lookahead simulations to quantify downstream predictive uncertainty or probability concentration. Candidates that demonstrate a higher likelihood of yielding coherent mathematical formulations are then dynamically selected via importance resampling. Empirical evaluations across multiple OR benchmarks (including NL4OPT, MAMO, and IndustryOR) demonstrate that our framework consistently outperforms both standard and low-temperature baselines, establishing an efficient, training-free paradigm for reliable OR formulation generation.",
+      "abstract_zh": "",
+      "authors": "Liang Guo, Lin Shaochong, Shen Zuo-Jun Max, Zhang Kun",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00019",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "facd668c27ccf5c7d7065e0131806419b2c890a5"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Learning Compositional Meta-Routing for Agentic Workflows: An Executable Benchmark",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00106v1 Announce Type: new Abstract: Agentic systems must decide not only what answer to produce, but which reasoning and execution operations should precede it. A controller may answer directly, decompose a request, retrieve evidence, execute code, delegate to a specialist, or verify an intermediate result. Existing routing work largely selects model endpoints, retrieval depth, or tools in isolation. We introduce an executable benchmark and a budget-aware meta-router that composes heterogeneous operations from raw task text. The benchmark contains 216 training, 72 development, 108 held-out test, and 108 locked lexical-shift challenge tasks across data analysis, frozen-corpus research, and document processing. Outcomes are machine checked after operations execute. Independent regularized logistic heads predict operation probabilities from word and character features, are temperature-scaled on development data, and are greedily composed under route-cost and action-count budgets. On the held-out test, the learned policy achieves 100% success versus 93.5% for strong static and fixed workflows, with 43% lower cost than the static policy; a matched learned one-shot router reaches 56.5%. On the untouched challenge split, learned success falls to 75.9% and trails static routing at 93.5%, while remaining 49% cheaper and exceeding one-shot routing by 34.3 points. The gap identifies lexical generalization, rather than route execution, as the principal limitation. These results establish a reproducible testbed and a bounded proof of concept, not evidence of live-LLM performance.",
+      "abstract_zh": "",
+      "authors": "Natan Vidra, Alina Kapanova, Arun Kanhai, Spurthi Setty",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00106",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "18f6f3d363af6986a64e56ef61eaa13b4d074279"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Rethinking Pretraining for Specialized Design Data: Evidence from the JONES-19 Cultural Design Dataset",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00135v1 Announce Type: new Abstract: Design and architectural archives encode expert human knowledge in graphical formats, providing a critical testbed for design-inspired Machine Learning (ML) challenges absent with typical computer vision benchmarks. Building on JONES-19, a small-size image dataset based on The Grammar of Ornament (London, 1857), we evaluate the discriminative performance of Convolutional Neural Networks (CNNs) in two model training strategies: (a) ImageNet pretraining for domain-general \"visual common sense,\" and (b) learning from scratch on the design data in JONES-19. We find that while domain-general priors improve discriminative performance, learning from scratch augmented with repeated local sampling (multi-crop) effectively recovers these gains. For highly structured design data, local design-driven representations provide sufficient foundation for learning, challenging a reliance on massive general-purpose pretraining. These findings suggest that in specialized design domains, careful curation of smaller high-quality datasets that capture empirical and formal design principles may prove more effective and informative on the nature of a particular design domain than prioritizing large-scale data collection.",
+      "abstract_zh": "",
+      "authors": "Alexandros Haridis, Charles Zhou",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00135",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "68d7ad2b17b7f8f9c917aaeda310a79700285fc6"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Response Magnitude as a Dominant Signal for Held-Out CRISPRi Perturbation Effect Prediction",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00152v1 Announce Type: new Abstract: Predicting the magnitude of a CRISPRi perturbation's transcriptomic effect on held-out target genes is an important open problem in single-cell biology. Recent work has documented that simple baselines often match or exceed deep perturbation predictors on related protocols. We study this phenomenon on the Virtual Cell Challenge (VCC) benchmark under a strict held-out target-gene split, identify the specific low-dimensional signal that drives the gap, and characterize how it transfers across cell types. The target is the log Anderson-Darling distance from non-targeting controls, which is strongly predictable from four deterministic scalar functions of the 2,000-dimensional input. A deep MLP encoder with direct access to the full input collapses toward the marginal training mean, and standard remedies do not close the gap. A linear regression on the four magnitude scalars alone exceeds the strongest x-only classical model, while a Random Forest on the input plus the four scalars substantially outperforms our deep proof-of-concept encoder. Two pre-specified controls attribute the magnitude gain to per-row alignment rather than added dimensionality. Under zero-shot transfer to two external CRISPRi screens evaluated against a target-gene endpoint rebuilt from single-cell data, magnitude-only predictors transfer positively whereas expression-only predictors are negative or unresolved. Exposing magnitude to the deep encoder improves transfer over its expression-only counterpart, yet the encoder does not outperform a four-scalar linear regression on the same features. We also find that the Anderson-Darling column distributed with these screens measures transcriptome-wide response breadth rather than target-gene effect strength, so evaluating transfer against it scores a different outcome.",
+      "abstract_zh": "",
+      "authors": "Mehrdad Shoeibi, Niloofar Yousefi",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00152",
+      "pdf_url": "",
+      "tags": [
+        "single-cell"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "single-cell"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "6a548e20299b6fa1f0a2b86a8b5cc4faabc4226b"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Inference-Time Policy Alignment for Fair Reinforcement Learning",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00175v1 Announce Type: new Abstract: Deep reinforcement learning (RL) agents achieve strong performance by optimizing scalar reward functions. However, once deployed, the policies of these RL agents are often rigid and costly to adapt to new performance criteria. For instance, an agent trained to maximize expected cumulative reward may not accommodate previously unknown stakeholder preferences. Existing approaches to achieve fairness, a type of preference, in RL typically assume that such preferences are known a priori and require complete retraining of the policy under a fairness-oriented metric. Inspired by inference-time alignment in large language models, we investigate the problem of steering a pretrained RL policy toward welfare-based fairness objectives at inference time without updating the base policy's parameters. We formalize inference-time fairness alignment as a policy shaping problem and propose a multiplicative policy shaping framework that adjusts action probabilities using action-dependent welfare scores, thus requiring no modification to the base policy. Our framework is general and compatible with any deep RL agent. Through extensive experiments across multiple domains, we demonstrate that inference-time policy shaping substantially improves welfare-based fairness objectives while preserving core task performance.",
+      "abstract_zh": "",
+      "authors": "Umer Siddique, Peilang Li, Conor Wallace, Yongcan Cao",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00175",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "1d3c0cbc2c1ab06eb428d4016a4c8a997bc0105e"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "AutoCause: A Python framework that automates expert decisions in environmental time-series causal discovery",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00198v1 Announce Type: new Abstract: Environmental time-series causal discovery requires expert decisions about method choice, conditional-independence tests, lag horizons, sample-size adequacy, multiple-testing control, and evidence interpretation. Applied inconsistently across datasets, these choices yield graphs that cannot be compared, reproduced, or audited. We present AutoCause, an open-source Python workflow that records each decision, derives defaults from an extended causal-audit module, and admits domain-informed overrides. The workflow wraps four established causal-discovery methods from three families, adds non-causal reference models, and grades links by method-count support. On 145 datasets from DGP-Atlas, TimeGraph, and a topology-derived CausalRivers reference, the methods recover complementary parts of the reference graphs. Majority-supported links are more precise than single-method links on the synthetic benchmarks but not against river topology. AutoCause converts inconsistent expert practice into an auditable, repeatable analysis; causal interpretation remains with the analyst. Available at https://github.com/marcoruizrueda/autocause.",
+      "abstract_zh": "",
+      "authors": "Marco Ruiz, Miguel Arana-Catania, David R. Ardila, Rodrigo Ventura",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00198",
+      "pdf_url": "",
+      "tags": [
+        "causal inference"
+      ],
+      "ai_tags": [
+        "causal inference"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "fd06088642dca6945a4c3d1a673398e8b7954876"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "A Physics-Chemistry-Informed Neural Network (PCINN) for Real-Time Spatial-ALD Coverage Prediction and Reliable Kinetics Inversion",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00212v1 Announce Type: new Abstract: Spatial atomic layer deposition (SALD) is a leading atmospheric-pressure, high-throughput route to industrial ALD, but design and control are limited by the cost of predicting surface coverage: high-fidelity CFD is far too slow for operating-window scans, while analytic models miss transport modulation such as the gas curtain. We present a physics-chemistry-informed neural network (PCINN), a hybrid surrogate with CFD-level accuracy at real-time speed: a query returns coverage in about 7 ms, roughly 5x10^4 times faster than a CFD solve, reaching a test R^2_log = 0.998 (leave-one-out R^2_raw = 0.974) from only 30 training cases spanning four orders of magnitude in coverage. The architecture is not a black box: a small network learns only the operating-condition to near-wall concentration closure, while the known surface kinetics is a hard-coded, trainable chemistry layer integrated along the substrate trajectory. This single-scalar bottleneck keeps it accurate under sparse data, interpretable and invertible. We add a full identifiability analysis (Fisher information, profile likelihood). The adsorption energy E_ads and desorption rate k_des are robustly identifiable; k_ads is not separately identifiable at a single temperature (only k_ads*c_wall is). Across four temperatures the prefactor nu and E_ads bind along a weakly identifiable degeneracy valley of slope 0.065 eV/decade, derived analytically as k_B T_eff ln(10) and turned into a reliability diagnostic: a seven-chemistry mismatch matrix shows it is invariant under any single-Arrhenius mismatch and shifts only when a second thermally activated process appears, so a slope departure flags unmodelled site heterogeneity. Data come from simulation with known ground truth inverted by the same kinetic form, so the study verifies pipeline self-consistency and the identifiability boundary, not real parameters.",
+      "abstract_zh": "",
+      "authors": "Ning Hu, Chang Liu, Yunlei Jiang, Yuan Dong",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00212",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "33637019b5355ba0b2720b168725208bd6653031"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Agentic Bayesian Optimization through Surrogate-Augmented Autoresearch",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00316v1 Announce Type: new Abstract: Bayesian optimization (BO) has become the standard tool for sample-efficient optimization and owes its efficiency to uncertainty-aware search driven by generic statistical priors. Richer domain priors can improve BO in principle, but encoding them through tailored kernels or problem structure is difficult and rarely done in practice. LLMs can help sidestep this difficulty by making informal priors from natural language, code, and documentation directly available to the optimizer. However, existing LLM-based BO methods either insert the LLM into a fixed role (surrogate, acquisition proxy, or configuration interface) or hand it broad control, sacrificing the systematic exploration that makes BO reliable. We introduce agentic Bayesian optimization: a paradigm in which an LLM agent is the central decision maker in the BO loop while a Bayesian backend provides the uncertainty-aware optimization substrate. The agent configures the problem, queries the backend, selects and commits evaluations, and can revise the optimization strategy during the run by tightening bounds, switching acquisition functions, proposing targeted evaluations, or even reframing the problem following new instructions or observed evidence. We instantiate this idea in Sara, a surrogate-augmented autoresearch agent, and lenz, a modular BoTorch-based backend that the agent can inspect and modify through a structured interface. Across synthetic and real-world benchmarks, Sara preserves the reliability of state-of-the-art BO without prior knowledge, outperforms LLM-based baselines, and uses natural-language priors to improve beyond standard BO. We further demonstrate the practical value of agentic BO in dynamic settings, where Sara reconfigures the full optimization problem on the fly as requirements change, a capability not previously available in standard BO.",
+      "abstract_zh": "",
+      "authors": "Paul Brunzema, Louis Tiao, Nhat Le, Kevin De Angeli, Yao Xuan, Djordje Gligorijevic",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00316",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "2019a9473c1bc8e65e06d6bf9fa82212a27461f2"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Neural operator learning for collision-aware trajectory planning of spacecraft swarms",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00320v1 Announce Type: new Abstract: Autonomous spacecraft swarms must plan fuel-efficient, collision-free maneuvers in increasingly congested orbits, yet classical trajectory optimization scales poorly as pairwise safety constraints multiply with swarm size, and learning-based planners rarely transfer across swarm sizes or debris densities. Here we introduce a permutation-equivariant neural operator that maps distributions of spacecraft, targets and debris to collision-aware trajectories for an entire swarm in a single forward pass, paired with a batched Gauss-Newton finish that enforces exact orbital dynamics. The operator is trained without optimal-trajectory labels, combining self-supervised physics objectives with adversarial threats generated against its own rollouts. Trained on ten spacecraft, it generalizes zero-shot to swarms of 1,000 amid more than 11,000 catalogued objects, matching a per-agent optimal-control solver's accuracy, evading worst-case threats that a debris-blind baseline cannot, and reducing proximity within the swarm several-fold. Physics-grounded operator learning thus offers a fast, scalable alternative to optimal control for crowded orbits.",
+      "abstract_zh": "",
+      "authors": "Sidhdharth D. Sikka, Suyi Gao, Zehui Lu, Rongjie Lai, Shaoshuai Mou",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00320",
+      "pdf_url": "",
+      "tags": [
+        "self-supervised learning"
+      ],
+      "ai_tags": [
+        "self-supervised learning"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "423895b2d32ac92c8649d175c02806495e366133"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Ensemble of Unsupervised Deep Learning for Clustering Imbalanced Tabular Data",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00346v1 Announce Type: new Abstract: Data imbalance poses a major challenge in supervised classification, where the majority-class bias contributes to false negatives and overestimates classification accuracy. Unsupervised deep clustering can be immune to class imbalance because representation learning for clustering is performed without class labels. Deep clustering has been proposed for images, languages, and graphs, while its application to tabular data has only emerged recently. This paper is among the first to examine the performance of state-of-the-art deep clustering methods under varying levels of data imbalance. We introduce two novel cluster ensemble approaches: one aggregates deep clustering assignments across different embedding dimensions, and the other applies majority voting to the best-performing clustering algorithms. Experiments on 16 binary tabular datasets with varying and artificially induced levels of imbalance reveal distinct strengths of different deep clustering methods. On average, our ensemble methods outperform individual clustering methods in ACC, NMI, and ARI scores, offering greater resilience to data imbalance when identifying ground-truth classes without supervision. Therefore, in an imbalanced data scenario, deep clustering can serve as a strong alternative to supervised classification.",
+      "abstract_zh": "",
+      "authors": "Pulock Das, Yina Hou, Md. Kamrozzaman Bhuiyan, Manar D. Samad",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00346",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "b53ac3c207515d05430bedfc430a16aed7af9e34"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Modeling Unknown Nonlocal PDE Systems via Flow Map Learning",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00400v1 Announce Type: new Abstract: Nonlocal partial differential equations arise in many applications but are often difficult to model and learn because of the presence of nonlocal operators. We present a flow-map learning (FML) framework for modeling unknown nonlocal PDEs directly from solution data. Rather than learning or approximating the underlying nonlocal operators, the proposed approach learns the finite-time evolution operator in either modal or nodal space. Two complementary formulations are developed for spectral and grid-based solution representations. Numerical experiments on one- and two-dimensional fractional diffusion and wave equations demonstrate accurate and stable long-time prediction using only short observation windows. The proposed approach provides an effective data-driven framework for learning unknown nonlocal dynamics without explicit evaluation of nonlocal operators.",
+      "abstract_zh": "",
+      "authors": "Zhongshu Xu, Ying Li, Yanzhi Zhang, Dongbin Xiu",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00400",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "d464cf7fe4d8e73655a2b678ec52accf1de93aa3"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "DSETA: A Dual-Stage Continual Learning Framework for Travel Time Prediction in Dynamic Traffic Environments",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00402v1 Announce Type: new Abstract: Estimated Time of Arrival (ETA) prediction is a core component of intelligent transportation systems. As traffic congestion patterns become increasingly dynamic in large cities, maintaining high prediction accuracy poses a major challenge for ride-hailing platforms. Existing methods either fail to adapt to irregular traffic patterns and sudden congestion, or suffer from new distributions without disentangling long-term trends from short-term fluctuations, thereby degrading model performance in real-world scenarios. To address this challenge, we propose DSETA, an incrementally updated Dual-Stage ETA prediction framework. Specifically, the continual learning process is divided into \\textit{inter-day} and \\textit{intra-day} stages. We first design the \\textit{intra-day} learning stage, which relies entirely on real-time data to enable dynamic adaptation to short-term traffic patterns caused by events like holidays or accidents. Next, we develop the \\textit{inter-day} learning stage, which leverages aggregated historical data from a short time window to capture knowledge of long-term distribution shifts, such as seasonal trends and traffic network evolution. Subsequently, to prevent catastrophic forgetting and preserve knowledge of regular patterns, we explore a \\textit{Historical Traffic Knowledge Consolidation} module. Finally, we validate DSETA's effectiveness and robustness through extensive offline and online experiments conducted on real-world datasets from DiDi's platform. Online A/B tests across three major cities including Beijing, Wuhan, and Xi'an consistently demonstrated performance gains, achieving MAE reductions of 6.62\\%, 0.73\\%, and 2.40\\% respectively. This framework has been successfully deployed in DiDi's production environment, processing hundreds of millions of daily requests and validating its strong performance in industrial applications.",
+      "abstract_zh": "",
+      "authors": "Yanming Lyu, Yue Cheng, Lingkun Li, Ruipeng Gao, Xinyue Liu, Hui Gao, Qiang Ni",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00402",
+      "pdf_url": "",
+      "tags": [
+        "EHR"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "EHR"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "aa02c620eec17a76abdc1f870b5b85c6de2bb3d0"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Unleashing the Potential of Large Language Models: A Blueprint for Real-Time, Enterprise-Ready Deployments",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00419v1 Announce Type: new Abstract: Large language models deployed in real-time, regulated settings face knowledge staleness, catastrophic forgetting, hallucination, and weak feedback loops. We present a unified, pattern-driven LLMOps architecture integrating real-time data ingestion, continual learning, retrieval-augmented generation (RAG), and human-in-the-loop feedback into a single operational pipeline. Four contributions map to established software design patterns: an adaptive ingestion pattern orchestrator (AIPO) evaluated with FreshStreamBench; STAR+FAR continual learning with sparse temporal adapter routing and freshness-aware replay; SAGE, an SLO-aware adaptive retrieval policy predicting a per-query passage budget to meet tail-latency targets; and an automated feedback-driven convergence stage with RLHF triggers. The result reduces latency-cost-accuracy trade-offs while supporting auditability and rollback for high-risk sectors such as health care and finance.",
+      "abstract_zh": "",
+      "authors": "Muhammad Faizan Raza (Luna),  Shuo (Luna),  Yang, Satish Mahadevan Srinivasan, Joanna F. DeFranco",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00419",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "cf4dd3f4f49b0ec22999b2c2b9a91e4f4558c416"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "HP-JEPA: Hierarchical Partitioning for Multi-Resolution Graph Joint-Embedding Predictive Learning",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00491v1 Announce Type: new Abstract: Graph self-supervised learning aims to learn transferable representations from large-scale unlabeled graph data. Joint-embedding predictive architectures (JEPAs) avoid explicit negative-pair construction and raw-input reconstruction by predicting masked targets directly in latent space. However, existing graph JEPAs typically rely on a single predefined graph partition, biasing the learned representations toward one structural granularity and limiting their ability to capture complementary patterns at different graph scales. To address this limitation, we propose HP-JEPA, a hierarchical partitioning framework for multi-resolution graph joint-embedding prediction. HP-JEPA organizes each graph into an ordered bank of coarse-to-fine partition resolutions and performs context-target latent prediction separately at each resolution using an online encoder, an exponential-moving-average target encoder, and a latent predictor. The resulting resolution-specific graph representations are subsequently integrated through concatenation or task-specific resolution weighting, allowing downstream models to combine complementary local, regional, and global structural information. Experiments on seven graph classification benchmarks and one graph regression benchmark show that HP-JEPA outperforms the fixed-resolution Graph-JEPA baseline on 6 of 8 tasks, improving upon Graph-JEPA on most evaluated benchmarks. Size-stratified analyses further show that HP-JEPA achieves higher accuracy than Graph-JEPA in most evaluated graph-size quartiles on three representative datasets. These results highlight the effectiveness of hierarchical multi-resolution partitioning for transferable graph representation learning.",
+      "abstract_zh": "",
+      "authors": "Ruichen Xu, Jingxiang Qu, Wenhan Gao, Jiaxing Zhang, Linsey Pang, Ravid Shwartz-Ziv, Yann LeCun, Yuefan Deng",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00491",
+      "pdf_url": "",
+      "tags": [
+        "self-supervised learning"
+      ],
+      "ai_tags": [
+        "self-supervised learning"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "9bd549baf2b045dc86f8321278cb843452bb07f0"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Agentic Graph Token Reasoning",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00542v1 Announce Type: new Abstract: Graphs model relational data throughout science and industry, from citation networks to product co-purchase graphs. Because the nodes of many such graphs carry rich text, a growing line of work applies large language models (LLMs) to graph analysis. The most graph-native of these methods use graph tokens: a graph encoder compresses a graph view, such as a node, its k-hop neighbourhood, or a cluster, into a short block of continuous tokens that jointly encodes node attributes and topology and is read directly by the model. Existing methods, however, use graph tokens in a static single-shot manner: they encode one predefined graph view before the model has even seen the target and never revise it, leaving the model's step-by-step reasoning ability unused. We introduce agentic graph token reasoning, which recasts graph tokenization as part of the reasoning process itself. At each step, the model chooses which graph view to encode and at what granularity; a graph encoder is invoked on demand to materialise the corresponding graph tokens; and the resulting block is spliced into the running context. The model thus reasons step by step in the graph token space, and the tokens it reads are trajectory-dependent. We realise this with a three-stage training pipeline: (i) self-supervised tasks that teach the model to read heterogeneous graph tokens, (ii) a token-robust trajectory stage with a graph-token consistency regulariser, and (iii) preference optimisation that rewards trajectories in which the graph-token evidence and the node-text evidence agree. Across evaluations spanning seven graph domains, our models outperform a broad set of baselines by a large margin and transfer zero-shot to unseen domains without any per-target fine-tuning. More broadly, this work pushes LLM-based graph analysis from static graph-token encoders towards a graph-native agent paradigm.",
+      "abstract_zh": "",
+      "authors": "Zhuoyi Peng, Yi Yang",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00542",
+      "pdf_url": "",
+      "tags": [
+        "LLM",
+        "self-supervised learning"
+      ],
+      "ai_tags": [
+        "LLM",
+        "self-supervised learning"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "fab37bce54b117bd5615f14d68460a7667e98195"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Crushing the Evidence: A Dual-Penalty Evasion Framework for Fooling White-Box Explainable AI Auditors",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00566v1 Announce Type: new Abstract: Post-hoc model explainers such as LIME, SHAP, and Integrated Gradients are widely deployed to audit models in high-stakes sensitive domains, including finance, healthcare, and social welfare. This ensures the model's transparency and acceptability. However, a few studies have examined potential attacks in the explainability pipeline. Adversaries can attempt to conceal algorithmic biases or backdoors using adversarial explanation attacks. These attacks have relied on scaffolding out-of-distribution (OOD) detectors that toggle predictions when queried by an explainer. Consequently, defenses have been developed to successfully neutralize these black-box attacks by identifying their anomalous perturbation footprints. In this paper, we demonstrate a critical vulnerability by introducing a more potent white-box, gradient-regularized evasion attack framework. By employing a continuous-embedding dual-penalty framework, we directly penalize trigger feature gradients during training on in-distribution data. Since our approach embeds the evasion logic natively into the model parameters, without relying on OOD scaffolding wrappers, it generates smooth, in-distribution predictions that leave no anomaly footprint. Empirical evaluations across four benchmark tabular datasets (COMPAS, German Credit, IEEE-CIS, and Communities & Crime) confirm that our method systematically crushes target feature attribution to near-zero ( 90% Attack Success Rates, and fundamentally bypasses Conditional Anomaly Detection.",
+      "abstract_zh": "",
+      "authors": "Niraj Kumar, Harsh Kasyap",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00566",
+      "pdf_url": "",
+      "tags": [
+        "explainable AI"
+      ],
+      "ai_tags": [
+        "explainable AI"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "c1053076bac92e61144f828551bccfefb764cc03"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Fairness Auditing: Lower Bounds on Company Manipulation",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00568v1 Announce Type: new Abstract: Fairness audits are increasingly mandated in high-stakes applications such as hiring, lending, and automated decision-making. Recent work has established fundamental impossibility results for black-box fairness auditing, showing that sufficiently expressive models can evade any auditing strategy. We complement these results by quantifying the extent of unavoidable post-audit manipulation under finite audit resources. We formulate fairness auditing as a min-max optimization between a computationally unbounded company and a budget-constrained auditor. We study two auditing regimes: (i) a budgeted auditor that certifies fairness using a fixed-size audit set, and (ii) a budgeted {\\alpha}-tolerant auditor that additionally requires the audit set to estimate the fairness of the certified model within an {\\alpha} approximation. For both settings, we derive explicit lower bounds on the worst-case post-audit demographic parity deviation as functions of the audit budget, group imbalance, and fairness tolerance. Finally, we empirically illustrate these theoretical limits using simple audit-set construction heuristics with linear and neural network classifiers. Our results demonstrate that increasing audit resources reduces, but does not eliminate, the scope for post-audit manipulation, highlighting fundamental limitations of finite-budget fairness certification.",
+      "abstract_zh": "",
+      "authors": "Rachit Verma, Padala Manisha, Sujit Gujar",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00568",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "faa06a70f96fbb8522db7e9027df7e5833902a39"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "CoSynFlow: Conformal Symplectic Neural Flows for Cross-System Prediction of Dissipative Hamiltonian Dynamics",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00571v1 Announce Type: new Abstract: Learning solution operators for differential equations is a central problem in scientific machine learning. However, many neural operator methods optimize prediction accuracy without explicitly enforcing the geometric structure of the dynamics. Structure-preserving models such as SympNets and Symplectic Neural Flows address this issue for conservative Hamiltonian systems by preserving the symplectic form. In dissipative Hamiltonian systems with conformal symplectic structure, however, the symplectic form evolves according to a conformal factor determined by the dissipation. We propose CoSynFlow, a conformal symplectic neural flow for learning continuous-time solution maps of dissipative Hamiltonian dynamics. CoSynFlow composes symplectic shear maps with explicit conformal scaling, preserving the conformal symplectic structure by construction. By conditioning it on a finite-dimensional Hamiltonian descriptor and the dissipation parameter, a single trained model predicts solution maps for unseen systems without retraining. CoSynFlow keeps the structure error at machine precision, attains the lowest long-horizon error, and admits physics-informed training.",
+      "abstract_zh": "",
+      "authors": "Baige Xu, Takaharu Yaguchi",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00571",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "8a15b264cd9de9d38391cb75ebe2e0bebefbc92d"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "From field-scale to large-scale spectral libraries: Tabular foundation models in soil spectroscopy",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00608v1 Announce Type: new Abstract: Visible and near-infrared (vis-NIR) and mid-infrared (MIR) spectroscopy enable rapid, cost-effective prediction of soil properties. Yet, translating high-dimensional, highly collinear spectra into accurate soil property predictions remains challenging, particularly when employing machine learning. We systematically investigated regression models and dimensionality reduction approaches for spectroscopic modeling across 85 regression tasks from open benchmark datasets in pedometrics spanning field-scale digital soil mapping and a global soil spectral library. We compared an in-context learning tabular foundation model (TabPFN), a convolutional neural network (CNN), rule-based regression (Cubist), Random Forest, and partial least squares regression (PLSR) using full spectra as well as features derived from principal component analysis (PCA) and partial least squares (PLS) latent variables. TabPFN consistently delivered the best overall performance across scales, including large spectral library tasks with tens of thousands of soil samples. Notably, TabPFN applied directly to full spectra already surpassed all classical baselines, showing that explicit dimensionality reduction is not strictly required for strong performance. Further improvements were achieved through PLS, which proved to be an effective dimensionality reduction strategy for all models. Combining PLS latent variables with TabPFN yielded the best predictions overall. Our findings provide evidence-based guidance for spectroscopic calibration model selection across operational scales, demonstrating that the long-standing advantages of PLSR and modern tabular foundation models complement each other in chemometrics.",
+      "abstract_zh": "",
+      "authors": "Viacheslav Barkov, Jonas Schmidinger, Robin Gebbers, Martin Atzmueller",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00608",
+      "pdf_url": "",
+      "tags": [
+        "foundation model"
+      ],
+      "ai_tags": [
+        "foundation model"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "f6764cc9d07c866cf6b709274e452b13f70f3a76"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "RHEA: Reliability-Harmonized Reconstruction and Assignment for Robust Multimodal-Attributed Graph Clustering",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00621v1 Announce Type: new Abstract: Multimodal-attributed graphs (MAGs), whose nodes carry heterogeneous attributes such as text and images over a relational structure, have become a fundamental substrate for label-free entity grouping tasks, including community discovery and product segmentation. Existing MAG clustering methods effectively integrate complementary modalities when attributes are clean and complete, but degrade substantially under noisy or missing attributes because they implicitly assume equal modality reliability across all nodes. In practice, modality reliability is inherently node-specific: images may be corrupted or absent, while textual descriptions are incomplete or noisy. We argue that, under attribute homophily, graph neighborhoods naturally provide supervision-free evidence for estimating node-specific modality reliability. Based on this insight, we propose RHEA, a reliability-aware framework for MAG clustering that estimates node-specific modality reliability from neighborhood consensus and propagates this signal throughout the clustering pipeline. RHEA reconstructs unreliable or missing modalities from graph neighborhoods, adaptively weights modalities during reliability-aware fusion, and performs topology-aware optimal transport clustering with reliability-aware transport assignment and neighbor-consensus assignment distillation. Furthermore, the confidence of reconstructed representations is incorporated into the clustering objective, allowing uncertain reconstructions to contribute proportionally during optimization. Experiments on four MAG benchmarks under five attribute conditions show that RHEA consistently outperforms the strongest baseline, with NMI gains increasing as attribute quality deteriorates.",
+      "abstract_zh": "",
+      "authors": "Yinlin Zhu, Di Wu, Ziyu Han, Zekai Chenm, Wang Luo, Miao Hu, Guocong Quan",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00621",
+      "pdf_url": "",
+      "tags": [
+        "multimodal learning"
+      ],
+      "ai_tags": [
+        "multimodal learning"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "6de1263c86d89f73dd87f2acfd146b67852c1b92"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Towards Effective Federated Multimodal Graph Learning via Navigating Multifaceted Heterogeneity",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00623v1 Announce Type: new Abstract: Multimodal-attributed graphs (MAGs), where nodes carry heterogeneous semantic content across multiple modalities while edges encode relational dependencies, have been widely adopted across diverse domains. Federated multimodal graph learning (FMGL) extends federated graph learning (FGL) to MAGs, enabling collaborative optimization across decentralized MAGs without exposing raw data. However, naively applying existing FGL methods to FMGL is insufficient, as they fail to navigate the multifaceted heterogeneity inherent in decentralized MAGs, including task heterogeneity across diverse client objectives, modality heterogeneity from discrepant modality quality and semantic domains, and topology heterogeneity arising from divergent topological patterns with low cross-modality correlation. To address these challenges, we propose Federated multimodal graph learning with Topology-aware Cross-modal Routing (FedTCR), the first systematic algorithm designed for FMGL. To handle task heterogeneity, FedTCR employs a two-stage paradigm that comprises federated task-agnostic pre-training followed by isolated task-oriented fine-tuning. To jointly address modality and topology heterogeneity, FedTCR introduces a topology-aware cross-modal routing mechanism. Concretely, each client distills modality-specific knowledge into compact prototypes via topology-aware importance-weighted aggregation informed by graph structure; the server then evaluates cross-client cross-modal relationships among these structure-informed prototypes and routes informative ones as contrastive references, driving a tri-level cross-modal contrastive learning scheme that jointly aligns cross-client modalities while preserving discrimination. Experiments across 7 domains demonstrate that FedTCR outperforms state-of-the-art baselines on both graph-centric and modality-centric tasks.",
+      "abstract_zh": "",
+      "authors": "Yinlin Zhu, Di Wu, Yi Zhang, Xunkai Li, Wang Luo, Wei-Jin Huang, Miao Hu, Guocong Quan",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00623",
+      "pdf_url": "",
+      "tags": [
+        "graph neural network",
+        "multimodal learning",
+        "self-supervised learning"
+      ],
+      "ai_tags": [
+        "graph neural network",
+        "multimodal learning",
+        "self-supervised learning"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "228447071339ac569c2052aba87fe1e6228c6d1a"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Relative Parameter Importance in Task-Agnostic Replay-Free Continual Learning",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00630v1 Announce Type: new Abstract: Achieving continual learning (CL) with deep neural networks requires balancing stability and plasticity while enabling knowledge transfer. In this work, we focus on offline learning algorithms under the constraints: (I) no access to training data from prior tasks (II) no access to task-id at inference time. We introduce a novel measure, the relative parameter-importance, which measures the relative importance of each parameter with respect to both the current and past tasks. Parameters with high relative importance are interpreted as more important for maintaining past-task stability and thus heavily regularised, whereas parameters with low relative-importance are allowed to be more freely updated. Unlike existing methods, our approach allows the update of parameters with high past-task importance when they have low relative-importance, thus enabling backward knowledge transfer in addition to tackling the stability-plasticity trade-off. We demonstrate improvements against state-of-the-art CL methods on both class-incremental and domain-incremental learning text classification problems and provide insights for extending our method to text generation problems. Code available at: https://github.com/itsmemala/LACL",
+      "abstract_zh": "",
+      "authors": "Malavika Suresh, Ikechukwu Nkisi-Orji, Nirmalie Wiratunga",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00630",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "af7b30f459933364f91d3dfcb9aa1352e69229fd"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Learning the Pareto Frontier of Predictive Models under Distribution Shift",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00632v1 Announce Type: new Abstract: Modern machine learning pipelines increasingly rely on reusing pretrained and foundation models across downstream tasks. These pretrained models can differ not only in performance but also in how they can be used: some only provide black-box predictions, while others may permit white-box access to internal representations that can be probed or fine-tuned. When deployed to the target domain in the presence of distribution shift, no single strategy, including zero-shot application, fine-tuning, or directly training a target-specific model, is uniformly the best. In this work, we propose Frontier Learning, a framework that treats a library of candidate models spanning different training histories and access regimes as complementary sources of information rather than mutually exclusive alternatives. Frontier Learning constructs a unified target-domain feature by concatenating internal representations from white-box candidates as well as prediction outputs from black-box candidates, then fits a lightweight, regularized supervised learner on this concatenated representation using labeled target data. Because the resulting hypothesis class contains predictors obtained by zero-shot reuse, fine-tuning, and direct training as special cases, empirical risk minimization over the frontier learner is guaranteed to be no worse, on the training sample, than any individual baseline. We evaluate the framework in simulations spanning varying degrees of source-target compatibility and in two real-world distribution-shift settings: visual domain adaptation on DomainNet/VisDA and clinical mortality prediction across intensive care unit domains using MIMIC-IV-Notes. Across all settings, Frontier Learning matches or outperforms the strongest individual reuse strategy, with the largest gains arising precisely when no single baseline is reliable across the range of shift considered.",
+      "abstract_zh": "",
+      "authors": "Yiming Dong, Jiwei Zhao, Yang Young Lu",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00632",
+      "pdf_url": "",
+      "tags": [
+        "foundation model"
+      ],
+      "ai_tags": [
+        "foundation model"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "44e2e434e1a94779b2edbe01e8086d7deabd3a94"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Mitigating Backdoors via Decoy Shortcuts and Knowledge Decoupling",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00732v1 Announce Type: new Abstract: Backdoor attacks pose a serious threat to deep neural networks, especially when training relies on third-party data, allowing adversaries to inject malicious behaviors through data poisoning. In this work, we reveal that backdoor behaviors tend to be absorbed by a simpler parallel branch when jointly trained with the main network. Motivated by this insight, we propose Trapping and Removing (TR), a simple yet effective training-time defense that introduces a lightweight shortcut branch as a \"honeypot\" to trap backdoor knowledge. After training, backdoors can be removed by discarding the shortcut, without requiring any additional data. To further enhance backdoor isolation while maintaining benign performance, we design a knowledge decoupling strategy with entropy-based weight assignment, encouraging poisoned samples to flow through the honeypot while guiding the main network to focus on benign learning. In addition, we introduce an automatic shortcut generation strategy to improve generalization across model architectures. Extensive experiments on four benchmark datasets and five model architectures demonstrate that our approach effectively mitigates a wide range of backdoor attacks while preserving performance on benign data. Code: https://github.com/Zixuan-Zhu/TR}{github.com/Zixuan-Zhu/TR.",
+      "abstract_zh": "",
+      "authors": "Zixuan Zhu, Rui Wang, Lihua Jing, Jinwen Zhong",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00732",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "f42dfeac1ad709c5745c30465784beafd3bd027f"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Generic Vision and Cross-Attention for Reaction Yield Prediction",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00776v1 Announce Type: new Abstract: Traditional reaction yield prediction is constrained by 1D quantum descriptors that lack explicit spatial information. To address this gap, a dual-modal Vision Cross-Attention architecture is proposed, fusing tabular physical-organic data with 2D molecular topologies. Notably, it is demonstrated that a generic computer vision backbone processing simple 2D skeletal structures independently outperforms purely quantum-based baselines. By synergizing both modalities, superior predictive accuracy compared to traditional methodologies is achieved by the optimal cross-attention framework (Test RMSE = 5.27%). Through mechanistic probing, active, descriptor-guided spatial querying is observed, effectively offloading macroscopic steric identification to the visual pathway. Furthermore, a dynamic chemical hierarchy is learned by the network to heavily prioritize critical steric bottlenecks, such as the aryl halide. Concurrently, residual skip connections are utilized to protect non-spatial electronic parameters from destructive attenuation during fusion. Collectively, a scalable and highly interpretable blueprint is provided for augmenting physical chemistry with deep visual learning.",
+      "abstract_zh": "",
+      "authors": "Qiwei Han, Chi Zhou",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00776",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "a0cc977e37cc3aacee190516c8faa1b1b8e7ded1"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Paris as a 15-Minute City: An Explainable AI Perspective",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00815v1 Announce Type: new Abstract: The 15-minute city promotes access to everyday services within a short walk or bicycle ride, but its relationship with observed mobility remains difficult to quantify. We investigate this relationship in the Paris metropolitan area using mobility trajectories from the NetMob 2025 Data Challenge, enriched with INSEE sociodemographic data and OpenStreetMap points of interest (POIs), yielding approximately 70,000 trip segments after stop-based segmentation and data cleaning. We construct walking- and cycling-based indicators of local service availability and examine their associations with trip duration, transport mode, and short-trip car use. Higher POI availability is associated with less private motorized travel and more active mobility, although this relationship is substantially weaker in the outer agglomeration. Gradient-boosted tree models interpreted with explainable machine-learning methods consistently identify trip purpose, home--work distance, local service availability, vehicle ownership, public-transport subscription, and sociodemographic context as important predictors. For short trips, high POI density is associated with lower car use, while car ownership and driving-licence availability are associated with higher predicted car use; where services are sparse, public-transport subscription is associated with lower predicted car dependence. Finally, explainable AI (XAI) methods are used to examine how feature attributions change under alternative assumed variable orderings. The results are consistent with central assumptions of the 15-minute city while revealing substantial spatial and demographic heterogeneity. They also demonstrate how explainable machine-learning methods can complement accessibility indicators and identify locally relevant hypotheses for urban-mobility policy.",
+      "abstract_zh": "",
+      "authors": "Andr\\'as J. Moln\\'aar, Csaba I. Sidl\\'o, Rita R\\'onai, Domonkos R\\'ozsay",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00815",
+      "pdf_url": "",
+      "tags": [
+        "explainable AI"
+      ],
+      "ai_tags": [
+        "explainable AI"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "d174a975e02737df26ddb497d6474976917322e3"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "AdvPlan-Bench: Adversarial Evaluation of Structured Plan-Generation Agents",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00832v1 Announce Type: new Abstract: Structured plan-generation agents are often evaluated as if a plan has quality in isolation, yet many realistic planning tasks require asking how a candidate behaves when another agent can search for responses. We introduce AdvPlan-Bench, an offline benchmark for adversarial evaluation of structured plan-generation agents. The contribution is a general evaluation object: a typed plan, an adversarial response set, selector diagnostics, and traceable candidate-frontier metrics. AdvPlan-Bench represents plans as typed action chains with optional branches, assigns synthetic quality scores, compares opposing plans with BLUE-vs-RED advantage and Nash-gap diagnostics, and evaluates qualitative constraint coherence with a transparent heuristic rubric. In 150 synthetic scenarios spanning five planning templates, a sampled best-response policy that draws eight response candidates reduces BLUE advantage from .518 to .486 and BLUE win rate from .900 to .820 relative to a single-sample response. An offline LLM-policy contract baseline reaches .496 BLUE advantage and .700 BLUE win rate, while a two-stage multi-agent council obtains .509 BLUE advantage and .813 BLUE win rate. A three-rater rubric-sensitivity study over 600 rating records yields .978 inter-rater agreement. AdvPlan-Bench is not an operational planner and provides no evidence about real-world decision quality; it is a reproducible benchmark artifact for studying adversarial plan evaluation, response-budget sensitivity, candidate frontiers, and multi-agent critique-and-revision traces.",
+      "abstract_zh": "",
+      "authors": "Alina Kapanova, Arun Kanhai, Natan Vidra, Spurthi Setty",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00832",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "8b8521dba792c2ab3c50a0c2f37fef64380883c5"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Deep Learning CNN and Recurrence Analysis for Alpha Gamma EEG Biomarkers in Fragile X Syndrome",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00835v1 Announce Type: new Abstract: Fragile X Syndrome (FXS) is a neurodevelopmental disorder caused by reduced expression of fragile X mental retardation protein (FMRP), leading to disrupted synaptic plasticity, cortical hyperexcitability, and impaired network synchronization. Electroencephalography (EEG) provides a noninvasive window into these mechanisms and consistently reveals abnormalities in alpha (8 to 12 Hz) and gamma (30 to 100 Hz) oscillations that relate to inhibitory control, sensory processing, and cognition. This paper proposes a multi representation deep learning framework for automated characterization of FXS EEG phenotypes by integrating convolutional neural networks (CNNs), long short-term memory (LSTM) networks, and recurrence plot (RP) analysis. Band limited EEG signals are decomposed into alpha and gamma components and transformed into complementary representations, including temporal feature sequences, time frequency maps, and RP images encoding the nonlinear recurrence structure. CNN modules learn discriminative spatial-spectral and dynamical textures from image based representations, while LSTM modules model temporal modulation of oscillatory activity; a hybrid CNN LSTM architecture jointly captures spatial, temporal, and nonlinear dependencies. Subject-independent evaluation demonstrates that the hybrid model outperforms single modality baselines, with gamma features providing strong discriminative power and alpha gamma integration yielding the best overall performance. These findings support deep learning with nonlinear representations as a scalable approach for EEG biomarker development in FXS, with potential utility for diagnosis, stratification, and treatment monitoring in translational settings.",
+      "abstract_zh": "",
+      "authors": "Zag ElSayed, Payton Siekierski, Jack Yanchen Liu, Ernest Pedapati",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00835",
+      "pdf_url": "",
+      "tags": [
+        "biomarker discovery"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "biomarker discovery"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "2233fd497228f8ff59244ab8fa036195f24f3ac4"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Nonlinear Laplacians Improve Signed-Directed Graph Learning",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00836v1 Announce Type: new Abstract: While signed-directed graphs have been studied using linear Laplacians in the design of graph neural networks, relatively little research has focused on developing non-linear Laplacian operators for such networks. We introduce a non-linear Laplacian operator specific to signed and directed networks (NLSD). This non-linear operator extends the concepts of the signed Laplacian for signed graphs and the Laplacian for directed graphs. The NLSD calculates node-specific potentials based on features More precisely, if the potential discrepancy is not aligned with the edge direction, we ignore it (and vice versa) leveraging message-passing techniques only across edges where potential discrepancies align with the edge's direction. Utilizing this novel operator, we propose an efficient spectral GNN framework (NLSD-GNN). We conducted comprehensive evaluations focusing on node classification and link prediction, examining scenarios involving signed, directional, or both types of information. Our findings reveal that this spectral GNN framework not only integrates signed and directional data effectively but also achieves superior performance across diverse datasets.",
+      "abstract_zh": "",
+      "authors": "Ali Parviz, Yuichi Yoshida",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00836",
+      "pdf_url": "",
+      "tags": [
+        "graph neural network"
+      ],
+      "ai_tags": [
+        "graph neural network"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "d01b484eb22a31f1e323175981be836db66a4fd4"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Adaptive Quantum Physics-Informed Neural Networks for Differential Equations with Applications to Fluid Dynamics",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00850v1 Announce Type: new Abstract: Physics-informed neural networks (PINNs) have emerged as a versatile approach for solving nonlinear partial differential equations (PDEs), yet achieving high accuracy efficiently using these techniques remains challenging for high-dimensional or multiscale systems. Here, we present a hybrid quantum-classical framework that enhances Quantum PINNs (QPINNs) through adaptive collocation point sampling and loss-aware attention mechanisms. By dynamically prioritizing points in regions with large PDE residuals or steep solution gradients, our method mitigates the spectral bias inherent in conventional PINNs. Current Quantum Physics-Informed Neural Networks are commonly assumed to be limited by the expressive power of quantum circuits. In our work, we observed that, across diverse differential equations, optimization - not only expressivity - can be an important bottleneck. Furthermore, a trainable loss-weighting scheme balances contributions from physics residuals, boundary conditions, and data fidelity during training. Integrating these strategies with quantum computing techniques (including variational quantum circuits and quantum gradient estimation) can yield at least a 60% improvement in solution accuracy under specific regimes for benchmark fluid flows and reaction-diffusion systems. Finally, we argue that merely increasing model expressivity is insufficient for resolving complex PDEs via QPINNs, as they remain constrained by the structural optimization limitations of classical PINNs. This framework provides a scalable pathway for quantum-enhanced scientific machine learning, bridging physics-based modeling with emerging quantum computational capabilities.",
+      "abstract_zh": "",
+      "authors": "Fabio Pereira dos Santos, Renato Portugal, J\\'ulio de Castro Vargas Fernandes, Lucas Timotheo Sanches",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00850",
+      "pdf_url": "",
+      "tags": [
+        "transformer"
+      ],
+      "ai_tags": [
+        "transformer"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "fdaf313b19f0b9764acbb3460e1a7d49a6d33274"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "HyperODE: Zero-Shot Surrogate for Simulation and Inference of Dynamical Systems",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00852v1 Announce Type: new Abstract: Understanding and controlling complex dynamical systems often requires executing thousands of numerical simulations across vast parametric landscapes, which is time-consuming. Machine learning surrogates significantly accelerate simulation by predicting state trajectories across different initializations and parameter values. However, surrogate models are specialized to one simulation model. Modifying the underlying differential equations - e.g., adding a physiological state or altering an epidemiological contact network - renders trained models obsolete and forces computationally expensive retraining from scratch. We introduce HyperODE, a surrogate capable of operating across an entire class of approximately mass-conserving compartmental models without retraining. By mapping the structure of ordinary differential equations (ODEs) into directed hypergraphs, HyperODE decouples the functional form of system interactions from the neural network architecture. HyperODE takes a compartmental model in the form of an ODE with an arbitrary parameter distribution defined through quantiles and transforms it into a hypergraph. It outputs the distribution of the trajectories for all the states in the original ODE in the form of quantiles. We then use this surrogate to build an encoder that takes a noisy trajectory and outputs a distribution over the parameters of the original ODE, thus calibrating the model in a single pass. On families and system sizes never seen in training, HyperODE produces calibrated quantile bands in a single forward pass, with weighted-interval score and coverage on par with specialized surrogates for each structure. For inverse inference, HyperODE produces calibration from noisy state trajectories in a few milliseconds with a single shared encoder, competitive with existing methods. HyperODE extends zero-shot to ODEs that break mass conservation and to external forcing.",
+      "abstract_zh": "",
+      "authors": "Ajitesh Srivastava",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00852",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "d1ad03c4635b561f4f7de6840680dd0c7adb04a4"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "SparseKAN: Compressing Kolmogorov--Arnold Networks Across Basis Functions, Neurons, and Bits",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00859v1 Announce Type: new Abstract: Kolmogorov--Arnold Networks (KANs) replace scalar edge weights with learnable univariate functions parameterized by multiple basis coefficients. This introduces a source of redundancy that conventional neural-network compression does not directly expose. We present \\textbf{SparseKAN}, a unified approach that compresses KANs along three complementary axes: basis functions, neurons/channels, and numerical precision. SparseKAN equips the base branch, nonlinear basis branch, and individual basis terms with hierarchical learnable gates trained under a differentiable active-cost objective. The learned importance structure is subsequently hardened under explicit basis and width budgets, recovered in full or low precision, and physically compacted into smaller dense tensors rather than retained as sparse masks. Experiments on MNIST, CIFAR-10, and CIFAR-100 across spline, polynomial, RBF, wavelet, and convolutional KAN variants show that the structural axes compose predictably in cost. We also find strong basis-dependent differences in term importance: coefficient-based selection outperforms matched low-order truncation by up to 15.25 accuracy points in the evaluated Gram-polynomial settings. Eight-bit quantization is broadly robust, whereas 4-bit convolutional KANs require quantization-aware adaptation. Physical compaction removes up to 73.0\\% of parameters without accuracy loss on MNIST and reduces large-batch CUDA latency to as little as $0.51\\times$ dense execution. On a ZCU104 FPGA, the resulting sparse low-bit models achieve up to $23.63\\times$ lower inference latency, demonstrating that SparseKAN converts functional redundancy into measurable software and hardware efficiency. The SparseKAN implementation is available at https://github.com/OSU-STARLAB/SparseKAN.",
+      "abstract_zh": "",
+      "authors": "Kazi Ahmed Asif Fuad, Lizhong Chen",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00859",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "1197e91de98652dd160ae818b9a64c06c00b5383"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Kilobyte Models: Neural Networks as a Seed and a Quantized Latent",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00860v1 Announce Type: new Abstract: The cost of storing and transmitting a trained neural network scales with its parameter count, a bottleneck for over-the-air updates, on-device libraries, and other bandwidth-bound deployments. We study an extreme form of model compression in which the deployable artifact is not the weights but a short recipe for regenerating them. Building on Mapping Networks, which express a network's weights as a nonlinear function of a compact trainable latent and a fixed random basis, we observe that only the latent need be stored, because the basis and initialization center are reproducible from an integer seed. A model becomes a seed together with a quantized latent, whose size is set by the latent dimension and bit width rather than the parameter count. We formalize this artifact and introduce a seeded block-wise basis that scales to networks whose projection cannot be held in memory. In our experiments, a mapped model is as accurate as the same network quantized aggressively to a few bits per weight, while taking far fewer bytes to store. Reaching the most aggressive bit widths depends on fine-tuning the latent with quantization in the loop. The results do not depend on the particular random basis, and a structured basis lets the weights be regenerated almost for free even for large networks.",
+      "abstract_zh": "",
+      "authors": "Sahil Rajesh Dhayalkar",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00860",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "0c7db7f8c1d7dc249470fc42511571851e845a83"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "GeoArbiter: Verifiability-Guided Grounding for Remote-Sensing Multimodal LLMs",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00877v1 Announce Type: new Abstract: Remote-sensing multimodal large language models (MLLMs) often assert facts that imagery cannot establish, such as a facility's identity or function. Coordinate-keyed geographic retrieval can supply this missing knowledge, improving fMoW land-use accuracy by 12.06--17.19 points across three open MLLMs. However, retrieved records can also contradict visible evidence, and we find that models frequently follow the records even when the image is decisive. We argue that source trust should therefore depend on \\emph{cross-modal verifiability}: geographic records are most useful for attributes the image cannot verify and most dangerous when they dispute visually verifiable attributes. We introduce GeoArbiter, a training-free pipeline that operationalizes this principle by injecting only image-unverifiable geographic facts. Unlike arbitration prompts, which leak across attribute types and bias yes/no responses, content-level filtering preserves 84.69--87.15\\% of the full-retrieval accuracy gain, reduces claim-level hallucination by 9.58--26.34\\% under a source-blinded judge, and improves robustness to conflicting records across all three models. These results identify verifiability-guided content selection as a simple, effective mechanism for grounding remote-sensing MLLMs in fallible geographic knowledge.",
+      "abstract_zh": "",
+      "authors": "Xuechen Li",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00877",
+      "pdf_url": "",
+      "tags": [
+        "LLM",
+        "multimodal learning"
+      ],
+      "ai_tags": [
+        "LLM",
+        "multimodal learning"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "80f0d59450261f6bd9ed3b5e1d594bc6e87921d4"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "AOSpec: Action and Observation Co-Speculation for Low-Latency Agent Serving",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00881v1 Announce Type: new Abstract: Large language model agents increasingly act through stateful tools, yet model generation and environment execution remain serialized at every step. As decoding accelerates, tool execution becomes a growing bottleneck. Existing action- or observation-only speculation leaves much of this latency exposed: value is concentrated in a few slow calls, some outcomes emerge only through execution, and longer lookahead typically requires an increasingly unlikely chain of action predictions. We present AOSpec, a lossless framework that co-speculates actions and observations across the full agent-environment loop. Expected Value Decoding (EVD) directs observation speculation toward outcomes with the greatest expected latency benefit, optimizing expected time hidden rather than hit rate. For outcomes only execution can reveal, AOSpec launches latency-critical target actions in isolated forks that contain their effects, while Joint Action-State Verification (JASV) verifies both the action and its origin state against committed execution before reuse. JASV recasts long-horizon action dependency from full-chain prediction into target action-state verification, breaking the lookahead--accuracy tradeoff and unlocking long-range overlap without sacrificing serial semantics. Across Terminal-Bench serving settings spanning four harnesses, five actor models, and five serving speeds, AOSpec outperforms every practical baseline, reducing mean end-to-end latency by 11.8-32.5% and p99 latency by up to 42.8%. Its gains increase as decoding accelerates, and its observation model transfers from Terminal-Bench to SWE-bench Verified without retraining.",
+      "abstract_zh": "",
+      "authors": "Hao Mark Chen, Jinnan Guo, Wayne Luk, Hongxiang Fan",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00881",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "2a33ca440dc513e21d665081de81c51666ad4fc1"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "xMICD: Explainable Representation of Multiple ICD Codes",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00935v1 Announce Type: new Abstract: Electronic Health Records (EHRs) are widely used for clinical risk prediction using machine learning. International Classification of Diseases (ICD) codes provide structured information about patient diagnoses, but representing them effectively remains challenging. Existing approaches often face a trade-off between predictive performance and interpretability: grouping-based representations are interpretable but may lose information, while embedding-based representations achieve strong predictive performance but are difficult to interpret. We propose Explainable Representation of Multiple ICD Codes (xMICD), a method for constructing low-dimensional patient representations from sets of ICD codes. xMICD combines clinically meaningful diagnostic groupings with similarity in a pre-trained ICD embedding space. Instead of using binary group membership, the method assigns codes to groups via similarity-based relative assignments, yielding features that reflect how closely a patient's diagnoses align with each clinical group. Experiments on large-scale EHR datasets demonstrate that xMICD achieves predictive performance comparable to embedding-based representations such as ICD2Vec across multiple clinical prediction tasks. At the same time, the resulting features remain clinically interpretable because each dimension corresponds to a recognizable diagnostic group. xMICD therefore provides a practical way to integrate embedding-based semantic relationships into interpretable clinical feature spaces for machine learning models.",
+      "abstract_zh": "",
+      "authors": "Pat Vatiwutipong, Kumkup Keeratisiwakul, Albert Phuoc Kien Van Truong, Nutcha Yodrabum, Wasin Pansiritanachot, Marvin N. Wright, Thanapon Noraset",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00935",
+      "pdf_url": "",
+      "tags": [
+        "EHR",
+        "clinical prediction",
+        "explainable AI"
+      ],
+      "ai_tags": [
+        "explainable AI"
+      ],
+      "bio_tags": [
+        "EHR",
+        "clinical prediction"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "fc609d566da5f60e1f88c0b721ca2e1a2ea5b738"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Interpretable machine learning for predicting splitting strength of asphalt concrete: insights from SHAP analysis",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00956v1 Announce Type: new Abstract: This paper presents an interpretable machine-learning framework for predicting the splitting strength (ST) of asphalt concrete and supporting data-driven mixture design. A database consisting of 296 samples was established, and 14 input variables related to asphalt properties, aggregate gradation, and fiber characteristics were selected for modeling. Six machine-learning models, namely TabPFN, ANN, SVR, RF, XGBoost, and LightGBM, were developed and compared. Hyperparameter optimization was performed for five models using NSGA-II, while TabPFN was directly applied with its default configuration. The results show that all six models achieved satisfactory predictive capability, whereas TabPFN delivered the best overall performance on the testing set, with the lowest RMSE of 0.28, MAE of 0.21, MAPE of 18.01%, MAD of 0.14, the highest R^2 of 0.88, and the highest composite score of 0.91. SHAP analysis further revealed that nine dominant variables accounted for 92.0% of the total average contribution, among which Ag9.5, FT, Ag4.75, AC, and Du were the most influential. In addition, favorable parameter ranges for improving ST were quantified, such as Ag9.5 134.7 cm. Finally, a GUI platform integrating prediction and SHAP-based explanation was developed to improve the accessibility and practical applicability of the proposed framework.",
+      "abstract_zh": "",
+      "authors": "Jianglei Xing, Xiao Tan, Dongzhao Jin, Pengwei Guo, Yuhuan Wang, Huiya Niu",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00956",
+      "pdf_url": "",
+      "tags": [
+        "explainable AI"
+      ],
+      "ai_tags": [
+        "explainable AI"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "f554cff016e5f9c71f5cbf2d5728a8bafba29429"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "One-Sided Quantile Coupling for Flow Matching",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00978v1 Announce Type: new Abstract: Flow Matching trains continuous-time generative models by regressing the velocity field of a probability path between a simple source distribution and a target data distribution. The coupling that pairs source and target samples strongly affects optimization and sample quality, but structured couplings typically rely on mini-batch transport or assignment procedures whose cost grows at least quadratically in batch size. We propose Quantile Coupling Flow Matching (QC-FM), a lightweight one-sided coupling: rather than matching two pre-sampled batches, it samples only the data batch and constructs each paired source directly. Data ranks projected along a small number of random orthogonal directions are mapped to Gaussian quantiles, and the latent code is completed in the orthogonal complement by conditional Gaussian sampling. The construction is one-dimensional per slice, so the coupling requires no pairwise cost matrix and no assignment to solve. We show that, for each drawn frame, this coupling eliminates the irreducible regression variance along every selected slice and makes the ideal flow exactly straight there, while leaving the sampling prior unchanged: generation still starts from the standard Gaussian, and the training source deviates from it only through the copula of the slice codes, whose transport cost we bound. For training, we apply QC to an anchor subset and complete the remaining source slots with exact Gaussian samples, retaining the QC bias while preserving an explicit signal from the Baseline coupling. Across CIFAR-10, CelebA, FFHQ, and ImageNet-64, QC-FM improves over the Baseline under matched training budgets, reducing FID by up to 12.9%, and outperforms OT-CFM on all four datasets. These results suggest that preserving projected rank structure is a simple and scalable way to inject useful geometric bias into FM couplings without solving a mini-batch transport problem.",
+      "abstract_zh": "",
+      "authors": "Jin-Young Kim, So-Yoon Cho, Hyun-Gyoon Kim",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00978",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "ac5be3aede538b07b1d37aa76699ffeda51c69dc"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Beyond Gene Reconstruction: Learning Cell Representations through Complementary Transcriptomic Views",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00985v1 Announce Type: new Abstract: The rapid growth of single-cell transcriptomic data has enabled the development of foundation models pretrained primarily by reconstructing masked expression values. This objective encourages these models to learn gene dependencies but does not directly optimize whole-cell representations, which are essential for many downstream tasks. To bridge this gap, we propose a contrastive pretraining framework that learns cell representations through complementary transcriptomic views. Since standard contrastive learning is not readily applicable to single-cell pretraining, we introduce specific adaptations along three dimensions --- co-expression-guided gene partitioning, expression-aware contrast-set construction, and competence-gated contrastive onset. Specifically, we first construct two complementary views of each cell by partitioning its genes according to their co-expression structure. Then, to prevent the model from using gene-set identity as a shortcut, we construct hard negatives by permuting expression values while keeping gene identities unchanged. Finally, we introduce a competence-aware controller to determine how the contrastive objective is applied. Experiments on cell-type annotation and gene regulatory network inference demonstrate competitive transfer under the evaluated protocols. In the six-network GRN evaluation, our method records the highest mean AUROC and AUPRC point estimates among the compared variants, while the highest-scoring variant differs across individual networks. These results establish complementary-view contrastive learning as an effective direction for single-cell pretraining beyond gene reconstruction.",
+      "abstract_zh": "",
+      "authors": "Jiaqi Xiong, Yuntao hu, Yu Zheng, Yifei Shi, Xinyue Guo, Jiaxin Qi",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00985",
+      "pdf_url": "",
+      "tags": [
+        "foundation model",
+        "self-supervised learning",
+        "single-cell"
+      ],
+      "ai_tags": [
+        "foundation model",
+        "self-supervised learning"
+      ],
+      "bio_tags": [
+        "single-cell"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "a21010a62e4067f0434d04a5447ac017ee718b4b"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Who Belongs in the Eval Set? A Capability-Taxonomy-Driven Pipeline for Curating Regression Eval Sets in Agent-Extensibility Platforms",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01004v1 Announce Type: new Abstract: Platform teams hosting agent-extensibility surfaces face a regression-economics paradox: every onboarding customer ships an evaluation set tuned to their domain, but the platform's regression set must live under a hard query-count ceiling bounded by release cadence. To our knowledge, no published industrial pipeline addresses this platform-side curation problem: existing evaluation frameworks are customer-side, and benchmark-compression work treats benchmarks as fixed pools rather than streams of incoming sets. We describe a capability-taxonomy-driven curation pipeline applied to declarative agents with custom actions in Microsoft 365 Copilot. It takes an agent specification and a customer's eval set as input, projects each query into a platform-owned capability taxonomy, and outputs per-query decisions (admit, drop, swap, or human review), under the philosophy that a healthy regression set is the minimal set of queries capturing the maximal spread of capability signatures -- distinct combinations of capabilities a query exercises together. Three components instantiate this: a classifier producing per-(query, capability) verdicts via a hybrid of deterministic specification-based extraction and large-language-model (LLM) semantic inference; an Invocation Quality (IQ) rater scoring how thoroughly a query exercises each capability, so a new query sharing a signature with an existing entry can still be recognized as a better test and displace it; and a consolidator comparing incoming queries against the regression set on coverage and quality through a rule-based decision cascade, backed by a conservative curator that only suggests evictions. The mechanism is taxonomy-agnostic and applies to any regression eval-set curation problem with a typed capability taxonomy, including taxonomies that evolve in response to the very evidence the pipeline surfaces.",
+      "abstract_zh": "",
+      "authors": "Tezan Sahu, Aritra Das, Pankaj Mittal, Sudipta Das",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01004",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "3633bd8663c28f00b78b08e01bb27bf75a62204b"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Hierarchical Solomonoff Induction: An Unbounded Machine Learning Model",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01005v1 Announce Type: new Abstract: Solomonoff Induction, or SolInd, provides an ideal unbounded model of a priori sequence prediction but cannot naturally describe extrapolation from a given training dataset, as performed by Large Language Models. We apply de Finetti's theorem on exchangeable distributions to SolInd to produce what we call Hierarchical Solomonoff Induction, or HSI, which maintains a hyperprior over all Solomonoff priors that can be conditioned on previously observed sequences. We extend Wood et al.'s proof that universal mixtures of semimeasures are equivalent to SolInd to show that universal mixtures of these mixtures are also equivalent, proving that HSI=SolInd. We also prove that HSI's excess error on any distribution, compared to its true generator, is bounded by that generator's complexity in the hyperprior. This result is directly comparable to SolInd's prediction error being bounded by the Kolmogorov complexity of the sequence being predicted, and forces HSI's average excess error to converge to 0 as a dataset grows, leading to optimal prediction in the limit. We claim that HSI is an ideal unbounded model of sequence prediction given a dataset in the same way that SolInd is ideal over individual sequences.",
+      "abstract_zh": "",
+      "authors": "Nathan Young",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01005",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "393fd81dd468a4741c137cb4501fbb6445d0c3f2"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Fused Bayesian Flow Networks for Dual-Target Molecular Design",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01007v1 Announce Type: new Abstract: Dual-target drug design aims to generate 3D molecules that can simultaneously interact with two target proteins, offering a promising route for discovering polypharmacological compounds against complex diseases. While recent generative models have shown encouraging performance in single-target drug design, existing dual-target approaches either focus on sequence generation or introduce an additional predictive drift term into the diffusion-based generative trajectory, which limits their ability to fully integrate feature information from both targets. We propose FusedBFN, a fused Bayesian flow network (BFN) for dual-target molecular design. FusedBFN formulates dual-target generation as distribution fusion in a unified continuous parameter space and employs a product-of-experts formulation to incorporate dual-target information throughout the generative process. To address the scarcity of dual-target structural data, we leverage a pretrained target-aware BFN model as the shared backbone. We further introduce a chemically aware prior-based alignment method and a prior-free pocket alignment strategy to construct aligned dual-target contexts. Extensive experiments demonstrate that FusedBFN generates molecules with strong binding affinity toward dual targets while maintaining favorable molecular properties.",
+      "abstract_zh": "",
+      "authors": "Jingyuan Zhou, Shikui Tu, Lei Xu",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01007",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "3d85bad4831279dfe49b383ee8415bdc26fc6e80"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Logit-Origin Centering for Singleton Test-Time Adaptation",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01074v1 Announce Type: new Abstract: Tabular data is used extensively in many real-world use cases. Deep learning models have been developed to deal with tabular data, but generally perform poorly when the test data distribution differs from that of the training data. Researchers have proposed test-time adaptation approaches to deal with this problem. The fully test-time adaptation (FTTA) setting involves adapting deployed classifiers to shifted target distributions using only unlabeled test data. Leading FTTA methods inherit a batch-dependent approach from computer vision literature. This paper demonstrates for the first time that such approaches degrade sharply in strict streaming regimes where examples arrive and must be classified one at a time. This occurs because at a batch size of one, batch-level statistics become unavailable or poorly estimated. We argue that singleton tabular FTTA is not merely a small-batch variant of ordinary FTTA, but a distinct identifiability problem where only the location of the model's score stream remains directly observable. To address this, we propose Prequential Logit-Origin Centering (PLOC), a lightweight approach that keeps the source model frozen and shifts the logit space at each step. PLOC stores only a single running number (the mean of past logits), requires no labels, estimates no priors, and bypasses weight updates entirely. A deferred variant applies a static shift that preserves the source ranking, and thus the AUROC, exactly. Evaluated across five tabular benchmarks, three architectures (MLP, FT-Transformer, and TabTransformer), and five independent source checkpoints, PLOC significantly outperforms strong tabular and entropy-based baselines.",
+      "abstract_zh": "",
+      "authors": "Mayank Sharma, Rohit Kumar Mourya, Pratik Mazumder",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01074",
+      "pdf_url": "",
+      "tags": [
+        "transformer"
+      ],
+      "ai_tags": [
+        "transformer"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "036bef25ffc851839ca14ca3b712d43fd97ff060"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Breaking Diversity Collapse in Spiking Pseudo-Ensembles for Efficient OOD Detection in Remote Sensing",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01090v1 Announce Type: new Abstract: Spiking Neural Networks (SNNs) are attractive for resource-constrained remote-sensing systems, but reliable out-of-distribution (OOD) detection remains challenging. Deep ensembles provide strong predictive uncertainty, yet require multiple complete models and backbone evaluations. We propose an efficient spiking pseudo-ensemble that attaches multiple lightweight classification heads to a frozen SNN backbone. Naively training these heads with cross-entropy can lead to diversity collapse, where independently parameterized heads may produce correlated predictions. To address this, we introduce an agree--disagree objective that preserves correct predictions on clean in-distribution samples while encouraging diversity on structured, uncertainty-inducing transformations of the same inputs. This provides a diversity-promoting training signal without requiring external OOD data. Experiments with Spikformer and ResNet19-SNN on EuroSAT demonstrate consistent improvements over conventionally trained pseudo-ensembles. Using three backbones with five heads each matches or improves upon a five-model deep ensemble on UCM and AID, while requiring approximately 38% fewer parameters and 40% fewer backbone evaluations. These results show that explicit diversity promotion can recover useful ensemble-style uncertainty at substantially lower deployment cost.",
+      "abstract_zh": "",
+      "authors": "Srinivas Anumasa, Rushi Shah, Qiran Zou, Dianbo Liu",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01090",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "b9fc987824ad3871a89c20344cb7747cf82dca7e"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Factorized AdaBoost.MH Achieves the Same Convergence Rate as AdaBoost.MH",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01091v1 Announce Type: new Abstract: AdaBoost.MH reduces multi-class classification to a collection of binary subproblems and enjoys the classical boosting-type convergence guarantee under a weak learning condition. A more structured variant, Factorized AdaBoost.MH, uses base classifiers of the form $\\mathbf{h}(x)=\\alpha \\mathbf{v} \\bm{\\varphi}(x)$, where a single binary classifier $\\bm{\\varphi}$ is shared across all classes and the label dependence is carried by a vote vector $\\mathbf{v} \\in\\{\\pm1\\}^K$. This factorization is algorithmically attractive and achieves better performance in practice, but its convergence depends on whether one can always choose a vote vector with sufficiently large induced binary weight mass. Previous work resolved this question with a lower bound $\\max\\{1/n,1/\\sqrt{2K}\\}$, which still leaves a dimension-dependent slowdown relative to the original AdaBoost.MH analysis. In this paper, we sharpen this combinatorial step. For the minimax quantity $\\mathfrak{W}_{n,K}$ governing the factorized edge, we prove $\\max\\{1/n,C_K\\}\\le\\mathfrak{W}_{n,K}\\le C_{\\min\\{n,K\\}}$, where $C_q=1$ for $q=1$, $C_q=q/(3q-4)$ for even $q\\ge2$, and $C_q=(q+1)/(3q-1)$ for odd $q\\ge2$. Since $C_q\\downarrow 1/3$, our bounds show that $\\mathfrak{W}_{n,K}=\\Theta(1)$ uniformly over $n$ and $K$. Consequently, Factorized AdaBoost.MH achieves the same boosting-type convergence rate as AdaBoost.MH up to a universal constant factor, removing the previously suggested additional dependence on $n$ or $K$ in the number of boosting rounds.",
+      "abstract_zh": "",
+      "authors": "Xin Zou, Jingyuan Xu",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01091",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "59e93896b8c4b9b32497c7d0561bfb0ee87b3dab"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "FL-OA: A Byzantine-Robust Federated Learning Framework with Outsourced Auditing for Intelligent Devices",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01095v1 Announce Type: new Abstract: Federated learning (FL) enables multiple intelligent devices to collaboratively train a high-accuracy model without sharing raw data. However, due to its distributed nature, FL is vulnerable to Byzantine attacks. Existing defense methods rely on strong assumptions, such as the proportion of malicious devices not exceeding 50\\%, or the server having an additional root dataset that matches the training task. Moreover, they show limited efficacy as they overlook $(i)$ the divergence among benign updates and $(ii)$ the curse of dimensionality involved in comparing two high-dimensional updates. To solve these concerns, we propose FL-OA, a Byzantine-robust federated learning framework utilizing outsourced auditing. In FL-OA, the server collaborates with third-party organization that holds an additional root dataset to perform outsourced auditing, thereby enabling the server to achieve robust aggregation without strong assumptions. Additionally, FL-OA introduces a gradient ascent step and a correction term during local training to mitigate the divergence among benign updates, and designs a parameter importance indicator to extract critical parameters for auditing, alleviating the curse of dimensionality. We further provide a detailed theoretical analysis of FL-OA. Extensive experiments demonstrate that FL-OA outperforms existing defense methods against Byzantine attacks.",
+      "abstract_zh": "",
+      "authors": "Hongliang Zhang, Zhongyuan Yu, Fenghua Xu, Teng Hu, Jian Meng, Jiguo Yu",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01095",
+      "pdf_url": "",
+      "tags": [
+        "federated learning"
+      ],
+      "ai_tags": [
+        "federated learning"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "03f619fb7393c2017d3cdbdc510151345c761987"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "When Do Surrogate Updates Improve Decisions? A Local Theory of Trajectory-Wise Transfer",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01130v1 Announce Type: new Abstract: A broad range of models face the mismatch where they are updated through trajectory losses but are evaluated by downstream task reward. Here, a trajectory is a training instance that induces a surrogate loss whose reduction might not track the model's decision utility update. Theoretically, we ask when one step of trajectory training reduces both population surrogate loss and decision risk, and how transfer accumulates along repeated updates. To formalize this, we first fix a checkpoint and a restricted update space, and define the reductions in population surrogate risk and decision risk induced by a trajectory as its learnability and decision utility, respectively. On this basis, our theory yields four main results. First, a one-step transfer bound separates their discrepancy into first-order gradient misalignment after nonnegative calibration and second-order curvature; and a pathwise extension accumulates the same terms over repeated updates. Second, when the accessible surrogate gradient is nonzero, universal first-order transfer over every accessible direction holds exactly when the accessible surrogate and decision gradients are positively collinear. Third, the calibration gap bounds the decision regret of learnability-based trajectory selection, while a candidate-difference refinement tightens this guarantee by retaining only directions that affect pairwise rankings. Finally, we establish an approximation--calibration trade-off across nested update spaces. Controlled gridworld and LLM post-training experiments yield results consistent with our predictions.",
+      "abstract_zh": "",
+      "authors": "Yuyang Shen",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01130",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "f70b177077ff1844b8c210926684d9de33b15ca6"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "EulerLoRA: Rank-Driven Jump Dynamics for Calibrated Parameter-Efficient Fine-Tuning",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01142v1 Announce Type: new Abstract: Low-Rank Adaptation (LoRA) enables parameter-efficient fine-tuning, but standard LoRA produces a single deterministic model and does not directly support predictive uncertainty estimation. We introduce EulerLoRA, a stochastic extension of LoRA that generates multiple predictive trajectories by sampling structured variations along the rank-one components of shared low-rank adapters, while preserving the deterministic LoRA transformation in expectation. We evaluate EulerLoRA with vision transformers on CIFAR-10, CIFAR-100, and HAM10000, together with out-of-distribution detection on SVHN. Across these benchmarks, EulerLoRA achieves comparable or improved performance relative to strong LoRA-Ensemble baselines. Using two rank-20 adapters, EulerLoRA requires approximately 3 million trainable adapter parameters, compared with about 10 million for a rank-8, 16-adapter LoRA-Ensemble, corresponding to roughly 69% fewer trainable parameters. These results show that useful predictive diversity can be obtained from a small number of shared adapters.",
+      "abstract_zh": "",
+      "authors": "Srinivas Anumasa, Dianbo Liu",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01142",
+      "pdf_url": "",
+      "tags": [
+        "transformer"
+      ],
+      "ai_tags": [
+        "transformer"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "a44077dca4c9bea5eecdd443a8c77db16deffad1"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Differentiable Lifting for Topological Neural Networks",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01160v1 Announce Type: new Abstract: Topological neural networks (TNNs) enable leveraging high-order structures on graphs (e.g., cycles and cliques) to boost the expressive power of message-passing neural networks. In turn, however, these structures are typically identified a priori through an unsupervised graph lifting operation. Notwithstanding, this choice is crucial and may have a drastic impact on a TNN's performance on downstream tasks. To circumvent this issue, we propose $\\partial$lift (DiffLift), a general framework for learning graph liftings to hypergraphs and cellular- and simplicial complexes in an end-to-end fashion. In particular, our approach leverages learned vertex-level latent representations to identify and parameterize distributions over candidate higher-order cells for inclusion. This results in a scalable model which can be readily integrated into any TNN. Our experiments show that $\\partial$lift outperforms existing lifting methods on multiple benchmarks for graph and node classification across different TNN architectures. Notably, our approach leads to gains of up to 45% over static liftings, including both connectivity- and feature-based ones.",
+      "abstract_zh": "",
+      "authors": "Jorge Luiz Franco, Gabriel Duarte, Alexander Nikitin, Moacir Ponti, Diego Mesquita, Amauri H. Souza",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01160",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "be098ba0b4c3be2d45179f539a2fd26a4e883e95"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Interpretable Machine Learning for Traffic Congestion Prediction: Unveiling the Impact of Different COVID-19 Periods",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01180v1 Announce Type: new Abstract: Traffic congestion prediction is essential for congestion mitigation, but the COVID-19 pandemic and related control measures altered travel behavior and increased prediction complexity. This study predicts congestion in Alameda County, California, during pre-lockdown, lockdown, and post-lockdown periods. Weather, seasonality, and COVID-19 variables are incorporated, and Recursive Feature Elimination with Cross-Validation is used to select important features and reduce overfitting. Support vector regression, multiple linear regression, recurrent neural networks, and long short-term memory networks are trained and optimized. Because LSTM is more sensitive to hyperparameter settings, an adaptive parameter selection approach is used, while SVR and RNN are manually tuned. Performance is evaluated using Normalized Root Mean Square Error. Bidirectional LSTM consistently performs best across all periods because it captures temporal dependence in both directions. Integrated Gradients is used to interpret Bi-LSTM predictions, and SHapley Additive exPlanations is applied to SVR. New COVID-19 cases have a mainly negative effect on congestion during lockdown and post-lockdown, likely due to greater risk awareness, voluntary travel reduction, and compliance with mobility restrictions. In the post-pandemic period, higher hospitalization reduces travel and congestion, while higher fuel prices do not prevent a shift toward private vehicles and therefore increase congestion.",
+      "abstract_zh": "",
+      "authors": "Dan Zhu, Chi Sin Ng, Litian Xie, Yang Liu",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01180",
+      "pdf_url": "",
+      "tags": [
+        "explainable AI"
+      ],
+      "ai_tags": [
+        "explainable AI"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "364abea391efb815801f1c9248189a9023093a1b"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "ReBRAC-v2: The Return of the King",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01205v1 Announce Type: new Abstract: Recent offline reinforcement learning methods increasingly rely on expressive generative policies and specialized value-guidance mechanisms. We ask whether comparable progress can instead come from systematically modernizing a conventional behavior-regularized actor-critic while preserving its algorithmic simplicity. We introduce ReBRAC-v2, which directly trains an exact-likelihood normalizing flow as the RL actor, combines likelihood, MSE, and MAE behavior regularization, and integrates a classification-based residual critic, staged optimization, and multi-sample test-time action selection. Rather than tuning this recipe separately for every task, we develop a single shared configuration via roughly 600 Bayesian proposals on six challenging OGBench tasks, freeze all structural and optimization choices, and adapt only two behavior-regularization coefficients over a 16-point grid. Across ten common state-based OGBench categories, ReBRAC-v2 averages 74.8 compared to 52.3 for the next-best aggregate result and ranks first in eight categories. The same recipe, without structural changes, obtains the strongest averages in our comparisons on D4RL AntMaze (90.2) and Adroit (33.6). Fixed-recipe ablations show the largest sensitivity to the selected mixed cloning objective, staged training, sufficient flow capacity, and multi-sample inference, while showing that several smaller choices depend on the values of other hyperparameters. These results show that disciplined, transferable engineering can achieve state-of-the-art aggregate performance without abandoning a minimalist offline RL foundation.",
+      "abstract_zh": "",
+      "authors": "Denis Tarasov, Robert K. Katzschmann",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01205",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "1eda1c7a8253b12559d14836bed8dcf631d50533"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "AdaHAT: Adaptive Hard Attention to the Task in Task-Incremental Learning",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01252v1 Announce Type: new Abstract: Catastrophic forgetting is a major problem in task-incremental learning, where neural networks tend to overwrite previously learned knowledge when trained on new tasks. A number of architecture-based approaches have been proposed to address this problem. However, the architecture-based approaches suffer from another problem related to network capacity when the networks learn long task sequences: As a network is trained on an increasing number of new tasks in a long task sequence, a growing proportion of active parameters becomes static to prevent forgetting of previously learned knowledge. In this paper, we propose Adaptive Hard Attention to the Task (AdaHAT) with an adaptive attention mechanism which allows adaptive updates to static parameters by taking into account the information about previous tasks on both the importance of these parameters to previous tasks and the current network capacity. Based on this idea, we develop a new neural network architecture incorporating our proposed AdaHAT mechanism. AdaHAT extends an existing architecture-based approach, Hard Attention to the Task (HAT), to better support task-incremental learning over long task sequences. We conduct experiments on a number of datasets and compare AdaHAT with task-incremental learning baselines including HAT. Our experimental results show that AdaHAT achieves better average performance across tasks than these baselines, especially on long task sequences, demonstrating the benefits from balancing the trade-off between stability and plasticity of a network when learning such sequences of tasks, alleviating the network capacity problem. Our code is available at pengxiang-wang.com/projects/continual-learning-arena.",
+      "abstract_zh": "",
+      "authors": "Pengxiang Wang, Hongbo Bo, Jun Hong, Weiru Liu, Kedian Mu",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01252",
+      "pdf_url": "",
+      "tags": [
+        "transformer"
+      ],
+      "ai_tags": [
+        "transformer"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "1e6bf83b821c54fd466519ccd0f391ef4715b8fd"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Distill What the Student Can See: Fisher-Projected On-Policy Distillation for Vision-Language Models",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01263v1 Announce Type: new Abstract: On-policy distillation (OPD) samples trajectories from the current student policy and minimizes token-level divergence between student and teacher next-token distributions at prefixes along those trajectories. This aligns the distillation states with the student's own generation distribution. However, it still assumes that the complete teacher distribution is an appropriate target across student capacities. In vision--language reasoning, teacher corrections can depend on visual distinctions that a compact student cannot represent. Our target-scaling study shows that, as the target approaches the complete teacher distribution, the student realizes less of the prescribed shift and obtains worse downstream performance. We therefore propose \\emph{Fisher-Projected On-Policy Distillation} (FP-OPD), which distills only locally realizable teacher corrections. FP-OPD uses continuous visual perturbations to estimate the student's local visual tangent space and projects the centered teacher--student log-probability gap onto this space under the student's Fisher metric. The resulting capacity-aware target is optimized with full-vocabulary reverse KL on student trajectories, retaining the standard OPD framework. In 8B-to-2B distillation, FP-OPD improves all seven evaluated multimodal benchmarks. It raises the average score by 2.77 points over the pretrained student and by 1.60 points over standard OPD. These results demonstrate that locally realizable teacher corrections provide a more effective target for distilling compact vision--language models.",
+      "abstract_zh": "",
+      "authors": "Leyan Xue, Feng Xiong, Mingjun Ma, Changqing Zhang",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01263",
+      "pdf_url": "",
+      "tags": [
+        "multimodal learning"
+      ],
+      "ai_tags": [
+        "multimodal learning"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "9d0bedb7d41698a533711435b9edb45448a6d88d"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Riemannian Attention Mechanisms for Transformers: A Theoretical Framework and Architecture Design",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01283v1 Announce Type: new Abstract: All Transformer-based large language models compute attention via the Euclidean inner product, an architectural choice that Dong et al. (2021) proved causes representational rank to decay doubly exponentially with depth in pure self-attention stacks. We develop a theoretical framework that targets this structural limitation at the mathematical level by replacing the flat Euclidean metric with learned per-token Riemannian metrics. Our contributions are threefold. (1) We prove that Riemannian attention scores with heterogeneous per-token metrics are non-Gram---they cannot be factorized as QK^T with factorization dimension O(d). We are explicit that this is a structural observation, not a proof of rank preservation. (2) We establish that low-rank metric factors render all geometric operations tractable: geodesic distance in O(d*r) per token and metric inversion in O(d*r^2) via the Woodbury identity---both far below the O(d^3) cost of a general matrix---making Riemannian attention feasible at billion-parameter scale with negligible overhead. (3) We present the Fiber Bundle Transformer, a complete architecture specification in which each token position carries its own Riemannian metric, attention is geodesic distance computation, feed-forward updates use metric-preconditioned steps, and the connection carries explicit curvature and torsion proxies. We derive formal predictions about correctly implemented geometric architectures and identify the central open problem: proving or disproving that heterogeneous Riemannian metrics prevent the rank collapse that row-stochastic attention matrices otherwise cause. This paper presents theoretical analysis and architectural design; empirical validation is the subject of future work.",
+      "abstract_zh": "",
+      "authors": "Sen Song",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01283",
+      "pdf_url": "",
+      "tags": [
+        "LLM",
+        "transformer"
+      ],
+      "ai_tags": [
+        "LLM",
+        "transformer"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "c5a2cd82e4463e0e6435d5bd9327ca1a842039b6"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Training nGPT",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01284v1 Announce Type: new Abstract: The normalized Transformer (nGPT) realizes hyperspherical representation learning by constraining model parameter vectors and activation vectors to the unit hypersphere. In this paper, we describe a practical training recipe for nGPT and evaluate it on modern hybrid Mamba-2--Transformer Mixture-of-Experts (MoE) models. The recipe introduces Logit Gradient Preconditioning, Logarithmic Learning Rate Decay, GatedAdamW, angular update control, and optional exploration mechanisms. Compared with an unnormalized model of the same hybrid MoE architecture trained with AdamW, the 14B-total-parameter nGPT model reaches the same validation loss using approximately half as many training tokens. The recipe scales across the models considered, which contain up to 14B total parameters.",
+      "abstract_zh": "",
+      "authors": "Ilya Loshchilov, Boris Ginsburg",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01284",
+      "pdf_url": "",
+      "tags": [
+        "LLM",
+        "transformer"
+      ],
+      "ai_tags": [
+        "LLM",
+        "transformer"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "5acd981e68123be2ce3dc4cfa6c4b95fc4a6508f"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Stop When Memory Suffices: Evidence-Conditioned Progressive Execution for LLM Agents",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01285v1 Announce Type: new Abstract: The continued development of LLMs toward persistent and adaptive intelligence increasingly requires long-term memory mechanisms that preserve and reuse information across interactions. Existing memory systems either compress and structure histories for efficient access or perform deep research over broader trajectories. The former lowers online cost but may omit temporal, causal, or cross-step dependencies, while the latter improves evidence coverage at substantial latency and inference cost. This raises a key question: can a memory system achieve strong answer quality while maintaining low online latency? We introduce Router-Mem, an evidence-conditioned progressive execution framework for long-horizon agent memory. Router-Mem first applies a shared low-cost retrieval prefix to obtain evidence. A lightweight sufficiency router then predicts whether the context supports early termination, which enable a single-token decision at inference time. It is trained with evidence-level supervision and rationale-conditioned representation distillation. When evidence is insufficient, Router-Mem reuses retrieval hits to expand memory blocks and perform deeper analysis and aggregation. Experiments on AMA-Bench and BEAM show that Router-Mem achieves 55.17\\% and 38.77\\% score while reducing average inference time by 27.3\\% and 25.5\\% compared with full memory execution.",
+      "abstract_zh": "",
+      "authors": "Yidan Lin, Kaixiang Wang, Jiong Lou, Jie Li",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01285",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "d6abb389e3f423d1df60b82c24664bae2bb40919"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "FedChronos: Federated Fine-Tuning of Time-Series Foundation Models for Privacy-Preserving Commodity Price Forecasting",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01290v1 Announce Type: new Abstract: Time-series foundation models (TSFMs) such as Chronos have demonstrated strong forecasting capabilities across domains, yet adapting them to institutionally fragmented settings, where data cannot be centralized due to regulatory, competitive, or sovereignty constraints, remains unexplored. We introduce FedChronos, a framework for federated parameter-efficient fine-tuning of an already pre-trained TSFM, a setting that existing federated time-series work has not addressed, since prior methods either pre-train from scratch or align prototypes rather than adapt a fixed backbone. Our approach applies Low-Rank Adaptation (LoRA) to the Chronos-T5 backbone and trains across distributed clients using FedAvg and FedProx, transmitting only lightweight adapter weights (384~KB per round, an 86$\\times$ reduction over full-model exchange). We evaluate FedChronos on daily commodity prices from 15 Indian agricultural markets across 9 states, a naturally non-IID federated setting, and find that na\\\"ive LoRA fine-tuning overfits substantially on small per-client datasets, dropping below zero-shot performance. We further observe that differential privacy (DP) noise can act as implicit regularization and counteract this overfitting: in our experiments the strongest configuration ($\\varepsilon = 5$) reduces mean absolute percentage error (MAPE) by 31% over zero-shot and 26% over the best traditional baseline, while bounding each round's information leakage via per-round $(\\varepsilon, \\delta)$-differential privacy. Because the model is compact and the updates are small, the approach also suits edge AI deployments where both the network link and the client device are constrained. Overall, our findings suggest that privacy and accuracy can be complementary rather than competing objectives in federated TSFM fine-tuning.",
+      "abstract_zh": "",
+      "authors": "Amit Sharma, Nitin Auluck, Akramul Azim",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01290",
+      "pdf_url": "",
+      "tags": [
+        "federated learning",
+        "foundation model"
+      ],
+      "ai_tags": [
+        "federated learning",
+        "foundation model"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "b96fd600f872360181cb175955ff6320e5bdfafb"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "AlphaG-OPD: Reliability-Gated Sibling Counterfactuals for On-Policy Distillation in Symbolic Alpha Factor Discovery",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01303v1 Announce Type: new Abstract: Symbolic alpha factor discovery can score a completed expression, but it provides no direct label for the structural decisions that produced it. Generative flow networks (GFlowNets) preserve a diverse, reward-proportional distribution over complete expressions, yet their trajectory-level objective does not compare unchosen sibling actions at an intermediate state. We introduce AlphaG-OPD, a structural on-policy distillation framework that turns terminal factor evaluations into local action guidance. Its design separates three decisions. Component I determines where to teach by exposing grammar-valid siblings at partial abstract-syntax-tree (AST) states visited by the current forward policy. Component II determines what is reliable enough to teach: it evaluates three supported siblings under four shared suffixes and admits a KL-bounded target only when their matched comparisons exhibit sufficient winner agreement and a positive empirical lower confidence bound (LCB). Component III determines how strongly and for how long to teach by consolidating accepted targets through bounded replay, score-indexed expiry, and forward-gradient balancing, without additional factor evaluations. Terminal reward, Trajectory Balance, the backward policy, grammar, and factor-pool rules remain unchanged. An equal-physical-score four-arm ablation tests paired teaching, reliability gating, and consolidation. Across China's CSI300, CSI500, and CSI1000 and the U.S. S&P 500, the complete method delivers strong cross-market performance over multiple random seeds.",
+      "abstract_zh": "",
+      "authors": "Yaoyu Su",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01303",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "4a78f0bba3f83c975b6928341f651624c1fa00ce"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Spatiotemporal Proximal Causal Inference under Hidden Confounding and Interference",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01352v1 Announce Type: new Abstract: Estimating causal effects from real-world spatiotemporal data is challenging due to hidden confounders and interference. Standard causal identification methods assume conditional exchangeability given observed covariates, which fails whenever hidden confounders affect both treatment and outcomes - a common setting in domains such as climate, environmental policy, epidemiology, and regional economics. In this paper, we propose a novel spatiotemporal proximal causal inference framework that extends proximal identification theory to spatiotemporal settings. The proposed method jointly captures local and neighborhood-level confounding information by introducing treatment- and outcome-inducing proxies, and we derive a spatiotemporal outcome confounding bridge function that identifies the potential outcome without requiring direct recovery of the hidden confounder. We establish the identifiability of this bridge function under proxy exclusion restrictions and a spatiotemporal completeness condition, and show that the resulting estimator recovers the outcome through a proximal generalization of the g-computation formula. To operationalize this identification result, we propose a neural architecture that learns proxies via transformer-based spatiotemporal encoders - coupled with a conditional mutual information critic to enforce exclusion restrictions and a moment-matching network to guarantee that the learned bridge function satisfies the underlying identifying equation. We further introduce a stabilized weighting scheme to address treatment support imbalance. Experiments on synthetic datasets demonstrate that our approach achieves comparable performance to baseline causal inference methods, while providing, to our knowledge, the first theoretically grounded outcomes for the hidden confounding in the presence of spatiotemporal interference through a proximal causal inference framework.",
+      "abstract_zh": "",
+      "authors": "Omar Faruque, Pavan Raj Ravi, Jianwu Wang",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01352",
+      "pdf_url": "",
+      "tags": [
+        "causal inference",
+        "epidemiology",
+        "transformer"
+      ],
+      "ai_tags": [
+        "causal inference",
+        "transformer"
+      ],
+      "bio_tags": [
+        "epidemiology"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "76e37df5b4c307e7d524030494cc48fbb5d5ff60"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Do Neural Networks Really Beat the Curse of Dimensionality? A Bit-Complexity View",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01357v1 Announce Type: new Abstract: Traditional approximation theory measures convergence rates in terms of the number of parameters or degrees of freedom. However, practical computation operates under finite precision: parameters must be encoded using a finite number of bits. Therefore, approximation efficiency should be evaluated in terms of computational bit complexity, which is intrinsically connected to the metric entropy of the underlying function class. In this work, we develop a unified approximation framework based on binary encoding and metric entropy. We analyze classical methods (including polynomial approximation, sparse grids, and finite elements) as well as shallow and deep neural networks, and compare their approximation rates for function classes with comparable metric entropy. We observe that, when evaluated in terms of bits, most classical methods are in general suboptimal relative to the intrinsic limits dictated by metric entropy, while neural network methods may exhibit different behaviors. We show that when complexity is measured in bits rather than parameters, no method fundamentally exceeds the approximation order achieved by classical approaches. Our results also indicate that many seeming advantages of neural networks, including dimension-independent rates and superconvergence phenomena, stem from differences in function class complexity rather than intrinsic architectural superiority. In this sense, the traditional curse of dimensionality can be misleading; the fundamental limitation is instead a curse of bit complexity, governed by metric entropy.",
+      "abstract_zh": "",
+      "authors": "Tong Mao, Jinchao Xu",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01357",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "3533c733f02d8b0f5f88da9eada842b5ea1ee16a"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "When May a Model Replace the Experiment? Audits, Licenses, and the Price of Trust in Surrogate-Driven Design",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01378v1 Announce Type: new Abstract: Design campaigns in chemistry, materials science, and machine learning share a bottleneck: determining how good a candidate truly is requires an expensive evaluation - an experiment, a first-principles simulation, or a full training run. Machine-learning surrogates that predict these outcomes are increasingly used not only to propose candidates but to grade them, and even to feed their own predictions back into the search as though they were measurements. Through mathematical analysis validated on three exhaustively ground-truthed design tasks, we establish when this practice is safe, what any certificate of safety must cost, and when the substitution provably pays. Predictive accuracy cannot anchor trust: near-perfect R^2 is compatible with worst-possible selections, and screening N candidates inflates the over-prediction at the selected candidate by a quantifiable \"selection tax\" with matching upper and lower bounds. Safety follows instead from an architectural rule - predictions may propose and train without restriction, but every certified conclusion must rest on true evaluations - which is sufficient with no assumptions on the surrogate, and necessary, since admitting predictions into certification with the standing of measurements opens a deterministic self-confirmation failure mode. We derive the minimal criterion under which a model may act as an oracle (rank preservation, not accuracy), show that trust must be purchased through selection-aware audits that are optimal in query complexity, and prove a dichotomy fixing when audited surrogates cut certified evaluation cost. Across 432 surrogate fits over six task-regime conditions, the audit statistic tracks deployed search performance at Spearman rank correlation 0.80-0.99, while the rank correlation of R^2 with deployed regret falls as low as 0.33; audited screening reduces certified oracle cost by a measured factor of 25.",
+      "abstract_zh": "",
+      "authors": "Shuangxiu (Max),  Ma (Zachary),  Wenhe (Zachary),  Zhao",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01378",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "aeb930a7f83b915a3aa31591892ca9d04e58d62b"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "TabDPT-Turbo: Efficient In-Context Learning for Tabular Prediction",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01400v1 Announce Type: new Abstract: Tabular foundation models, driven by in-context learning, have rapidly grown in quality and popularity. However, recent approaches with either cell-based architectures or retrieval have sacrificed efficiency for raw performance, restricting their utility in situations where compute is limited or inference speed is crucial. We adopt an alternate approach, sticking with row-based attention while incorporating long context pre-training to eliminate the need for retrieval. By combining this with architectural improvements and SSL pre-training on a newly-sourced, larger corpus of real data results, we present TabDPT-Turbo, a model that provides comparable default performance to TabDPT v1.1 on TabArena-Lite, CC18, and CTR23, at orders of magnitude faster. In our experiments, TabDPT-Turbo is the fastest model overall among leading foundation models. We have released the new model as TabDPT v1.2 at https://github.com/layer6ai-labs/TabDPT-inference.",
+      "abstract_zh": "",
+      "authors": "Rasa Hosseinzadeh, Alex Labach, Zexin Xue, Shuyi Han, Valentin Thomas, Anthony L. Caterini",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01400",
+      "pdf_url": "",
+      "tags": [
+        "foundation model"
+      ],
+      "ai_tags": [
+        "foundation model"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "9d46ba921043e43b91ec320f8879d65049b31f4b"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Cluster-Aware Over-the-Air Federated Learning with Energy-Harvesting Devices: From Global Training to Model Personalization",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01426v1 Announce Type: new Abstract: Federated learning (FL) enables distributed optimization and learning across decentralized edge devices while preserving data privacy, but its performance is fundamentally constrained by heterogeneous data distributions, limited communication resources, and energy availability. In practical wireless networks, mobile devices (MDs) often exhibit diverse data and learning objectives, naturally forming clusters of users with jointly trainable models. When devices rely on energy harvesting (EH), stochastic energy arrivals further complicate participation and scheduling under communication constraints. In this work, we study over-the-air (OTA) FL with EH MDs under heterogeneous data distributions, and investigate two closely related learning objectives within a unified framework: one aiming for a more representative global model by reducing data bias, and the other learning more personalized cluster-specific models by exploiting this bias. In the global training mode, cluster information guides energy- and diversity-aware scheduling, ensuring that the scheduled active users provide a more representative aggregate update. In the personalization mode, the same cluster structure defines cluster-level learning objectives and OTA recovery targets, enabling the parameter server to train multiple cluster-specific models through simultaneous transmissions over the wireless multiple-access channel. Numerical results demonstrate that the proposed unified framework improves fairness or personalization, depending on the operating mode, while reducing communication overhead.",
+      "abstract_zh": "",
+      "authors": "Furkan Bagci, Busra Tegin, Mohammad Kazemi, Tolga M. Duman",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01426",
+      "pdf_url": "",
+      "tags": [
+        "federated learning"
+      ],
+      "ai_tags": [
+        "federated learning"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "56674b24510bf9b87a0f5a6b51fcacc14487d2f3"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "GRAIN: Molecules Are Not the Right Granularity -- Active-Ingredient Modeling for Safe Medication Recommendation",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00098v1 Announce Type: new Abstract: Medication recommendation from electronic health records must balance predictive accuracy against the risk of adverse drug-drug interactions (DDIs) under polypharmacy. Existing safety-aware recommenders operate at one of two granularities: the drug code, which treats each medication as an indivisible token, or the molecular substructure, which is finer than pharmacological interaction knowledge is actually organized. We argue that the active ingredient is the missing granularity, and introduce GRAIN, a medication recommendation framework built around it. GRAIN encodes longitudinal patient trajectories (diagnoses, procedures, past medications) with a selective state space backbone that handles long, irregular visit sequences in linear time. On top of it we introduce a joint objective unifying three knowledge sources aligned to a common medication vocabulary: a drug-level DDI graph, an ingredient-level DDI graph obtained by normalizing medication codes to active ingredients via RxNorm, and an EHR-derived co-prescription graph. A proportional controller adapts the accuracy-safety trade-off to the observed validation DDI rate rather than fixing it a priori. Under strictly matched settings -- identical preprocessing, cohort, vocabulary, split, and evaluation code -- GRAIN improves over a re-implemented MambaHealth baseline on MIMIC-IV across all standard multi-label metrics (Jaccard 0.4488 to 0.4983, PRAUC 0.6911 to 0.7485, F1 0.5989 to 0.6453) while reducing the drug-level DDI rate from 0.1875 to 0.0948. We further define an ingredient-level DDI rate, a safety measure invisible to drug-code-level evaluation. The results indicate that ingredient-level normalization recovers predictive signal erased by code-level aggregation, and that it is complementary to, rather than in competition with, accurate sequence modeling.",
+      "abstract_zh": "",
+      "authors": "Juao Fan, Jinhan Li, Shengxin Zhu",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00098",
+      "pdf_url": "",
+      "tags": [
+        "EHR"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "EHR"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "1dbe7586231a1ede6915de9a302b6947617690f6"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "LLMBDC: Language Model for Biological Domains Oriented Clustering of Gene Ontology",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00099v1 Announce Type: new Abstract: Gene Ontology (GO) enrichment analysis is a foundational tool for translating large-scale genomic data into biological insights, but typically yields hundreds of redundant terms that obscure overarching themes. Existing summarization tools rely on fixed similarity metrics (REVIGO, GOSemSim, clusterProfiler::simplify()), gene-overlap measures (Metascape), or static hierarchy mappings (GO-slim), and therefore cannot incorporate biological context. Manual curation provides context-aware grouping but is subjective and labor-intensive. A scalable, context-aware framework is needed to cluster GO terms into interpretable higher-order biological domains. Here we present LLMBDC (Large Language Model for Biological Domains Oriented Clustering of Gene Ontology), a training-free framework that leverages zero-shot semantic reasoning of LLMs with confidence scoring to cluster GO terms into BioDomains using only ontology information at inference time. Benchmarked across Alzheimer's disease (AD) and Fragile X syndrome (FXS) against six baseline methods including SapBERT, LLMBDC achieved substantially higher precision, recall, and clustering performance. Against ground-truth annotations, LLMBDC improved ARI from 9.7% to 73.3% (AD) and from 15.7% to 66.6% (FXS) over REVIGO, with corresponding NMI gains from 59.9% to 73.4% (AD) and 66.0% to 79.5% (FXS). A Cauchy combination test further confirmed that aggregated BioDomains retained statistically significant functional signals. LLMBDC provides a scalable, reproducible, and interpretable route to context-aware, system-level interpretation of GO enrichment results while preserving biological specificity.",
+      "abstract_zh": "",
+      "authors": "Ximing Ran, Jie Xu, Peng Jin, Zhaohui Qin, Zhexing Wen, Jiaying Lu",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00099",
+      "pdf_url": "",
+      "tags": [
+        "LLM",
+        "neurodegenerative"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [
+        "neurodegenerative"
+      ],
+      "is_preprint": 1,
+      "id": "cb8141a1084b290c4634f1819898edebb6f2113d"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Data augmentation as a framework for modeling hippocampal contributions to generalization",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01297v1 Announce Type: new Abstract: The hippocampus plays a critical role in generalization, enabling us to flexibly repurpose prior experiences to perform novel tasks. Here we suggest that data augmentation---a machine learning strategy to improve generalization by refactoring prior experience---offers a useful framework to conceptualize and model hippocampal function. We begin by outlining how data augmentation operates across two timescales: the traditional ``offline'' setting, where refactoring training data yields more general representations, and an ``online'' setting, where retrieved experiences can be flexibly refactored at test time to support zero-shot inference. We suggest that these `offline' and `online' computational strategies map onto functions supported by the hippocampus. Critically, we argue that these computational tools can be leveraged to develop formal `linking functions' between experimental evidence and theoretical claims, such that a unified modeling approach can be used to predict the diverse behaviors that depend on the hippocampus---from navigating in high-dimensional sensory environments to more abstract inferences. We hope this perspective, and the modeling strategies it makes available, will support new efforts to formalize and evaluate theories of hippocampal function.",
+      "abstract_zh": "",
+      "authors": "Tyler Bonnen, Andrew Kyle Lampinen",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01297",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "10ca11acb0168b8d89eaf318e06c678f6f6f9637"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "NeuroWorld: A Latent Brain World Model for Stimulus-Conditioned Human Brain Dynamics",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01773v1 Announce Type: new Abstract: Forecasting human brain activity during naturalistic experience requires modeling how endogenous neural states evolve causally under continuous sensory drive. Existing brain encoding models instead frame this as stimulus-to-response regression without strict temporal constraints, allowing future stimuli to leak into current predictions. We introduce NeuroWorld, to our knowledge the first brain world model, which casts naturalistic brain functional dynamics prediction as stimulus-conditioned evolution in a learned latent brain-state space, separating endogenous states (measured via fMRI) from exogenous multimodal stimuli across two stages. Latent Dynamics Learning (LDL) jointly learns a transition-sufficient representation and causal dynamics through next-latent prediction, without reconstructing the observed fMRI signal. Latent Rollout Decoding (LRD) freezes LDL, autoregressively rolls latent states forward from an observed fMRI prefix, and decodes them into subject-specific whole-brain responses. Across three naturalistic movie-fMRI benchmarks spanning 30 participants, including our newly collected Singapore Multimodal Imaging & Naturalistic Dataset (SG-MIND; 20 participants, 8,519 paired stimulus-response clips, 140.7 person-hours of viewing), NeuroWorld achieves state-of-the-art multi-step rollout performance under strictly causal stimulus access, with greater robustness to long-horizon autoregressive drift, supporting reliable simulation of extended brain-state trajectories. Extensive interpretability analyses characterize the functional organization of the learned dynamics, establishing latent-space world modeling as a principled framework for causal forecasting of human brain activity.",
+      "abstract_zh": "",
+      "authors": "Zijian Dong, Jianxiong Zhou, Kwun Kei Ng, Jan Paolo Macapinlac Balagtas, Zhizhou Li, Zijiao Chen, Juan Helen Zhou",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01773",
+      "pdf_url": "",
+      "tags": [
+        "explainable AI",
+        "multimodal learning"
+      ],
+      "ai_tags": [
+        "explainable AI",
+        "multimodal learning"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "2109bb676a143e6da6604c34f8e3663006436ef2"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Divisive Normalization Shapes Low-Rank Slow Manifolds for Continuous Working Memory",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01947v1 Announce Type: new Abstract: The ability to robustly maintain and update continuous variables is a hallmark of working memory. While classical continuous attractor networks suffer from severe fine-tuning fragility, standard artificial recurrent neural networks (RNNs) like GRUs and LSTMs typically fail to stably learn continuous manifolds, instead shattering the state space into discretized point attractors. To bridge this gap, we draw inspiration from divisive normalization, a canonical neural computation widely observed across cortical circuits, and propose the Recurrent Divisive Normalization Network (RDNN), a minimal and algebraically isolated model of dynamic division. Through dynamical systems analysis on canonical working memory tasks, we demonstrate that this biophysical constraint allows the network to converge to robust, high-fidelity slow manifolds. Furthermore, we analyze the gradient dynamics of divisive normalization during Backpropagation Through Time (BPTT), showing that it introduces an activity-dependent local gradient scaling. This scaling dampens parameter updates in highly active regimes, which empirically aligns with a significant self-compression of the network's effective rank, confining the recurrent dynamics to a tight, low-dimensional subspace while avoiding the optimization pathologies associated with explicit low-rank factorization. Finally, ablations demonstrate that while subtractive inhibition can maintain static memories, divisive normalization is mathematically essential to prevent manifold shattering under time-varying inputs. Our findings identify divisive normalization not merely as a biological artifact, but as a critical computational mechanism for learning high-fidelity continuous representations.",
+      "abstract_zh": "",
+      "authors": "Zhaotian Gu, Jie Su, Weiwei Wang, Chang Liu, Tianyi Qian, Dahui Wang",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01947",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "1425dba032a540e08bd0dfe8fba6f2c2c06ef3bf"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "What Carries the Signal in Pathology Foundation-Model Atlases? A Patient-Level Controlled Benchmark in Breast Cancer",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00105v1 Announce Type: cross Abstract: Pathology foundation models are reported to encode molecular programmes in tissue morphology, but the evidence is usually a cohort-wide ranked gene list rather than a prediction for a held-out patient. We rebuild such an analysis with the patient as the unit of evidence and ask which pipeline component carries signal. Across 11 frozen backbones, four pre-specified gene programmes and 285 TCGA-BRCA patients with paired slides and RNA-seq (44 cells; GroupKFold by patient, all preprocessing fitted inside the fold), ridge regression on mean-pooled embeddings predicts held-out programme scores at Spearman rho = 0.25-0.56, UNI2 strongest on all four (immune 0.556). A matched permutation null gives raw p ~ 1e-4 at 10,000 permutations for every cell; Holm-adjusted p = 0.0044. The signal is real but not uniformly morphological. Against competing models on the same patients and folds, embeddings beat tissue composition for ER/luminal, proliferation and immune (+0.280, +0.284, +0.479; p =5/6 drivers.",
+      "abstract_zh": "",
+      "authors": "Chimdi Walter Ndubuisi",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00105",
+      "pdf_url": "",
+      "tags": [
+        "cancer",
+        "foundation model"
+      ],
+      "ai_tags": [
+        "foundation model"
+      ],
+      "bio_tags": [],
+      "disease_tags": [
+        "cancer"
+      ],
+      "is_preprint": 1,
+      "id": "268c5d3ad1b2a539e98f81845c0b5961b5a7c83f"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "A Quantum Reservoir for Neurodynamical Forecasting",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00139v1 Announce Type: cross Abstract: Forecasting neural activity from short recordings remains a fundamental challenge. Reservoir computing may offer an efficient paradigm for temporal prediction, however classical reservoirs typically underperform in small-data regimes. Here we investigate whether quantum reservoir computing (QRC) can help overcome this limitation. Building on recent advances, we introduce a quantum reservoir based on a transverse-field Ising model, combined with heterogeneous quantum measurements and polynomial ridge regression. On a standard benchmark task, results show that the quantum reservoir outperforms a classical counterpart overall, with prediction accuracy strongly dependent on reservoir parameters. We further demonstrate feasibility by running the same task on quantum hardware. To assess performance on biological signals, we evaluate QRC on simulated human electroencephalography (EEG) data with a parallel reservoir architecture. On this challenging task, the tested quantum reservoir did not match the performance of the classical one, but it produced stable, convergent predictions. This is a meaningful first step toward forecasting of biologically realistic neural data using a quantum reservoir. Overall, our findings indicate that although current quantum hardware and parallel reservoir architectures do not yet surpass classical methods on complex neural signals, QRC can be executed on near-term devices and does converge with realistic EEG-like data. This work establishes a practical baseline for future algorithmic and hardware developments aimed at clinical time-series forecasting with quantum systems.",
+      "abstract_zh": "",
+      "authors": "Annemarie Wolff, Kathleen Hamilton, Kahn Rhrissorrakrai, Laxmi Parida, Filippo Utro, Guillaume Dumas",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00139",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "3cab835a06d24750c1b2831173f8a6229cfc5aa4"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Dynamical principles of habituation across substrates and scales",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00249v1 Announce Type: cross Abstract: Habituation is a basic form of learning in which a system's response to repeated stimulation progressively diminishes but eventually recovers when the stimulus is withheld. Long studied in animals, it has increasingly been observed in unicellular organisms and non-living devices such as electronic circuits and neuromorphic materials, suggesting underlying dynamical principles that recur across domains. This review asks what those principles are: given qualitative constraints imposed by habituation on a system's response, what is the minimal dynamical structure that satisfies them? We formalize the classical hallmarks of habituation as behavioral constraints on input--output behavior, show that linear time-invariant systems are structurally incompatible with these constraints, and construct nonlinear motifs---linear fading-memory dynamics composed with static nonlinearities---that exhibit the hallmarks across diverse settings. We relate these motifs to models of specific biological systems and to physical and algorithmic realizations, from analog circuits to transient computation in machine learning.",
+      "abstract_zh": "",
+      "authors": "Matthew Smart, Stanislav Y. Shvartsman, Martin M\\\"onnigmann",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00249",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "d209c6c928b3dbe04c41f02c3150b0c98702b3e5"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Cross-Task Dissociation in Frontier Vision-Language Model Theory of Mind",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00261v1 Announce Type: cross Abstract: Do frontier vision-language models present a coherent Theory-of-Mind (ToM) profile across tasks, matching the same human reference group, or does that profile fragment from one paradigm to the next? We evaluate a shared panel of nine frontier VLMs on two psychology-derived benchmarks: the Keysar Director Task (visual perspective-taking under egocentric interference) and the Frith-Happ\\'e animated triangles scored with the Castelli rubric (intention attribution from pure motion). On the Director Task, without chain-of-thought, the panel makes the egocentric error on 78\\% of trials like children rather than adults; variation is substantial across models, and reasoning rescues several models. On the triangles, the panel under-attributes intention: its ToM profile sits more than three times closer to the high-functioning-autistic-adult (HF-ASD) mean than to the typical-development-adult (TD) mean, while Goal-Directed and Random stay near TD. No model is nearest TD on both tasks; the model that looks adult-like on the Director Task falls on the HF-ASD side on the triangles, and the most TD-like model on the triangles is child-like on the Director Task. We report group-level descriptions, not diagnostic labels for any model.",
+      "abstract_zh": "",
+      "authors": "Kejia Zhang, Youran Sun, Chugang Yi, Haizhao Yang",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00261",
+      "pdf_url": "",
+      "tags": [
+        "multimodal learning"
+      ],
+      "ai_tags": [
+        "multimodal learning"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "e82a14f0562f12d6827f6689290f0dc1b9c92e1e"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Gene Ontology-Guided Hierarchical Spatial Gene Expression Prediction from Histopathology Images",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00405v1 Announce Type: cross Abstract: Predicting spatial gene expression from histopathology images enables large-scale transcriptomic profiling without the cost of direct measurement. Existing methods decode the target gene set as a flat, unstructured vector, ignoring the inter-gene dependencies arising from shared biological pathways and regulatory programs. Without explicit structural guidance, models must infer these dependencies entirely from limited paired data, constraining prediction quality. We propose MSGR (Multi-Scale Gene Refiner), which bridges this gap by incorporating the Gene Ontology (GO), a curated functional hierarchy of genes, as an explicit structural prior. MSGR organizes target genes into a four-level GO tree. Its GO-guided decoder then progressively refines predictions from coarse functional domains to fine individual genes via residual corrections under scale-weighted supervision. Operating solely on the gene side, the GO-guided decoder serves as a seamless plug-in replacement that consistently improves existing architectures without requiring any image-side modifications. Extensive experiments on nine datasets from the HEST-1k benchmark provide empirical evidence for two central claims: GO-structured decoding consistently outperforms flat decoding, even against a state-of-the-art generative baseline, and the gain is attributable to biological ontology structure rather than hierarchical decomposition per se, as confirmed by a +0.027 margin over a structurally equivalent random hierarchy.",
+      "abstract_zh": "",
+      "authors": "Zhiwen Xu, Xiaoming Yan, Chengkun Wu, Juan Chen, Haoang Chi, Liyang Xu",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00405",
+      "pdf_url": "",
+      "tags": [
+        "medical image analysis"
+      ],
+      "ai_tags": [
+        "medical image analysis"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "35242a59637f416493a749fbda5f750250611ef0"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "No persistent circadian oscillator at genome resolution: pseudo-coherence in gut microbiome dynamics",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00662v1 Announce Type: cross Abstract: Diurnal rhythms in the gut microbiome are commonly read as evidence of host-driven entrainment or of microbial oscillators that synchronise to a common clock. We reanalyse hourly genome-resolved (MAG-level) mouse-gut time series with diagnostics tailored to test that interpretation. At this resolution and for both animals in the dataset, the time-frequency representation carries no persistent ridge; the time-averaged spectrum is enhanced at low frequencies and depleted at intermediate frequencies; the lagged covariance is markedly time-asymmetric, with a global imbalance peak near tens of hours; and an amplitude-adjusted Fourier surrogate test identifies a weak time-averaged construction in the candidate circadian band, never as a fixed time-frequency ridge. The two functional guilds that carry the inferred non-normal amplification are identified independently by the rankings of two inferred dynamical modes (the reaction mode, into which fluctuations are transiently amplified, and the non-normal mode, which injects them), and recover the primary polysaccharide degraders of Bacteroidota and the secondary butyrate and propionate fermenters of Bacillota A without invoking any phase information. The conjunction of these signatures matches a stable but strongly non-normal stochastic regime, that is, pseudo-coherence: geometric amplification reshapes stochastic fluctuations onto a low-dimensional reaction subspace, producing intermittent synchronisation-like episodes, broken time-reversal symmetry, and emergent time-averaged characteristic scales without an underlying oscillator. We propose a falsifiable test via high-resolution clock-gene-knockout cohorts.",
+      "abstract_zh": "",
+      "authors": "V. Troude, L. Takayasu, R. Maskawa, W. Suda, D. Sornette, H. Takayasu, M. Takayasu",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00662",
+      "pdf_url": "",
+      "tags": [
+        "microbiome"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "microbiome"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "8b107bc2e75a79b88d8afb14f16f96c8a53d7049"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Evolutionary Curriculum Learning Improves Biological Sequence Modeling",
+      "title_zh": "",
+      "abstract": "arXiv:2608.00697v1 Announce Type: cross Abstract: Variational autoencoders (VAEs) trained on multiple sequence alignments (MSAs) have emerged as powerful generative models for biological sequences, with applications ranging from disease variant prediction to functional RNA design. However, standard biological VAE training treats all sequences as exchangeable, ignoring the rich evolutionary structure that organizes homologous sequences from evolutionarily close to highly divergent. We propose Evolutionary Curriculum Learning (ECL), a training strategy that exploits this structure by progressively exposing the model to sequences of increasing evolutionary distance from sampled anchors, following a power-law expansion schedule. Applied to two architecturally distinct VAE models and two biological domains--protein variant effect prediction with EVE and RNA family sequence generation with RfamGen--ECL improves downstream task performance across five random seeds per configuration. Mean ClinVar classification AUROC rises from 0.981 to 0.989 for p53; for PTEN, ECL attains 1.000 in every seed whereas the baseline is unstable (mean 0.905, falling as low as 0.54). For RNA, ECL raises mean covariance-model bit scores on all three families tested and exceeds its seed-matched baseline in 12 of 15 training runs, though with only three families the effect cannot be established as significant at the family level. Ablation experiments show that progressively expanding the sampled sequences by evolutionary distance outperforms fixed-size neighborhood sampling in addition to uniform random sampling. Evolutionary distance is therefore a useful inductive bias for ordering the training curriculum in biological sequence modeling.",
+      "abstract_zh": "",
+      "authors": "Richard Zhu, Kento Nishi",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.00697",
+      "pdf_url": "",
+      "tags": [
+        "variant effect prediction"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "variant effect prediction"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "d1ba86982558b187705ab25a10aa3d2700dae332"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Funnel-like protein energy landscapes emerge from functional evolution under thermal fluctuations",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01143v1 Announce Type: cross Abstract: Proteins perform biological functions by folding into specific native structures that are stabilized by funnel-like energy landscapes shaped through evolution. We investigate whether such foldable proteins can emerge solely from selection for function, without any direct selection for foldability. Using a two-dimensional lattice protein model with four amino-acid types, we define protein function as the equilibrium probability that a prescribed local structure forming an active site is realized at environmental temperature $T$, and use this probability as the evolutionary fitness. Amino-acid sequences spanning the entire fitness range are sampled by multicanonical Monte Carlo method and their energy and free-energy landscapes are constructed from the equilibrium conformational ensemble. We find that only within an appropriate range of environmental temperatures do high-fitness sequences spontaneously acquire funnel-like energy landscapes, despite foldability never being included in the fitness definition. High-fitness sequences are furthermore supported by only a limited number of native conformations. At low temperatures, in contrast, high-fitness sequences exhibit rugged, glass-like energy landscapes and much greater structural diversity. These results suggest that foldable proteins need not be direct targets of evolution, but can emerge as a thermodynamic consequence of maintaining function under thermal fluctuations, whereby local functional constraints organize the global fold and give rise to funnel-like energy landscapes.",
+      "abstract_zh": "",
+      "authors": "Norifumi Maruyama, Macoto Kikuchi",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01143",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "64fb864ba4b70eeab0cd20981160e2603af5a3be"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Smart membrane: high content in situ monitoring barrier on chip with artificial neuronal network",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01239v1 Announce Type: cross Abstract: Conventional transepithelial electrical resistance (TEER) technique provides only a low-content analysis of cell-layer conditions, necessitating repeated microscopic assessments of morphology and cell-cell contacts outside the incubator for barrier-on-chip systems. This work presents a novel high-content TEER device in the form of a novel nanoporous membrane that facilitates continuous electrical measurement of cell-substrate impedance sensing (ECIS). The ultrathin (700 nm) membrane, composed of ultra-low-stress SixNy, is monolithically integrated into wafer-level fabricated chips sealed with glass lids. Coplanar ECIS electrodes were connected to custom electronics to record impedance under sinusoidal excitation. Human umbilical vein endothelial cells (HUVECs) were seeded and continuously recorded impedance spectra were compared with bright-field and fluorescence microscopy, revealing distinct phases of monolayer formation. With one-dimensional convolutional neural network (Conv1d) and Kolmogorov-Arnold Network (KAN) trained with a small amount of Nyquist-diagrams, phases of (I) adherence, (II) outspreading, (III) confluence and (IV) barrier maturity with tight junction formation could be recognized with 95% confidence. As further proof of concept, reversible and irreversible barrier weakening using modulators PN159 and BAC was identified in this way. Our studies have demonstrated that an immediate and automatable non-invasive detection of in-vitro barrier dynamics within barrier-on-chip systems, eliminating the need for microscopy and endpoint staining. We expect this ECIS technique will find broad applications in organ-on-chip systems for in situ monitoring physiological or pathological states of tissue barrier.",
+      "abstract_zh": "",
+      "authors": "Bo Tang, Victor Krajka, Mengxi Liu, Wei Zhao, Gazal Goekkus, Paul Lukowicz, Lili Zhu, Pu Chen, Stephan Reichl, Andreas Dietzel",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01239",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "b3064501ec28aafaddbffa3cd3f218980b6c0022"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Statistical Mechanics of Learning on Product Wasserstein Manifolds",
+      "title_zh": "",
+      "abstract": "arXiv:2608.01434v1 Announce Type: cross Abstract: Normally the statistical mechanics of learning treats constraints on weight distributions as restrictions that shrink the space of possible solutions. Therefore, it reduces model capacity. In this paper we would like to take a contrary approach, which, however, is based on the earlier work on distribution-constrained perceptrons. Rather than treating a prescribed weight distribution as a mere restriction, we propose that it defines the intrinsic geometry upon which learning naturally unfolds. We formulate both deep neural networks and variational quantum circuits as gradient flows on a product of Wasserstein manifolds -- one classical Wasserstein space for each layer and one quantum Wasserstein space for the circuit parameters. Within this geometry, the capacity reduction, which was previously associated with distributional constraints, appears as the metric structure of the constraint manifold itself. We develop a hierarchical mean-field description for deep networks, extend the framework to the quantum setting using the quantum Wasserstein distance of order 1, and introduce two such practical algorithms, Hierarchical DisCo-SGD and Quantum DisCo, that follow approximate geodesics on the manifold of the product itself. Experiments on teacher-student problems, standard image classification tasks, and small variational quantum classifiers show that respecting these distributional geometries improves generalization, stabilizes training, and reduces the severity of barren plateaus compared with unconstrained and purely norm-based baselines. This approach firstly reframes structural constraints as geometric priors and suggests a route for incorporating biological, spectral, or hardware-derived distributional information into both learning systems, viz., classical and quantum learning.",
+      "abstract_zh": "",
+      "authors": "Srinivasa Rao P Vangmayi P Reddy",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.01434",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "329bb24f1cd74a0dbffad91c431472a675dfd56b"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Self-supervised DXA representations encode multi-system disease risk, biological aging and heritability",
+      "title_zh": "",
+      "abstract": "arXiv:2608.02208v1 Announce Type: cross Abstract: Whole-body dual-energy X-ray absorptiometry (DXA) scans are routinely acquired to measure bone density and regional body composition, leaving their spatial structure largely unused. Here, we show that self-supervised learning (SSL) can convert raw DXA images into representations of systemic health. We introduce LeDXA, a vision model based on a joint-embedding predictive architecture (JEPA) that learns by predicting latent representations rather than reconstructing pixels. Trained from scratch on 11,540 unlabeled Human Phenotype Project scans, LeDXA was evaluated internally and on 47,400 external UK Biobank (UKBB) scans. It improved cross-cohort prediction of prevalent diseases and biomarkers beyond scanner-derived DXA measurements and DINOv3, a state-of-the-art general-purpose model, despite approximately 150,000-fold fewer training images and nearly 40-fold fewer parameters. Over a median 4.3-year UKBB follow-up, LeDXA improved incident disease prediction over tabular DXA measures, with the largest gains for hip and knee arthrosis and type 2 diabetes. For hip arthrosis, 66% of incident cases occurred in the highest-risk quartile versus 41% for tabular measures. Its representations predicted chronological age externally (r = 0.88; mean absolute error = 2.90 years), and the biological-age gap tracked broader disease burden and a 45% higher mortality hazard in the oldest-appearing quartile. The gap also decreased in women after starting hormone-replacement therapy, suggesting it may be modifiable. Genome-wide associations recovered mostly known body-composition and bone-density loci, and LeDXA embeddings were more heritable than DINOv3's. These findings reveal prognostic information in DXA images that conventional readouts discard, learnable with relatively little data and modest compute.",
+      "abstract_zh": "",
+      "authors": "Gil Sasson, Zachary Levine, Smadar Shilo, Sarah Kohn, Guy Lutsker, Anastasia Godneva, Adam Gabet, David Krongauz, Adina Weinberger, Yann LeCun, Randall Balestriero, Eran Segal",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.02208",
+      "pdf_url": "",
+      "tags": [
+        "GWAS",
+        "biomarker discovery",
+        "diabetes",
+        "genomics",
+        "self-supervised learning"
+      ],
+      "ai_tags": [
+        "self-supervised learning"
+      ],
+      "bio_tags": [
+        "GWAS",
+        "biomarker discovery",
+        "genomics"
+      ],
+      "disease_tags": [
+        "diabetes"
+      ],
+      "is_preprint": 1,
+      "id": "5963ff774e69d0cc7e7b64585d04786df6258156"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Oscillatory Hierarchical Reservoirs for Human-like Rhythm Perception and Anticipation",
+      "title_zh": "",
+      "abstract": "arXiv:2503.12509v2 Announce Type: replace Abstract: Rhythm is a fundamental aspect of human behaviour, present from infancy and deeply embedded in cultural practices. Rhythm anticipation often occurs before surface event onsets, yet most neuroscience and artificial intelligence studies focus on metronome-based tasks, with less attention to complex musical rhythms. To address this gap, we propose a hierarchical oscillator-based computational model for selected aspects of complex rhythm perception. The model uses coupled neurons that generate oscillations across four layers corresponding to Tatum, Tactus, Motor, and Higher Cognition levels. We evaluate the model using representative rhythm patterns spanning different tempi and perceptual ranges. The model maintains stable entrainment and exhibits selected rhythm-relevant behaviours, including anticipatory movement-timing predictions, timing deviations under tactus-surface conflict, and suppression of movement-timing predictions at anticipated-but-silent tatum-level pulses. In addition, Motor Layer beta-band activity shows rhythm- and tempo-dependent modulation, which we report as a qualitative exploratory comparison with human beta activity.",
+      "abstract_zh": "",
+      "authors": "Zhongju Yuan, Geraint Wiggins, Dick Botteldooren",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2503.12509",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "213301fd204707a7618e04c1c99941312b1e2032"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Inferring Relative Consequences of Mechanical Ventilation from Observational Data Using Game-Based Comparisons",
+      "title_zh": "",
+      "abstract": "arXiv:2510.15127v3 Announce Type: replace Abstract: Identifying the effects of mechanical ventilation (MV) protocols in critical care requires analyzing data from heterogeneous patient-ventilator systems in the clinical decision-making environment. Multiscale interactions among these coupled components generate a high-dimensional state space that remains sparsely sampled despite extensive data collection. Analysis of existing data is essential for understanding current respiratory management practices and generating testable hypotheses about improvement. The scale and complexity of available data motivate the use of reinforcement learning (RL) to explore data-consistent counterfactual trajectories. However, formulating RL in practical applications requires a spatiotemporally dependent reward process that defines state-to-consequence relationships, their context dependence, and the delays over which consequences emerge. These poorly understood elements are not known \\emph{a priori} and inferred from data via hypotheses. To that end, categorized observed states are contrasted according to their relative consequences by solving a game-based inverse problem that identifies a comparison model required for downstream probabilistic and stochastic methods such as reinforcement learning for seeking MV optimization and personalization. The inverted-game inference is validated on synthetic data to reveal potential caveats before proceeding to real-world ICU data applications that expose complexities of the data-generating process. Clinical data applications revealed that both breath-type consequences and their relative ordering are inherently context- and time-dependent, varying across patient subgroups, time, and comparison quantities, and effect timescale. The discussion includes potential developments toward a state transition model for simulating the effects of MV management actions using empirical data and game-inferred comparisons.",
+      "abstract_zh": "",
+      "authors": "David J. Albers, Tell D. Bennett, Jana de Wiljes, George Hripcsak, Bradford J. Smith, Peter D. Sottile, J. N. Stroh",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2510.15127",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "d049f7fd2fdffd4a05f829849bc09f9e9266afe3"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "A clinically validated framework for auditing AI chatbot behavior in mental health interactions",
+      "title_zh": "",
+      "abstract": "arXiv:2602.01347v3 Announce Type: replace Abstract: Millions of users turn to consumer AI chatbots to discuss emotional, behavioral, and mental-health concerns, creating an urgent need for rigorous and scalable safety evaluations. Here we introduce SIM-VAIL, a clinically validated framework for auditing chatbot behavior in mental-health contexts. SIM-VAIL simulates users with specific psychiatric vulnerabilities and conversational intents, engages them in multi-turn conversations with frontier AI chatbots (including Claude, ChatGPT, Gemini, Grok and Llama models), and scores each exchange across 13 clinically grounded risk dimensions. Across 810 conversations, spanning 9 target chatbots and 30 simulated user profiles, concerning behavior in target chatbots was widespread, albeit reduced in newer models. Concerning behavior varied by user vulnerability and conversational intent, accumulated over turns, and could be reduced by interventions at early escalation points. Risk was highest when otherwise supportive chatbot behaviors reinforced the psychological mechanisms underlying the simulated user's vulnerability, a pattern we term a Vulnerability Amplifying Interaction Loop (VAIL). SIM-VAIL provides a scalable framework for mapping mental health risk across users, chatbots, and conversational trajectories, offering a foundation for targeted safety improvements.",
+      "abstract_zh": "",
+      "authors": "Veith Weilnhammer, Kevin YC Hou, Lennart Luettgau, Christopher Summerfield, Raymond Dolan, Matthew M Nour",
+      "published_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2602.01347",
+      "pdf_url": "",
+      "tags": [
+        "LLM",
+        "mental health"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [
+        "mental health"
+      ],
+      "is_preprint": 1,
+      "id": "cbb8901ef21f00b2a92898190b945122514f12b9"
+    },
     {
       "source_name": "npj Digital Medicine",
       "journal": "npj Digital Medicine",
@@ -1819,6 +3807,148 @@
       "disease_tags": [],
       "is_preprint": 1,
       "id": "c26216923f29a0dadb70d48b8588f974aef02c53"
+    },
+    {
+      "source_name": "Nature Medicine",
+      "journal": "Nature Medicine",
+      "title": "Non-invasive tests for the evaluation of liver fibrosis in MASLD",
+      "title_zh": "",
+      "abstract": "Nature Medicine, Published online: 03 August 2026; doi:10.1038/s41591-026-04560-x In the LITMUS imaging study, we assessed non-invasive alternatives to liver biopsy histopathology in metabolic dysfunction-associated steatotic liver disease (MASLD). Elastography and elastography-based composite scores had sufficient diagnostic accuracy to replace liver biopsy histopathology in evaluating advanced fibrosis and cirrhosis, but no markers were accurate enough for diagnosing metabolic dysfunction-associated steatohepatitis (MASH).",
+      "abstract_zh": "",
+      "authors": "",
+      "published_date": "2026-08-03",
+      "updated_date": "2026-08-04",
+      "article_type": "Article",
+      "doi": "10.1038/s41591-026-04560-x",
+      "url": "https://www.nature.com/articles/s41591-026-04560-x",
+      "pdf_url": "",
+      "tags": [
+        "medical image analysis"
+      ],
+      "ai_tags": [
+        "medical image analysis"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "b5b93b93f66073c4d10424094b94310527f35f0f"
+    },
+    {
+      "source_name": "Nature Medicine",
+      "journal": "Nature Medicine",
+      "title": "The next generation of antibody–drug conjugates",
+      "title_zh": "",
+      "abstract": "Nature Medicine, Published online: 03 August 2026; doi:10.1038/s41591-026-04543-y The authors outline strategies to maximize the impact of ADCs by integrating multiple chemistry advances into drug constructs, and developing infrastructures and tools to accelerate and de-risk the preclinical and early clinical development of these agents.",
+      "abstract_zh": "",
+      "authors": "F. Mosele, A. Peltier, Y. Ozaki, A. Detappe, J. C. Soria, F. André",
+      "published_date": "2026-08-03",
+      "updated_date": "2026-08-04",
+      "article_type": "Article",
+      "doi": "10.1038/s41591-026-04543-y",
+      "url": "https://www.nature.com/articles/s41591-026-04543-y",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "404b528a4cba7bcee15b54911db0cd1cfac701db"
+    },
+    {
+      "source_name": "Nature Biotechnology",
+      "journal": "Nature Biotechnology",
+      "title": "Editor’s pick: Excelsior Sciences",
+      "title_zh": "",
+      "abstract": "Nature Biotechnology, Published online: 03 August 2026; doi:10.1038/s41587-026-03249-3 Each year, Nature Biotechnology highlights companies that received sizeable early-stage funding in the previous year. Excelsior Sciences is developing a closed-loop system for drug discovery using carbon building bloccs.",
+      "abstract_zh": "",
+      "authors": "Charlie Schmidt",
+      "published_date": "2026-08-03",
+      "updated_date": "2026-08-04",
+      "article_type": "Article",
+      "doi": "10.1038/s41587-026-03249-3",
+      "url": "https://www.nature.com/articles/s41587-026-03249-3",
+      "pdf_url": "",
+      "tags": [
+        "drug discovery"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "drug discovery"
+      ],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "7e67f6bc74e81649a781a99e1fa05ccb10acb3b3"
+    },
+    {
+      "source_name": "Nature Biotechnology",
+      "journal": "Nature Biotechnology",
+      "title": "Evolution of botulinum neurotoxin serotype X proteases to induce inflammatory cell death in cancer cells",
+      "title_zh": "",
+      "abstract": "Nature Biotechnology, Published online: 03 August 2026; doi:10.1038/s41587-026-03243-9 Directed evolution of proteases induces targeted, multipathway lytic cell death in cancer cells.",
+      "abstract_zh": "",
+      "authors": "Julia McCreary, Colin F. Hemez, Michael H. Raymond, Travis R. Blum, Angel Gonzalez-Valero, Teresa L. Augustin, Nicholas A. Krasnow, Stephan J. DeCarlo, Yan Qin, Kaitlin Rhee, Wei Jiang, Blanche C. Ip, Ahmad S. Khalil, David R. Liu",
+      "published_date": "2026-08-03",
+      "updated_date": "2026-08-04",
+      "article_type": "Article",
+      "doi": "10.1038/s41587-026-03243-9",
+      "url": "https://www.nature.com/articles/s41587-026-03243-9",
+      "pdf_url": "",
+      "tags": [
+        "cancer"
+      ],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [
+        "cancer"
+      ],
+      "is_preprint": 0,
+      "id": "aa3fe3d32bffa06b8282b4f0004ad02b74f75ee8"
+    },
+    {
+      "source_name": "Nature Machine Intelligence",
+      "journal": "Nature Machine Intelligence",
+      "title": "Reinforcement learning steers generative crystal design",
+      "title_zh": "",
+      "abstract": "Nature Machine Intelligence, Published online: 03 August 2026; doi:10.1038/s42256-026-01282-0 Generative machine learning methods have led to progress in crystal discovery, but cannot fully explore the space of material candidates that are both novel and useful. A reinforcement learning-based method steers candidate generation to these areas, enabling the design of novel functional materials.",
+      "abstract_zh": "",
+      "authors": "Zhendong Cao, Lei Wang",
+      "published_date": "2026-08-03",
+      "updated_date": "2026-08-04",
+      "article_type": "Article",
+      "doi": "10.1038/s42256-026-01282-0",
+      "url": "https://www.nature.com/articles/s42256-026-01282-0",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "a8967194923f6155f577997cd376831115f54da2"
+    },
+    {
+      "source_name": "Nature Machine Intelligence",
+      "journal": "Nature Machine Intelligence",
+      "title": "Beyond representational alignment with brain-guided language models for robust reasoning",
+      "title_zh": "",
+      "abstract": "Nature Machine Intelligence, Published online: 03 August 2026; doi:10.1038/s42256-026-01278-w Xiao et al. show that large language models partially align with human brain activity during deductive reasoning. They further show that brain signals can directly guide and improve model performance, with transfer across reasoning types.",
+      "abstract_zh": "",
+      "authors": "Mingqing Xiao, Kai Du, Zhouchen Lin",
+      "published_date": "2026-08-03",
+      "updated_date": "2026-08-04",
+      "article_type": "Article",
+      "doi": "10.1038/s42256-026-01278-w",
+      "url": "https://www.nature.com/articles/s42256-026-01278-w",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "e48d4bfb9f2babc11391f4405a46d4bb6344fdff"
     },
     {
       "source_name": "npj Digital Medicine",
