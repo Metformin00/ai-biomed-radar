@@ -1,6 +1,1660 @@
 {
-  "generated_at": "2026-10-21T08:29:35.722169Z",
+  "generated_at": "2026-10-22T08:32:09.383771Z",
   "articles": [
+    {
+      "source_name": "npj Digital Medicine",
+      "journal": "npj Digital Medicine",
+      "title": "Multi-scale integration identifies an ox-LDL-autophagy-inflammasome framework linking osteoporosis and neurodegeneration",
+      "title_zh": "",
+      "abstract": "npj Digital Medicine, Published online: 22 October 2026; doi:10.1038/s41746-026-03371-1 Multi-scale integration identifies an ox-LDL-autophagy-inflammasome framework linking osteoporosis and neurodegeneration",
+      "abstract_zh": "",
+      "authors": "Haojun Shi, Liang Shi, Lei Huang, Min Chen",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Article",
+      "doi": "10.1038/s41746-026-03371-1",
+      "url": "https://www.nature.com/articles/s41746-026-03371-1",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "af7cd95db049d15b584b388a73204250a13e13e0"
+    },
+    {
+      "source_name": "npj Digital Medicine",
+      "journal": "npj Digital Medicine",
+      "title": "A hybrid framework for Turner Syndrome facial detection: integrating deep feature learning and geometric prior knowledge under data scarcity",
+      "title_zh": "",
+      "abstract": "npj Digital Medicine, Published online: 22 October 2026; doi:10.1038/s41746-026-03221-0 A hybrid framework for Turner Syndrome facial detection: integrating deep feature learning and geometric prior knowledge under data scarcity",
+      "abstract_zh": "",
+      "authors": "Jiaqi Qiang, Junjie Zhang, Xiaohong Lyu, Yuxin Sun, Zhouxian Pan, Zhibo Zhou, Gang Xiong, Shi Chen, Hui Pan, Zhen Shen",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Article",
+      "doi": "10.1038/s41746-026-03221-0",
+      "url": "https://www.nature.com/articles/s41746-026-03221-0",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "efb893d894d1fbcc2060193e864d742f4d0993e8"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "To Keep or Not to Keep: Learning KV Cache Retention in Disaggregated LLM Serving Systems",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28637v1 Announce Type: new Abstract: Disaggregated \\textsc{LLM} serving separates prefill and decode across node pools, placing a network fabric between \\textsc{KV}-cache computation and consumption. This breaks a key assumption of classical cache policies: a miss no longer incurs only local recomputation, but also network transfer to the decode node. Likewise, admitting a block to the global cache requires an additional transfer, so poor retention decisions waste both memory and bandwidth. We present \\textbf{KVLearn}, a learning-based framework for cost-aware \\textsc{KV}-cache retention in disaggregated serving. KVLearn includes: (i) a lightweight Prefix Reuse Predictor (\\textsc{PRP}) that estimates reuse probability from structural and temporal prefix features without modifying model weights; (ii) a Cost-Aware Retention Score (\\textsc{CARS}) that converts reuse probability into keep/admit decisions using recomputation, transfer, and storage costs; and (iii) an Adaptive Threshold Controller (\\textsc{ATC}) that adjusts admission thresholds online from observed hit rates and memory pressure. We integrate KVLearn into a globally disaggregated serving topology and evaluate it on text and multimodal workloads, including large image/video-derived \\textsc{KV} blocks with heterogeneous reuse patterns. KVLearn reduces end-to-end time-to-first-token by up to 56% versus No-Cache, 38% versus LRU-Pool, and 33% versus Mooncake-style baselines, while cutting inter-node \\textsc{KV} transfer volume by up to 53% versus LRU-Pool. On MM-Session, throughput remains within ${\\sim}5%$ of oracle. Code is available at https://github.com/FastLM/KVLearn.",
+      "abstract_zh": "",
+      "authors": "Dong Liu, Yanxuan Yu, Eric Jiang, Shu Wang, Ying Nian Wu",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28637",
+      "pdf_url": "",
+      "tags": [
+        "LLM",
+        "multimodal learning"
+      ],
+      "ai_tags": [
+        "LLM",
+        "multimodal learning"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "59698671ef168aa24749aca09d300c556fe23c71"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Scalable Stress-Constrained Topology Optimization: A Super-resolution and Simultaneous Approach Based on Machine Learning",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28703v1 Announce Type: new Abstract: Large-scale topology optimization (TO) remains computationally demanding, especially for stress-constrained problems. To address this challenge, we propose the simultaneous neural topology optimization (SNTO) framework where we represent state, adjoint, and design variables with custom neural networks (NNs) whose parameters are jointly optimized within a single optimization loop that leverages continuous adjoint analysis and automatic differentiation. This optimization minimizes a multi-component loss function that combines the design objective, an aggregation of the local stress constraints, and the potential energy functionals. Our NNs have a unique architecture that accelerates convergence while enabling the networks to capture sharp gradients and boundaries which are critical to stress-constrained TO. To achieve scalability to millions of degrees of freedom (DoF), we develop a hardware-aware training scheme in which the design domain is partitioned into subdomains that are distributed across multiple GPUs. To control peak GPU memory usage, we further slice each subdomain into smaller regions whose loss gradients are evaluated sequentially and accumulated to update the NN parameters. Unlike domain decomposition approaches, our partitioning naturally ensures field continuity across the subdomains and does not require the introduction of additional terms into the loss function. For validation, we first evaluate the proposed framework on various 2D stress-constrained benchmarks and compare our results to a conventional finite element-based approach, showing that SNTO produces super-resolution designs with sharper boundaries, smaller gray areas, and lower volume fractions. We then consider large-scale 3D problems with up to eight million collocation points and distribute the training over up to eight GPUs.",
+      "abstract_zh": "",
+      "authors": "Xiangyu Sun, Shirin Hosseinmardi, Ramin Bostanabad",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28703",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "8b1ebaf87a87bbf5bacbf64932c0931b6b8d28e8"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "SimHack: Predicting the onset of detectable reward hacking before RL training",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28707v1 Announce Type: new Abstract: When training LLMs to code with reinforcement learning, reward hacking is often detectable but difficult to prevent, since (a) environment hardening is increasingly difficult as training environments grow more complex; and (b) training-time interventions incentivize models to obfuscate hacking behavior to bypass detection. We instead study whether we can predict when detectable reward hacking becomes dominant before executing an RL run, enabling us to select lower-risk recipes in advance. We find that the initial hacking rate alone does not determine onset, which varies substantially across training recipes and repeated runs. We thus formulate this problem as predicting the distribution of the reward hacking onset step under a target training recipe. We introduce SimHack, a simulator that learns reward hacking training dynamics from a handful of smaller-scale reference RL runs and generates counterfactual simulation runs of unseen target recipes without costly retraining. Across unseen target recipes, SimHack predicts the median onset to a relative error of 11.3% and achieves across-recipe rank correlation of 0.85, while generalizing to differences in model scale, curriculum, number of rollouts, and learning rate between reference and target recipes. As an application, we show that SimHack can guide training decisions by screening candidate RL curricula, discovering curricula over the same set of scenarios that train for 96.6% longer without hacking.",
+      "abstract_zh": "",
+      "authors": "Junwei Deng, Alex Bie, Natalia Ponomareva",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28707",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "cf364b8521f73c251a7d2be448c2fa6e00853306"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "STAR-XPC: Set Transformer for Estimating X-ray Transmission in Polymer Composites",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28709v1 Announce Type: new Abstract: Evaluating the energy transmission ratio of an X-ray beam through a polymer composite is a challenging task in radiation shielding studies. The reference solution with Monte Carlo transport simulation is highly accurate but computationally expensive: each of our reference simulations is capped at $4\\times10^9$ photon histories and a 20,000 s (over 5 hours) time limit, while closed-form analytical methods fail to represent such complex scenarios. We present an artificial neural network model that maps the unordered multi-set of molecular constituents, their mass fractions, and four bulk physical descriptors directly to the transmission ratio $I(t)/I_0$ in 1-3 milliseconds. The model is a Set Transformer, which makes it permutation invariant by construction and accepts mixtures of different sizes up to 11 constituents within a fixed-size padded set. Each constituent is embedded with a chemistry-pretrained transformer language model, ChemBERTa. In our proposed method, training data are produced by an automated PENELOPE/penEasy pipeline using the radiation source at 30, 80, 100, and 120 kV tube voltages over polyethylene-based shielding composite slabs of thicknesses spanning 0.15-2.5 mm. After preprocessing, the dataset contains $n = 4697$ simulated configurations on which a leakage-free, jointly stratified 10-fold cross-validation is performed, attaining mean squared error MSE = $(1.12 \\pm 0.56)\\times10^{-4}$, normalized-MSE percentage NMSE% = 0.0294% $\\pm$ 0.0147%, and $R^2 = 0.9988$. The corresponding per-sample percentage errors give an alpha-trimmed ($\\alpha = 0.10$) absolute percentage error (APE) of 1.66% and a median APE of 1.15%. Our model's inference is several orders of magnitude faster than the underlying Monte Carlo simulation (sub-millisecond per query vs. several hours for the reference run) with effective accuracy in predicting $I(t)/I_0$.",
+      "abstract_zh": "",
+      "authors": "Can Erer, H. Birkan Yilmaz, Nebahat Aral",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28709",
+      "pdf_url": "",
+      "tags": [
+        "transformer"
+      ],
+      "ai_tags": [
+        "transformer"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "6e970d145030f63773e17eb33da89570562d5fa3"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Big Claims, Small Margins: Do Reported GraphLLM Gains Survive Simple Baselines?",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28714v1 Announce Type: new Abstract: LLM-based methods for node classification on text-attributed graphs (TAGs) routinely report state-of-the-art accuracy. We ask how these results compare with inexpensive baselines run on the same splits. On the splits of three recent studies, we tune four baseline representatives with validation-only selection and compare them with the highest mean that each paper reports for an LLM-based method in the matched setting. Correct & Smooth on TF-IDF features trails this reference by a median of 2.3 percentage points, and an MLP on frozen e5-large-v2 embeddings by 2.8 points. Correct & Smooth is within 3 points of the reference or better on 15 of 24 tasks, but the reference is significantly higher on 12 of 22 testable tasks, so several reported gains remain substantial. Reading released code next to the papers, we also document evaluation risks: selection of hyperparameters or checkpoints on the test set, labels of test-pool nodes used in training, baseline numbers reused without disclosure, and a text-label misalignment in a released Cora loader. Reports of the same method on the same split also differ by up to 12.5 points across papers whose configurations are not documented to match.",
+      "abstract_zh": "",
+      "authors": "Michal Podstawski",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28714",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "df7e3133e2c77c6a80da86aeb158cdbb6a20d446"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Offline Apprenticeship Learning for Human-Centric Environments",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28716v1 Announce Type: new Abstract: Effective decision-making in human-centric environments such as Intelligent Tutoring Systems (ITSs) and clinical healthcare requires policies that are adaptive, data-efficient, and ethically deployable. Apprenticeship Learning (AL) infers policies directly from expert demonstrations by recovering the underlying reward structure, enabling strictly offline learning without environment interaction. This dissertation develops a progression of offline AL frameworks organized around two challenges: reward modeling and demonstration quality. For reward modeling, EM-EDM clusters demonstrations by latent reward functions and induces cluster-specific policies, and THEMES partitions trajectories into temporally coherent sub-trajectories guided by a hierarchically learned reward regulator; across one educational and three clinical datasets, THEMES outperforms flat and hierarchical AL baselines. For demonstration quality, HALIDE integrates continuous quality signals into hierarchical policy induction, enabling principled reuse of mixed-quality data under distribution shift. CCHAL further attributes quality to individual decisions via Bayesian credit assignment, dual-arm criticality scoring that contrasts expert and non-expert behavior, and a Bradley-Terry contrastive IRL objective over failure trajectories, outperforming baselines including HALIDE on three clinical EHR datasets and an ITS dataset. Finally, a real-world classroom evaluation of StuEDM, an EDM-induced policy that preserves student agency and intervenes only on disagreement, shows significant learning gains over an Expert baseline and a higher pretest-adjusted posttest score than a CQL policy trained on a far larger corpus, while overriding students less than half as often. Together, this work establishes offline AL as a practical, data-efficient, and ethically viable paradigm for human-centric environments.",
+      "abstract_zh": "",
+      "authors": "Md Mirajul Islam",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28716",
+      "pdf_url": "",
+      "tags": [
+        "EHR"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "EHR"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "0141517bf164e01d8764e0061602a009d5e58a58"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "ReAPO: Retry-Aware Policy Optimization for Efficient Exploration in LLM Reasoning",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28770v1 Announce Type: new Abstract: RLVR improves language-model reasoning, but commonly relies on independent stochastic rollouts for exploration, which can repeatedly sample similar failed strategies. Prior work has seen success with approaches that guide exploration by introducing dependence into the sampling process by including incorrect solutions in the context for subsequent attempts. Still, these methods introduce the additional question of how to assign credit to each attempt. We propose to view the credit assignment through the lens of Stochastic Shortest Paths, a framework in classical reinforcement learning that seeks to minimize the expected cumulative cost to reach a terminal state (in our case, a verified successful response). We show that, under suitable simplifying assumptions, this perspective naturally leads to a simple modification to GRPO, which we call Retry-Aware Policy Optimization (ReAPO). ReAPO allocates additional generation to failed trajectories, allowing successful retries to be reinforced without rewarding preceding failures, and assigns credit in a theoretically principled way to each attempt. Across Qwen3 and OLMo-2 models from 0.6B to 4B and eight mathematical and scientific reasoning benchmarks, ReAPO improves first-attempt performance over GRPO as well as natural recent baseline algorithms, while additional ablations demonstrate the utility of both serial sampling and ReAPO's credit assignment. On Qwen3-0.6B, ReAPO also outperforms GRPO with twice the group size or twice the training steps, reaching their peak accuracy with 39% and 31% fewer generated tokens, respectively. Taken together, our results suggest that ReAPO is a simple yet effective approach for improving LM reasoning performance through improved exploration and retry-aware credit assignment.",
+      "abstract_zh": "",
+      "authors": "Nghi Dao, Calder Morton-Ferguson, Noah Golowich, Adam Block",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28770",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "19377db2a70e616d4f0d49034f87c44cea50f50a"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Motion Equivariant Convolutional LSTM: When Motion Becomes a Gauge Symmetry",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28771v1 Announce Type: new Abstract: Objects move, cameras pan, and weather drifts with the wind: much of what changes in sequential data is motion. Motion changes where things are, not what they are, and is therefore a symmetry of the data. Yet standard recurrent networks are not equivariant to it: their memory stays put while the input moves on. Flow equivariant recurrent networks first brought this symmetry into sequence models, for motions of constant velocity, or flows, by enumerating a bank of velocities. We extend this idea in three directions: from simple recurrent networks to convolutional LSTMs, from flows to motions whose velocity changes in time, and from enumerating velocities to estimating them. Treating a sequence as a field over time, we show that motion becomes a gauge symmetry: a global symmetry made local in time. Built on this view, our motion equivariant convolutional LSTM (MELSTM) uses its velocity model as the gauge field and is provably equivariant to every motion. Across future-frame prediction, classification of digits visible only through their motion, and action recognition under camera shake, MELSTM outperforms a convolutional LSTM and its flow equivariant counterpart with the same number of parameters: it is more accurate, generalizes to longer horizons and to unseen motions, and carries a fraction of the flow equivariant model's state.",
+      "abstract_zh": "",
+      "authors": "Vahid Hosseinzadeh, T. Anderson Keller, Michael Puthawala",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28771",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "186c939209794c0a659cf8e79cc993f8b3d6d4c4"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Building a Nested LADDER for LLM Unstructured Post-Training Pruning",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28773v1 Announce Type: new Abstract: Non-uniform allocation can improve post-training pruning of large language models, yet quality can still degrade sharply at high sparsity. To control degradation as sparsity increases, we introduce LADDER (Layer-Wise Allocation via Damage-Driven Evaluation and Refinement), which allocates sparsity incrementally. At each step, it evaluates pruning an additional fraction of weights from each eligible layer and commits the layer update that causes the least end-to-end degradation per removed parameter. This process produces non-uniform sparsity profiles and exactly nested masks across multiple budgets. We evaluate LADDER on five OPT, Llama, and Qwen models across 10-90% sparsity, using SparseGPT as its candidate-generation backend and comparing against uniform and adaptive allocation baselines. Results reveal a clear operating-regime trade-off: LADDER is comparable or slightly weaker at benign sparsity but becomes substantially more robust from 70% onward. This high-sparsity advantage largely persists after posterior distillation across four of five models and translates into improved retention of aggregate zero-shot accuracy.",
+      "abstract_zh": "",
+      "authors": "Nicol\\'as Mauricio Cuadrado \\'Avila, Ivo Gollini Navarrete, Martin Tak\\'a\\v{c}, Samuel Horv\\'ath",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28773",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "4859c55bdd15a261a14607f9fb15826f2325c557"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Extreme Low-State Quantized Transformer for Electricity-Load Forecasting",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28784v1 Announce Type: new Abstract: Aggressive low-state weight quantization can substantially reduce neural-network representational flexibility, making predictive performance difficult to preserve when only a few discrete weight states are available. We investigate this regime for Transformer-based electricity-load forecasting using 3-, 5-, 7-, and 16-state weight quantization across feed-forward-only and attention-plus-feed-forward quantization. Two tasks predict either the next hour or the next 24 hours from the preceding 48 hours across two co-primary electricity-consumption datasets. Direct post-training quantization (PTQ) increased mean normalized root-mean-square error (NRMSE) relative to full precision by 6.25 and 7.04 percentage points in Datasets A and B, whereas quantization-aware fine-tuning (QAT-FT) recovered approximately 90.2% and 94.5% of these penalties. Quantization-aware training from random initialization (Scratch-QAT) also produced competitive low-state solutions, with particularly favorable behavior at three states. We further introduce accumulated-update thresholding, which accumulates optimizer-proposed weight changes before commitment. Relative to paired Scratch-QAT controls, this reduced committed shadow-weight updates by approximately 99.7% and discrete state transitions by approximately 77--80%, while mean NRMSE changed by only +0.042 and +0.197 percentage points. These results show that useful Transformer forecasting can be retained under highly discrete weight representations while strongly suppressing target-state activity, supporting a prospective route toward compact, low-activity edge forecasting using multilevel synaptic devices.",
+      "abstract_zh": "",
+      "authors": "Muhammad Sabbir Alam, Harindra Sandun Mavikumbure, Victor Cobilean, Milos Manic, Jayasimha Atulasimha",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28784",
+      "pdf_url": "",
+      "tags": [
+        "transformer"
+      ],
+      "ai_tags": [
+        "transformer"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "f5c244ee0f700f84f63e8c90f06a8523c79c960d"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "CALLIOPE: Private Insights into AI Use, Without Embeddings",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28797v1 Announce Type: new Abstract: We introduce CALLIOPE, a top-down framework for discovering topic hierarchies in large corpora of unstructured data (e.g., LLM conversations), while supporting differential privacy (DP). Unlike traditional and even recent LLM-augmented approaches that ultimately rely on clustering vector embeddings, our framework leverages LLM capabilities directly for the entire pipeline. Experiments demonstrate that this approach provides better utility over existing (embedding-based) methods in the DP setting, especially in the high privacy regime. We evaluate the quality of CALLIOPE outputs using a variety of traditionally studied clustering metrics, as well as some novel utility metrics that we introduce.",
+      "abstract_zh": "",
+      "authors": "Edith Cohen, Vadym Doroshenko, Badih Ghazi, Charlie Harrison, Pritish Kamath, Alexander Knop, Ravi Kumar, Ethan Leeman, Pasin Manurangsi, Mikhail Pravilov, Adam Sealfon, Yurii Sushko, Marika Swanberg, Chiyuan Zhang",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28797",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "e5671a3ac43e66f236d783ea8a00d1aa45107625"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "A Mechanistic Study of Automated Failure Attribution in LLM-based Agentic Systems",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28811v1 Announce Type: new Abstract: Agentic systems have demonstrated strong capabilities on complex tasks by enabling multiple interacting large language model (LLM)-based agents to collaborate and execute subtasks in parallel. However, this collaborative structure introduces new challenges for reliably evaluating and diagnosing system failures, particularly failure attribution: tracing a system's execution to identify the agent step responsible for an incorrect final outcome. Because manually performing this task is time- and labor-intensive, recent work has turned to LLMs as judges to automate the process, referred to as automated failure attribution (AFA). These approaches assume that a sufficiently capable model can infer the failing step directly from an interaction transcript. In practice, however, direct prompting often performs poorly, which motivates follow-up work that explores various ways to improve AFA performance, including alternative prompting strategies and inference-time interventions. In this paper, we examine a more fundamental question: whether this weak behavioral performance reflects a genuine capability limitation. Using linear probes applied to internal activations, we uncover a significant \\emph{knows-but-won't-say gap:} models encode sufficient information to attribute a failure correctly but fail to explicitly output the responsible step. Building on this finding, we propose \\emph{grafting}, a simple manual intervention that exploits knowledge already encoded in the model to improve AFA performance without requiring ground-truth labels at inference time. Extensive evaluations across multiple LLMs and benchmark settings demonstrate that grafting consistently outperforms direct-prompting approaches, underscoring the potential of leveraging latent model knowledge for more reliable failure attribution. Our code is available at https://github.com/wendyzheng22/mi4afa.",
+      "abstract_zh": "",
+      "authors": "Wendy Zheng, Liang Wu, Yinhan He, Mayank Darbari, Jundong Li, Liangjie Hong",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28811",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "95ca1b7b3609122ca9cbe72503578134baf3c634"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "When Do Gaussian Priors Fail? A Latent Geometry Investigation of RL Fine-Tuning",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28849v1 Announce Type: new Abstract: Latent diffusion models almost universally place a Gaussian prior on the VAE latent space. For base generation this default is unproblematic; under reinforcement-learning fine-tuning, however, it carries a structural limitation. The standard VAE's KL term does not merely ignore mode structure - it actively taxes separation and tightness. When data are multimodal, the ELBO optimum compresses distinct modes into an overlapping latent. RL fine-tuning amplifies this overlap: the score network is under-resolved on the saddle region between modes, dynamic-to-variational amplification rises sharply, and the collapse boundary beta_c is pushed far above its variational scale. On the real alanine-dipeptide Boltzmann distribution, a Gaussian-prior VAE collapses at beta_c = 0.224 while a mode-tracked Gaussian-mixture prior collapses at 0.00316, a 71x gap from the same pipeline. We trace this gap to a single geometric mediator, d_min/(2 sigma_0), and verify the causal chain through controlled interventions: moving geometry at fixed prior, and switching prior at matched geometry (full mediation; prior-label coefficient 0.995x, 95% CI [0.79, 1.25]). A three-source decomposition localises the amplification to the learned policy (zero ODE-solver contribution, bounded anchor mismatch); the coverage plateau is an unconditional benefit of mode-separating priors that no amount of RL capacity recovers. The remedy is conditional: a non-Gaussian prior is necessary precisely when the latent geometry would fall into overlap and the task is coverage-sensitive. A machine-checked theory skeleton supports the KL pricing structure - a divergent compactness tax under a Gaussian prior versus a finite assignment fee under a mixture - and the position-versus-plateau distinction delimits what is finite-resource from what requires changing the prior.",
+      "abstract_zh": "",
+      "authors": "Wang Ru",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28849",
+      "pdf_url": "",
+      "tags": [
+        "diffusion model",
+        "multimodal learning"
+      ],
+      "ai_tags": [
+        "diffusion model",
+        "multimodal learning"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "44ce9b457cc248ea33c2edc854e9380e25ff1db3"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "A General Topological Symmetry Index for Critical Orbits In Neural Network Loss Landscapes",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28864v1 Announce Type: new Abstract: A systematic understanding of the global structure of neural-network loss landscapes remains challenging due to their high dimensionality. Symmetries arising from network architectures and learning objectives provide a way to investigate aspects of this structure. Although a growing number of studies have drawn attention to these symmetries, a systematic characterization of them, as well as of the critical orbits they give rise to, remains incomplete. To address this gap, in this work we establish a topological symmetry index, based on the methodologies from the family of equivariant degree theories, to decode these symmetries. The frameworks apply to arbitrary network architectures and include methods applicable to degenerate critical orbits. The index detects the isotropy of the critical points and quantifies the corresponding net topological contributions. Several examples, including softplus MLPs, Transformers, and equivariant neural networks, are presented to illustrate the computations.",
+      "abstract_zh": "",
+      "authors": "Jingzhou Liu",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28864",
+      "pdf_url": "",
+      "tags": [
+        "transformer"
+      ],
+      "ai_tags": [
+        "transformer"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "dc2a673475a902efaba02c82b8b9f9994e27da36"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "How Much Gradient Does Truncated Backprop Lose in Looped Transformers?",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28871v1 Announce Type: new Abstract: Looped transformers reuse one block of layers many times and are often trained by backpropagating through only the last k loops. We measure how much of the weight gradient this throws away, exactly and for every k from one backward pass, on nine looped language models, and report three findings. First, on a trained model this lost gradient is set near the output: once the loop count is well above k, it barely changes with the loop count (within about 0.03 from 32 to 64 loops on the three models we tested, as a pre-registered test predicted for Parcae). Where the backward signal shrinks, $\\rho^k$, with $\\rho$ the signal's fitted shrink per loop, approximates it at moderate loop counts but overstates it at long ones, because the fitted $\\rho$ drifts up as the fit takes in more loops. On Ouro the signal grows, and keeping two of four loops still loses 81% of the final output's gradient. Second, the lost gradient falls during fine-tuning, by 0.07-0.22 within 300 steps on three of four models, on held-out problems too. The fall is not just the read-out's share of the gradient; training only the layers outside the loop reproduced up to half of it, and it also falls under truncated training. So a trained model's value overstates what truncation removes later. Third, we could not show that it predicts the training cost of truncation better than rules that need no measurement: on two new models it tied Parcae's cost at the same k, in a test too small to separate them.",
+      "abstract_zh": "",
+      "authors": "Aur Shalev Merin",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28871",
+      "pdf_url": "",
+      "tags": [
+        "transformer"
+      ],
+      "ai_tags": [
+        "transformer"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "3c9d3dfcf2a030246cc2076b713d0c78a1ffc3c6"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "LEAN: Loss-Engineered Modulation of the Model Weight-Sensitivity Distribution for Efficient, Error-Tolerant Neural Networks",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28872v1 Announce Type: new Abstract: The weights of a trained network do not have uniform sensitivity to model accuracy: the 1% most sensitive weights carry about a fifth of the damage a bit flip can do. This distribution decides the bit-flip tolerance of a model, the fraction of weights a code must cover and the bits each weight needs; existing schemes work with the distribution training leaves. We show that we can systematically modulate or alter the weight sensitivity distribution of a trained model, thereby shifting weights from one sensitivity bin to another. The sensitivity of a stored weight is the product of its gradient and the step a flip takes in the storage format, and LEAN adds a composite regularizer on both factors, a range term that bounds the flip step and a tail term that lowers the gradient of the most sensitive weights, with one coefficient {\\lambda} setting how far the distribution moves. Ten epochs with the term, as a fine-tune or as the last epochs of training, shrink the sensitive tail 5 to 13 times on nine vision models (ResNet-18, ResNet-50, VGG-16 on CIFAR-10, CIFAR-100, ImageNet) within 0.5 points of accuracy; real flips confirm that the reshaped weights do less damage, a plain gradient-norm penalty does not reproduce the effect, and a preliminary extension to three small language models shows the same tail shaping. With a BCH code over 1% of the weights the model then survives 300 progressive bit-search flips in every training seed and 500 in two of three, where three of four published defenses with the same code fail by 300 and WCAT falls to 75% at 500. The reshaped distribution also cuts the parity for a fixed guarantee 3.7 times and makes a sensitivity-ordered 8/6/4/3-bit format affordable, which stores ImageNet ResNet-50 at a 3.29-bit weight payload, 2.4 times smaller than INT8, above the accuracy of LSQ at 3 bits.",
+      "abstract_zh": "",
+      "authors": "Habibur Rahaman, Swarup Bhunia",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28872",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "84b39cda1978d18d85782b3ffe7d0ae9060d0253"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Minimax-Optimal Predictive Flow Matching under Distribution Drift",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28898v1 Announce Type: new Abstract: Flow matching learns a generative velocity field by regression, but under distribution drift a field must be deployed before the current data arrive. We study this predictive problem for a fixed, possibly nonconvex, neural class, with dynamic regret against the best represented field of each round. We propose DyProd-FM, which refits flow matching on dyadic historical prefixes and selects among the fits with a sleeping Prod master. Without knowing any drift budget, it attains regret $\\widetilde{O}(\\min\\{N_\\omega+1,1+\\sqrt{T\\Omega}\\})$ in the relative velocity risk variation $\\Omega$ and $\\widetilde{O}(\\min\\{N_\\mu+1,1+T^{1/3}V_\\mu^{2/3}\\})$ in the target-law variation $V_\\mu=\\sum_t W_2(\\mu_{t+1},\\mu_t)$, up to approximation and fitting costs. Matching lower bounds for fixed classes show that both rates are optimal in $T$ and in the budgets up to logarithmic factors. Prior optimal dynamic-regret guarantees rely on a convex decision set with strongly convex or exp-concave losses, whereas our class may be nonconvex and no curvature in its parameters is assumed. The target-law rate rests on a second-order link between the two variations, which the base noise of flow matching provides.",
+      "abstract_zh": "",
+      "authors": "Aadithya Srikanth, Vaneet Aggarwal",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28898",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "f3f75b9bd7a8eb4fb2bd627b51760823b51fedfa"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "A Model-Free Continuous-Time RL Algorithm from Discrete-Time Off-Policy Data with End-to-End Guarantees",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28915v1 Announce Type: new Abstract: In this paper, we study continuous-time reinforcement learning, where the state follows an unknown stochastic differential equation but only a fixed off-policy batch of discrete-time transitions is available. Standard discrete-time Q-learning becomes problematic as the sampling interval shrinks, because differences between action values vanish. Continuous-time alternatives, such as Deep Advantage Updating and martingale q-learning, preserve the action signal but jointly learn a value function and an action-dependent critic. Building on the PhiBE-Q formulation (arXiv:2606.21925), we develop a model-free PhiBE policy iteration (PhiBE-PI) framework that uses a single state-action critic while preserving the continuous-time action-ranking scale. At each iteration, the framework learns the critic directly from sampled increments and uses it to improve the policy. The same batch is reused throughout, without explicitly estimating the drift or diffusion. We further develop an implementation under linear function approximation and establish a local end-to-end suboptimality guarantee for the learned policy. Our analysis quantifies how errors from time discretization, function approximation, and finite-sample policy evaluation propagate through policy iteration. It accounts for the dependence of successive policies on the reused data, so the guarantee does not require a fresh batch at each iteration. Moreover, we identify a bias-variance trade-off: smaller sampling intervals improve the approximation to the continuous-time problem but can increase statistical error at a fixed sample size. Thus, finer time discretization does not necessarily lead to better policy performance.",
+      "abstract_zh": "",
+      "authors": "Chaorui Yao, Yuming Paul Zhang, Lin Yang, Yuhua Zhu",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28915",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "ec8ef35623b23e7bfec049f0c69768be321a4bcd"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Query Feedback and Teaching for Stable and Certifiable Language Generation",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28918v1 Announce Type: new Abstract: Language generation in the limit studies whether a learner observing an enumeration of an unknown target language can eventually generate only valid, previously unseen elements. We study stability, introduced by Kalavasis, Mehrotra, and Velegkas (2025), which requires the generator's infinite output set to eventually remain unchanged, and introduce the stronger notion of certifiability, which requires the generator to determine from its observations that its current output is valid. Drawing on teaching sets in learning theory, we introduce a hierarchy of teaching dimensions for generation under three increasingly strict success criteria: correctness, stability, and certifiability. These dimensions measure the minimum number of selected examples whose appearance guarantees the corresponding success condition. We also study stability and certifiability in the membership-query model of Charikar and Pabbaraju (2025). We characterize stable and certifiable generation, both with and without query feedback, and establish their relationships with uniform generation and identification in the limit. In particular, we give a finite-witness characterization of stable generation, analogous to Angluin's tell-tale characterization of identification, resolving a gap left open by Kalavasis, Mehrotra, and Velegkas (2025). We further compare these generation notions with identification in the limit and contrast their teaching requirements on well-studied language families, including regular and erasing pattern languages.",
+      "abstract_zh": "",
+      "authors": "Farnam Mansouri, Alireza F. Pour, Grigoris Velegkas, Sandra Zilles",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28918",
+      "pdf_url": "",
+      "tags": [
+        "EHR"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "EHR"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "51df72687a225d385be28e1ca81292cc5ba5f716"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Multi-Objective Protein Optimization via Modular Diffusion Steering",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28943v1 Announce Type: new Abstract: Protein engineering often requires improving several properties simultaneously, motivating the search for high-performing sequences that represent useful fitness tradeoffs. Discovering these sequences is challenging because the design space is combinatorially large and experimental campaigns often permit only a few rounds of batched measurements. We introduce \\textit{MODS}, a modular framework for multi-objective protein optimization via inference-time diffusion steering. For each proposal, MODS samples augmented Chebyshev scalarization weights and a fitness-surrogate ensemble member to define a scalar steering reward. Varying the weights directs generation toward different objective tradeoffs, while varying ensemble members diversifies the predictions used for guidance. Because MODS expresses multi-objective acquisition through scalar rewards, it can be paired with different diffusion models and compatible steering procedures. After each evaluation batch, MODS updates the surrogates without retraining the generative model. We evaluate MODS on six protein optimization tasks using predictive oracles trained on experimental assay data, with two diffusion models and two steering procedures. MODS achieves competitive final hypervolume across all six tasks with both diffusion models, and substantially outperforms the best evaluated baseline on several tasks. Our results demonstrate a flexible and effective approach to multi-objective protein optimization with limited feedback.",
+      "abstract_zh": "",
+      "authors": "Meir Roketlishvili, Felix Huber, Wenda Chu, Yisong Yue, Raul Astudillo",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28943",
+      "pdf_url": "",
+      "tags": [
+        "diffusion model",
+        "protein design"
+      ],
+      "ai_tags": [
+        "diffusion model"
+      ],
+      "bio_tags": [
+        "protein design"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "3dda2170fcca7cde81f60ef6dfe82f0366a1701d"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Is 2:4 Sparsity Still Worth It? Semi-Structured Sparsity versus Quantization in LLM Inference",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28947v1 Announce Type: new Abstract: NVIDIA tensor cores have supported 2:4 semi-structured sparsity since Ampere, and the pattern composes with quantization. When the two are combined, the practical question is which step to take next: from a given precision, add 2:4 sparsity or drop to the next lower precision? We compare the two at equal bits, with sparsity metadata counted, and at equal nominal tensor-core tiers, over all six GEMM operands of a transformer layer, with kernels measured on three GPU generations and online pruning and quantization included. Our results show that as long as a lower precision is available, adding 2:4 is the worse step, both less accurate and slower, because the energy that 2:4 discards from each group of four along the hardware-forced axis does not shrink with bits, while quantization error does. Once quantization reaches the lowest precision the hardware supports, 2:4 still speeds up linear layers by 1.3--1.7\\x{}, and on an H100 a retrained 2:4 model served in FP8 by vLLM reaches 27\\% higher prefill throughput than the dense FP8 model, with GSM8K accuracy on par. Its quality has to be won back by retraining, however, which restores perplexity long before reasoning; on Blackwell, whose sparse FP4 uses a pairwise 4:8 pattern, the loss is larger and our retraining budget did not recover it.",
+      "abstract_zh": "",
+      "authors": "Xiuyi Qin",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28947",
+      "pdf_url": "",
+      "tags": [
+        "LLM",
+        "transformer"
+      ],
+      "ai_tags": [
+        "LLM",
+        "transformer"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "0c3bd6fa2fe8a7ebf88753519142a4598ef4d3b6"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Transformers as Generic Deep Neural Networks: Exact Compilation, the Cost of Removing Activation-Activation Products, and Multi-Agent Attention Clustering",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28958v1 Announce Type: new Abstract: Transformers are deployed as a special model class. Neural processing units (NPU) add dedicated operators for attention and normalization, and quantization relies on Transformer-specific algorithms. We show the computation does not force this. Every Transformer block, with attention, LayerNorm and a GELU MLP, compiles exactly into a generic deep neural network built from fixed affine maps, routing and the square, sigmoid and inverse square root, plus GELU or its sigmoid approximation. Without activation-activation products, every transform-wise compilation adds at least $N^2$ scalar nonlinear evaluations per head for dense scores. Keeping that one operation type removes this cost; its elementwise form, present on every surveyed NPU, suffices with the sigmoid and inverse square root. For top-$k$ attention with exchangeable tail scores, we prove that exact or conditional-mean tail mass gives an unbiased, minimum-mean-square-error estimate of the attention distribution, while tail drop is conditionally biased. When queries or agents cluster, centroids choose the keys first, reducing the number of computed scores from $N^2$ to $Nk$ per head. On DeiT-Tiny, MambaIRv2-Light and Pythia-70M the compiled models match their references with all keys, standard post-training quantization applies, and the exact tail-mass estimate beats tail dropping with half as many keys on DeiT-Tiny and, for $k\\le8$, on Pythia-70M.",
+      "abstract_zh": "",
+      "authors": "Sergey Salishev, Zeev Volkovich, Oleg Granichin",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28958",
+      "pdf_url": "",
+      "tags": [
+        "transformer"
+      ],
+      "ai_tags": [
+        "transformer"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "a6ca85a308e1113a745fe8a958a11c3d9c43c4c4"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Unit-Aware Differentially Private Quantum Machine Learning for Clinical and Wearable Health Data",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28968v1 Announce Type: new Abstract: Clinical registries and wearable sensors support early health-risk assessment, yet models trained on these records may leak sensitive information when released. Differential privacy (DP) bounds this leakage by injecting noise whose total magnitude grows with the number of trainable parameters, a cost especially severe for small health cohorts. This motivates parameter efficient models including quantum machine learning (QML), whose variational circuits can represent complex decision boundaries with few trainable parameters. It raises a question: at matched input dimensionality and privacy budget, does a quantum model retain more utility than a classical one? We investigate this question on three clinical cohorts and one wearable cohort, treating each clinical record or participant as a privacy unit. We compare capacity-matched quantum, multilayer perceptron, and logistic regression models across five privacy budgets and five seeds. The quantum model leads on three clinical cohorts by up to 0.104 ROC AUC averaged across budgets; however, trails on the wearable cohort, where the small number of participants requires substantial noise. No difference survives Holm correction across 24 tests, so these results indicate a trend rather than a quantum advantage. An analytic gradient bound shows that lower clipping thresholds can improve utility by reducing noise despite clipping bias. Finally, an experiment on IBM quantum computer (ibm_fez, a 156-qubit superconducting processor) using eight fixed test cases yields mean absolute probability errors of 0.046 (private) and 0.063 (non-private) relative to simulation, supporting the feasibility of inference on noisy intermediate-scale quantum (NISQ) hardware. Code is publicly available at https://github.com/TITANS-Lab-Artifacts/DP-QML-Health.",
+      "abstract_zh": "",
+      "authors": "Md Khalid Syfullah, Alvi Ataur Khalil",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28968",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "25243379900b1d6f812b18a519d7536a487bb504"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "From Weather to Enhanced Weathering: Weather Foundation Models for Carbon Dioxide Removal at Operational Scale",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28973v1 Announce Type: new Abstract: Enhanced Rock Weathering (ERW) is a carbon removal solution with the potential to remove gigatons of CO$_2$ per year, but quantifying that removal today requires dense soil sampling and laboratory analysis. We evaluate five weather Foundation Models (FMs) as frozen encoders feeding lightweight decoders, under a leave-one-field-out protocol on 5,192 chronosequences from 264 fields across Brazil and the US. To our knowledge, this is the first holistic evaluation of weather FMs for ERW and the largest evaluation on operational ERW data. We find that across weather FMs, representations transfer to ERW: our best model, TerraNova-ERW, built on Aurora 1.5, positively orders measurements within fields it has never seen. Zero-shot prediction of a new field's mean removal is not yet feasible, and we attribute this to data scale: the same architecture excels on $\\sim$$10^5$ natural-weathering sequences, anchoring the scale we expect ERW data must reach. Few-shot prediction, blending the model with a few samples per field, is supported today: TerraNova-ERW recovers over 60% of the highest-removal fields with two samples per field, roughly halves the samples needed to estimate a field's mean removal, and can cut sampling on our densest fields by 28-98%.",
+      "abstract_zh": "",
+      "authors": "Sasankh Munukutla, Felipe Oviedo, Danrong Zhang, Kenji Takeda, Juan M Lavista Ferres",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28973",
+      "pdf_url": "",
+      "tags": [
+        "foundation model"
+      ],
+      "ai_tags": [
+        "foundation model"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "27b1f2616ab3e414b05bd21e7d1e08d4a9257e77"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "How Does Orthogonalization Adapt to the Neural Network Hessian Structure? A Gradient Self Outer-Product Analysis at Initialization",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28975v1 Announce Type: new Abstract: Muon orthogonalizes a weight matrix's momentum before each step, and on neural networks this simple preconditioner beats AdamW in a wide range of tasks. Existing analyses explain Muon within general optimization frameworks or on a few specific models, and many of them view orthogonalization as a preconditioner. Since the Hessian is the optimal preconditioner under a quadratic approximation of the loss, these works leave a basic question open: what makes orthogonalization suited to the Hessian of a neural network? Prior work shows that the layer-wise Hessian of a neural network is row-block diagonally dominant, and Muon's implicit preconditioner, the Kronecker product $(\\mathbf{V}\\mathbf{V}^\\top)^{1/2}\\otimes\\mathbf{I}$ with $\\mathbf{V}$ the momentum, has the same row-block structure exactly when $\\mathbf{V}\\mathbf{V}^\\top$ is diagonally dominant. Diagonal dominance of $\\mathbf{V}\\mathbf{V}^\\top$ has been observed in language models, but why a neural network produces it has not been explained. This work provides a quantitative asymptotic theory for neural networks at initialization, and points out the intuition that the overparameterization of the weight matrices drives the diagonal dominance. We analyze $\\mathbb{E}[\\mathbf{G}\\mathbf{G}^\\top]$, which equals $\\mathbb{E}[\\mathbf{V}\\mathbf{V}^\\top]$ at initialization, in four canonical models: symmetric matrix factorization, deep linear networks, two-layer ReLU networks, and single-layer linear attention. In each case the diagonal entries outgrow the off-diagonal ones at explicit rates as the hidden dimensions grow; for the query, key and value weights of attention the off-diagonal vanishes altogether. Simulations of the four models and experiments on language models at initialization confirm the predicted scaling.",
+      "abstract_zh": "",
+      "authors": "Shenyang Deng, Garvit Goyal, Tianyu Pang, Shuhua Yu, Yaoqing Yang",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28975",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "58b8ba323f612bec1adc9e615e771cd69353b8be"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "SSMCGM-Stream: A Streaming State-Space Model for Personalized Diabetes Management",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28976v1 Announce Type: new Abstract: Continuous glucose monitoring supports diabetes management but requires forecasting models that are accurate, interpretable, and efficient enough for real-time deployment. We present SSMCGM-Stream, a streaming state-space model that maintains a personalized hidden state updated with each incoming glucose reading to provide constant-time forecasting, physiologically structured counterfactual reasoning, and interpretable forecasts through hidden-state attribution. Built on this foundation, SSMCGM-Agent delivers risk-aware, natural-language decision support by translating forecasts, explanations, and counterfactuals into grounded recommendations through a guarded language-model interface. Evaluated on the T1DEXI cohort, SSMCGM-Stream achieves forecasting performance comparable to strong neural baselines while substantially reducing computational cost, enabling continuous on-device diabetes decision support.",
+      "abstract_zh": "",
+      "authors": "Shakson Isaac, Chirag Patel",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28976",
+      "pdf_url": "",
+      "tags": [
+        "diabetes"
+      ],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [
+        "diabetes"
+      ],
+      "is_preprint": 1,
+      "id": "ff864d395d4793a63247da6c36f4fb9bd669af53"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Attention-based Classification for Indirect Prompt Injection",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28988v1 Announce Type: new Abstract: Indirect prompt injection (IPI) attacks, in which adversarial instructions are embedded in external data processed by a language model, pose a significant threat to the integrity of deployed LLM agents. Attention Tracker (Hung et al., 2025) is a recently proposed white-box detection method that identifies prompt injection attacks by monitoring how a model's attention is distributed between user task tokens and data tokens, claiming dataset-agnostic detection via a scalar focus score threshold. In this paper, we provide the first evaluation of Attention Tracker in a realistic agentic IPI setting using the AgentDojo benchmark, finding that the dataset agnosticism claim does not hold. We find that in agentic environments, long structured tool outputs subvert the fundamental assumptions Attention Tracker makes about attention that the method depends on and produces near-chance detection on AgentDojo across most model families. We propose AttnDA, an extension replacing the scalar threshold with a Fisher Linear Discriminant Analysis classifier over the per-head focus score vector, and evaluate both methods in a cross-dataset setting spanning four benchmarks. AttnDA improves detection performance across agentic and tool-integrated benchmarks, though transfer to AgentDojo remains challenging regardless of classifier choice. A covariance ablation further shows that removing inter-head correlation structure substantially contributes to performance, with complex covariance assumptions causing significant degradation on cross-domain data. These results indicate that the attentional distraction signal underlying focus-score-based detection does not transfer reliably to agentic environments, and that learned linear classifiers over head-level attention features offer improved detection performance, provided training data from the target deployment domain is available.",
+      "abstract_zh": "",
+      "authors": "Amelia Kawasaki, Stefan Lee",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28988",
+      "pdf_url": "",
+      "tags": [
+        "LLM",
+        "diffusion model"
+      ],
+      "ai_tags": [
+        "LLM",
+        "diffusion model"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "d28e0927f1f9bb2f1192bc1a1c0df6b98e442d3f"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Doob-Based Generative Policy Optimization",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28990v1 Announce Type: new Abstract: Diffusion and flow models provide expressive policy classes for robotic and sequential decision-making systems. However, their action likelihoods are generally intractable, limiting the direct use of widely adopted policy optimization methods such as PPO and GRPO. We propose Doob Policy Optimization (DoobPO), a framework that leverages Doob's $h$-transform for likelihood-free reinforcement learning fine-tuning of generative policies. DoobPO separates policy improvement from generative policy learning. It first learns a lightweight ratio model that represents the desired policy update, and then distills the resulting ratio-tilted target policy into the generative policy via conditional drift matching. This formulation applies uniformly to both diffusion and flow policies and supports a broad family of policy improvement rules, including PPO and GRPO. We prove that the practical conditional drift matching objective is gradient-equivalent to the ideal Doob drift matching objective. We further show that the induced diffusion process solves an endpoint-constrained stochastic optimal control problem. This establishes that it achieves the minimum-energy modification required to realize the desired policy tilt. Across MuJoCo continuous-control benchmarks, DoobPO achieves strong performance against competitive diffusion- and flow-policy baselines, showing a principled and practical route to RL fine-tuning for generative policies.",
+      "abstract_zh": "",
+      "authors": "Maojiang Su, Qijie Zhu, Yu Xiao, Shuyang Yu, Minshuo Chen, Zhaoran Wang, Han Liu",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28990",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "692450d2b385123b52ff0ec888517e958b6f5869"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "FlashNext-RL: A System Optimization Study for Long-Horizon Agentic RL of Qwen3.8-Flash-Next",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28998v1 Announce Type: new Abstract: Long-horizon agentic reinforcement learning (RL) requires both efficient rollout generation and training on long sequences. However, the memory requirements and model-specific operators of Qwen3.8-Flash-Next make this difficult with existing open-source implementations. To resolve these limitations, we introduce FlashNext-RL, a model-specific RL training optimization framework based on prime-rl, with vLLM for software engineering (SWE) rollout generation. Our main focus is BF16 training of the full 48-layer model on a single 8xB200 node, with the first two layers, the n-gram table, the sparse-attention indexer and the multi-token prediction head frozen. We optimize host offload, gradient accumulation and the kernels for mixture-of-experts, sparse attention and the gated residual stream. In the full-model development study, non-padding training throughput increases from approximately 395 tokens/s/GPU in the initial 32K-token configuration to 4,438 tokens/s/GPU in the optimized 131K-token configuration, with hardware matmul throughput (aka without considering the cost of attention components) increasing from approximately 20 to 213 TFLOPs/GPU. A controlled cumulative study on an 8-layer model further quantifies the contributions of individual optimizations. Together with three inference nodes, the system supports a live SWE RL run with a target batch of 1,024 trainable rollouts and a 131,072-token context limit. Over steps 5-15, an iteration takes 22.4 minutes on average, with bounded entropy and trainer-sampler mismatch KL. These results highlight the importance of tailoring RL training to the model's architecture, memory layout and kernel requirements, rather than relying only on general-purpose RL infrastructure.",
+      "abstract_zh": "",
+      "authors": "Zhewei Yao, Yuxiong He",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28998",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "fab7b93ee3b19fd74badf664f1cdf3e1c87366cb"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "ART-MPG: Autoregressive R/T Manifold Path Guiding",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29049v1 Announce Type: new Abstract: Specular chains concentrate important transport in small regions of path space and the structure depends on chain topology. We introduce ART-MPG, a compact neural model that samples chain length, an autoregressive reflection/transmission (R/T) string, and a direction from a topology-conditioned four-component von Mises-Fisher (vMF) mixture. We extend the repeated trial weighting in Manifold Path Guiding (MPG) by conditioning retry sampling on both chain length and the sampled R/T string, accounting for its known mass outside the stochastic re-hit trials. For a fixed proposal and target chain, this preserves the ideal expectation while reducing the expected retry count and reciprocal-estimator variance compared with retries conditioned on chain length alone. We distinguish the formal unbiasedness result from the capped and clamped renderer used in experiments. We evaluate fourteen scenes across a range of samples per pixel (SPP) against existing online and offline rendering algorithms. Our method consistently produces lower mean squared error at equal SPP than the online and offline baselines, with lower standard deviation across runs.",
+      "abstract_zh": "",
+      "authors": "Zehao Zhao, Yanyang Yang, Xiaole Zhang, Xiyu Deng",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29049",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "988a74eac8f86f57f14cf6796b7a997af1e250c9"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Distilling Multi-Teacher Scoring Principles for Unsupervised Time Series Anomaly Detection",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29063v1 Announce Type: new Abstract: Time series anomalies take diverse forms, and individual detectors encode different anomaly scoring principles that rarely cover all anomaly types. Recent unsupervised time-series anomaly detectors provide complementary scoring signals, yet deploying them as an ensemble preserves the inference and maintenance cost of every individual detector. We study whether heterogeneous teacher detectors can be distilled into a single lightweight detector in the unsupervised setting, where no anomaly labels are available to define a shared target. AnoMix addresses this by extracting weak pairwise supervision from the training-set anomaly scores of frozen teachers. It normalizes each teacher score sequence independently and trains the student with CoRank, a multi-teacher ranking-distillation objective that converts teacher score gaps into pairwise supervision through teacher consensus. Across seven benchmark datasets, AnoMix successfully integrates complementary teacher scoring principles into a single deployable model, improving over individual detectors and static score ensembles while using a compact student with under 80k parameters on the benchmark settings. A zero-shot variant further shows that the distilled ranking signal transfers to unseen datasets and can outperform large pretrained time-series foundation models for anomaly detection.",
+      "abstract_zh": "",
+      "authors": "Dongchan Cho, Jiho Han, Juwon Hwang, Changhee Min, Minsang Kim, Namsoon Jung",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29063",
+      "pdf_url": "",
+      "tags": [
+        "foundation model"
+      ],
+      "ai_tags": [
+        "foundation model"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "1bbdbe2ff9574e9fd23cbaba05b0cd989a6d2ce9"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "The Price of Choice in Selective Prediction",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29067v1 Announce Type: new Abstract: A selective classifier may be claimed to satisfy a risk-coverage contract if some rule from a predeclared menu (a threshold or a union of $K$ score intervals) attains coverage at least $\\kappa$ and error at most $\\alpha$. Refuting this existential claim requires ruling out every permitted rule. The intersection-union test (IUT) achieves validity without a multiplicity correction, but its sample cost can increase with menu richness. We characterize this cost and compare it with the optimal audit. For a fixed interior risk target $\\alpha$ and gap $\\gamma$, the minimax sample size for K-interval menus at coverage floor $\\kappa$ is $K(1-\\kappa)/(\\kappa\\gamma^2)$, up to logarithmic factors, in the stated small-gap, large-menu regime; exact IUT attains this rate. The lower bound holds even with a known score distribution, while the upper bound extends to menus of VC dimension $d$. Procedures that refuse to reject whenever any rule appears feasible on the audit sample can pay a linear $K$ cost even when a square-root rate is possible. Reference-free testing reaches a smaller scale under constant-risk alternatives, whereas unknown heterogeneous risks can make the linear cost unavoidable. In simulations with $K=4$, the raw menu cost varies 7.7-fold between $\\kappa=.5$ and $\\kappa=.95$; after theorem-motivated normalization the endpoint values differ by approximately 5%. Held-out experiments with three VLM judges show positive exact-hiding windows in all 60 split-specific confidence-gate families, with 28/30 contracts chosen on audit-A remaining hidden on untouched audit-B. On a cleaner multi-annotator target, hiding is weaker and transfers in 3/10 resplits. Frozen image and multimodal classifiers show boundary behavior consistent with the IUT guarantee and strong power relative to practical certificates.",
+      "abstract_zh": "",
+      "authors": "Daniel Cie\\'slak, Andrzej Czy\\.zewski",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29067",
+      "pdf_url": "",
+      "tags": [
+        "multimodal learning"
+      ],
+      "ai_tags": [
+        "multimodal learning"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "1fef6a50f519b3d326a4de5f786143eca419920f"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Value-Rectified Distillation for Flow-based Offline Reinforcement Learning",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29075v1 Announce Type: new Abstract: We aim to address the problem of Out-of-Distribution (OOD) Mode Averaging, a critical problem that emerges when distilling Flow Matching (FM) based behavior policies in offline Reinforcement Learning (RL): When learning over multi-modal datasets, standard distillation inadvertently forces the policy to interpolate across different behavioral modes, causing the generated actions to collapse into invalid, OOD regions. To resolve this, we propose Value-Rectified Distillation (VRD), a novel framework that reformulates offline policy distillation as a value-guided generative trajectory alignment problem. By employing a dynamic coupling mechanism, VRD actively rectifies flow dynamics to explicitly decouple distinct behavioral modes, cleanly isolating high-value actions. Specifically, we instantiate VRD through two complementary algorithms: VRD-Q, which utilizes value-quantile behavior distillation to statistically filter out low-value behaviors, and VRD-R, which reorganizes the latent space to geometrically isolate high-value generative trajectories from the FM-based behavior policy. Extensive empirical evaluations demonstrate that VRD improves existing generative baselines across diverse continuous control and planning tasks on the D4RL, OGBench, and Minari benchmarks, especially over those multi-modal, non-expert datasets.",
+      "abstract_zh": "",
+      "authors": "Ke Jiang, Wen Jiang, Yoshinobu Kawahara, Xiaoyang Tan",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29075",
+      "pdf_url": "",
+      "tags": [
+        "multimodal learning"
+      ],
+      "ai_tags": [
+        "multimodal learning"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "3326d4cc768ebb9c08aabe42be92a4b38d841854"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Mitigating Reward Hacking in Realistic Scenarios Through Representation Engineering",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29129v1 Announce Type: new Abstract: Reward hacking is a major problem in current production machine learning systems, resulting in costly and dangerous failures. Here we study how to monitor for and mitigate reward hacking in realistic settings, including tool calls and long contexts. We apply a dynamic intervention to steering directions obtained by three different methods: difference-in-means vectors from labeled rollouts, gradient optimization-based vectors, and vectors extracted when models reference an anti-reward-hacking model spec. This dynamic intervention perturbs model representations less than uniform steering vector addition to the residual stream, allowing for more precise edits. We find that we are able to cheaply and significantly reduce reward hacking without correspondingly significant costs to model coherence or capability, and that steering vectors originally extracted from coding environments also generalize to reducing reward hacking in other domains. Our results pave the way towards latent space monitoring and control over realistic production systems.",
+      "abstract_zh": "",
+      "authors": "Austin Meek, Kyle Cox, Matthew Nguyen, Austin J. Brockmeier, Steven Basart",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29129",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "9097d17fe421c98ac349d6730380f0e572f57890"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Conditional Flow Models Convert Epistemic Uncertainty into Apparent Aleatoric Variance",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29172v1 Announce Type: new Abstract: Conditional Flow Models (CFMs) are increasingly being used in place of deterministic predictors across machine learning, including for tasks that were classically formulated as regression. Given their success in such tasks, we ask the question: what useful information do the conditional distributions produced by CFMs carry beyond what a point predictor would provide? We identify a systematic phenomenon: in many natural regimes, CFM samples routinely have larger variance than the true conditional distribution, even in nearly deterministic regression problems. This effect is most pronounced where the model has not resolved the dependence on the conditioning variable, and thus the additional variance can be viewed as converting epistemic uncertainty in fitting the ground truth conditional distribution into apparent aleatoric variance in the generated samples. Through controlled synthetic and real-data experiments, and comparisons with explicit smoothing estimators, we show that the induced variance tracks model underfitting of complex or hard-to-fit targets, and decreases with additional training or data. We provide a theoretical account of the phenomenon in a simplified setting and demonstrate a consequent practical use-case of conditional flow-matching: designing high-coverage predictive sets that cover the ground-truth regression target.",
+      "abstract_zh": "",
+      "authors": "Navodita Sharma, Abhishek Shetty, Max Simchowitz, Pulkit Agrawal",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29172",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "2cb315d7b26a92ba604bb253f2754b20640864d5"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "PerSPL: Personalized Semi-supervised Preference Learning",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29219v1 Announce Type: new Abstract: Personalized reward models require user-specific preference comparisons, but collecting such feedback is costly and provides only limited supervision for each user. At the same time, large pools of responses can be generated without user identities or preference labels, yet existing personalized reward models leave this data unused. Directly learning from these responses is difficult because pairwise objectives constrain relative scores within a prompt, whereas pseudo-labeling individual responses requires scores that are comparable across prompts for the same user. We propose \\textbf{PerSPL} (Personalized Semi-supervised Preference Learning), a backbone-agnostic framework that uses pair-mean score centering to stabilize this cross-prompt score coordinate and iteratively turns unlabeled responses into user-specific training signals. Against seven representative baselines across four benchmarks---PersonalLLM, HelpSteer2, Reddit TLDR, and Chatbot Arena---PerSPL achieves the highest reported mean accuracy among the evaluated methods for both seen and unseen users. The two latter benchmarks provide real-user preference comparisons in summarization and open-domain chatbot interaction, respectively. These results indicate that unlabeled responses can provide additional supervision for personalized reward modeling when per-user preference labels are scarce.",
+      "abstract_zh": "",
+      "authors": "Xiaoan Xu, Tingzhou Wei, Juncheng Dong, Korel Gundem, Ethan X. Fang, Zhengling Qi",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29219",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "4905e6b62debb3675a6df178d84a71e640c2f5d8"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Extending FAIR Principles with Observability for Trustworthy Federated Learning",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29252v1 Announce Type: new Abstract: Federated learning (FL) keeps data at its source, but locality alone does not make a federation trustworthy. Without sufficient observability, an aggregator cannot determine whether the client service was healthy, the local data pipeline was trustworthy, or contractual constraints were properly monitored during training. We take the position that trustworthy FL needs an evidence plane in addition to its model-update process. Each participant continuously summarizes local infrastructure, data into minimal, signed trust evidence associated with each FL round, while raw data, logs remain local. A local TinyLLM may assist in interpreting observability signals, deriving contextual evidence, and providing natural-language explanations to operators. We instantiate this vision through FAIR-O, an observability extension of FAIR principle. Rather than benchmarking FL accuracy, a three-level trust model has been proposed and a two-participant Python prototype demonstrates evidence generation and trust assessment. We further discuss future integration of FAIR-O Trust Evidence into participant selection, evidence weighting, and federated aggregation.",
+      "abstract_zh": "",
+      "authors": "Hangli Ge, Noboru Koshizuka",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29252",
+      "pdf_url": "",
+      "tags": [
+        "LLM",
+        "federated learning"
+      ],
+      "ai_tags": [
+        "LLM",
+        "federated learning"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "613381e5024190181595c9941ba126f176794cf2"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Estimating Performance for Safe Deployment of Machine Learning Models",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29262v1 Announce Type: new Abstract: The main challenge in applying deep neural networks to real-world scenarios lies in distributional discrepancies between training and test datasets, often caused by variations in data acquisition conditions. Assessing the performance of pre-trained models without labels is crucial for safety, but this is complicated by deep models' overly optimistic probabilistic outputs, often exacerbated by class imbalances, leading to unreliable predictions. To address these issues, we introduce MOVAL, a novel MOdel eVALuation tool that estimates performance using unlabeled test data. MOVAL incorporates class-wise confidence calibration to adjust model outputs, allowing for the estimation of metrics beyond accuracy and mitigating the detrimental effects of class imbalance on confidence calibration. Additionally, we propose an ensemble approach that combines multiple calibrated confidence scores for a more robust solution. We validate MOVAL on natural and medical image datasets with various acquisition shifts, covering tasks from classification to segmentation. It achieves state-of-the-art results across evaluation metrics such as accuracy, F1-Score, AUC, and more. Furthermore, we demonstrate that MOVAL provides accurate performance estimations at the class, instance, and pixel levels, ensuring the transparent and safe deployment of machine learning models. We provide MOVAL as a deployment tool for monitoring and estimating performance under a range of domain shifts.",
+      "abstract_zh": "",
+      "authors": "Zeju Li, Konstantinos Kamnitsas, Mobarakol Islam, Melanie Roschewitz, Cheng Ouyang, Chen Chen, Ben Glocker",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29262",
+      "pdf_url": "",
+      "tags": [
+        "foundation model",
+        "medical image analysis"
+      ],
+      "ai_tags": [
+        "foundation model",
+        "medical image analysis"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "3c9c2c273f0b2167ebb9dd0630ff6e3912ec2c56"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Design and Tuning of Multi-Agent Systems Using Bayesian Evolutionary Optimization",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29276v1 Announce Type: new Abstract: Designing effective multi-agent systems (MAS) remains a challenging and resource-intensive task. We propose a Bayesian Evolutionary Optimization framework for automatically discovering task-specific MAS topologies. The approach combines evolutionary operators to generate diverse workflow graphs with Bayesian optimization to focus cost intensive evaluations on promising candidates. In contrast to LLM-based candidate selection, our approach uses a graph-aware Gaussian Process and Expected Improvement to provide an explicit selection criterion during evolutionary search. We evaluate the method on BigCodeBench for code generation and on a tabular preprocessing benchmark using TabPFN. On BigCodeBench, evolved architectures achieve the highest overall performance among the evaluated agent systems. On temporal tabular datasets, optimized MAS preprocessing improves over the default TabPFN model on several tasks, while remaining competitive on IID datasets. Overall, the results demonstrate the potential of Bayesian selection for guiding evolutionary MAS search under expensive evaluation budgets.",
+      "abstract_zh": "",
+      "authors": "Dominik Jehle, Tom Zehle",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29276",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "7733aa860c1e206d1ee8390b4c9f68a2ef4cf4e1"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Flat-RLVR: Sharpness-Aware Reinforcement Learning with Verifiable Rewards for Reasoning Capacity in LLMs",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29281v1 Announce Type: new Abstract: Reinforcement learning with verifiable rewards (RLVR), particularly through group-relative policy optimization (GRPO), has emerged as a central paradigm for the post-training of large language models (LLMs). While RLVR is highly effective at enhancing the reasoning capabilities of LLMs, it commonly induces \\textit{distribution sharpening}, whereby the policy distribution becomes excessively peaked and rare-yet-correct trajectories are progressively suppressed, thus diminishing sample diversity. To this end, we promote flat-reward optima in RLVR to smooth the policy distribution. We theoretically link flat reward RLVR to reduced distribution sharpening, and empirically show improved sample diversity while maintaining single-attempt accuracy. Our method, called \\texttt{Flat}-RLVR, searches for flat reward regions via sharpness-aware minimization during LLM post-training, combining this with GRPO variants to achieve better trade-offs between sampling efficiency and reasoning capacity.",
+      "abstract_zh": "",
+      "authors": "Yeonbum Kim, Hyun Kyu Lee, Sung Whan Yoon",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29281",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "9f4b2f4fa70b9093b70621f5feedc6f1a2b91465"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Approximate Solomonoff Induction: On the Robustness of Learned Universal Predictors",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29289v1 Announce Type: new Abstract: Why large language models trained via log-loss minimization over massive and diverse datasets exhibit broad capabilities and generalizable skills is not yet fully understood. Grau-Moya et al. (ICML 2024) offer a conceptual explanation through the lens of meta-learning: if sequence-generating environments $\\nu$ are drawn from a prior $w_{\\nu}$, minimizing population log-loss recovers the corresponding Bayesian mixture predictor $\\xi=\\sum_\\nu w_\\nu\\nu$. In the idealized limit in which $w$ is a universal prior, the optimal predictor corresponds to Solomonoff universal induction. Practical machine learning algorithms, however, generally produce only \\emph{approximately} optimal predictors. This raises a natural question: \\emph{Does the prediction performance remain robust under approximation}? In this paper, we first provide a tight bound on the worst-case effect of approximation on prediction error. We show any predictor $\\rho$ satisfying $D_{KL}(\\xi \\|\\rho)\\leq \\eta$ retains bounded cumulative-expected-squared prediction error. However, while the Bayesian mixture predictor $\\xi$ has error $O(\\log(1/w_\\mu))$ in an environment $\\mu$, we establish a tight $\\Theta(\\eta/w_\\mu)$ bound on the excess error of $\\rho$ relative to $\\xi$. Thus, approximation can substantially degrade performance in environments assigned small prior probability. In sharp contrast, when environments are averaged according to prior $w$, we prove that the excess prediction error is only $O(\\eta)$. Furthermore, we establish a distribution-shift theorem for dominated shifts from a training prior $w$ to a test prior $w'$, interpolating our average-case and worst-case guarantees. Finally, we extend our robustness analysis to a finite-sampling setting relevant to learning universal predictors with neural networks and Transformers, where $D_{KL}(\\xi\\|\\rho)$ could be unbounded. [For the full abstract, see the paper.]",
+      "abstract_zh": "",
+      "authors": "Qian Li, Shang-Hua Teng",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29289",
+      "pdf_url": "",
+      "tags": [
+        "LLM",
+        "transformer"
+      ],
+      "ai_tags": [
+        "LLM",
+        "transformer"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "8b15331e2f40e2b9a8baa7ea7445ba494d654dd6"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "ExpEvolve: Structuring and Reusing Experience for Open-Ended Discovery",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29303v1 Announce Type: new Abstract: Evolutionary coding agents such as AlphaEvolve are one of the notable successes in using Large Language Models (LLMs) to build AI Scientists. These agents tackle open-ended scientific problems by iteratively improving and evolving programs, leveraging the prior knowledge and reasoning capabilities of LLMs. Despite their success, mutations over programs are mostly low-level upon surface heuristics, without a persistent unit of control. In contrast, science compounds through ideas. In this work, we propose ExpEvolve, which injects idea-level extraction and control into evolution: it discovers and leverages the high-level factors from programs that explain scoring differences among different programs. We characterize theoretical conditions on when discovery with idea factors improves sample efficiency. We also build a practical framework to show that the extracted high-level idea factors are helpful for guiding exploitation from experience and exploration when discovery comes to a plateau. Across 11 open-ended mathematical tasks, ExpEvolve significantly improves the final performance and sample efficiency up to 5.0x. The improvements also transfer to 4 other LLMs and to 6 machine learning tasks from MLS-Bench. Analysis shows that ExpEvolve can discover idea-level factors to provide better exploration and exploitation for evolutionary discovery.",
+      "abstract_zh": "",
+      "authors": "Yongqiang Chen, Chenxi Liu, Deyu Zou, Zhenhao Chen, Tongliang Liu, Bo Han, Kun Zhang",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29303",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "6148d9af87379402d34487e00469c194ad040360"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Interpretable Cutting Plane Selection for Mixed-Integer Linear Programming Using Genetic Programming",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29311v1 Announce Type: new Abstract: Cutting planes (cuts) remove fractional solutions from mixed-integer linear programs (MILPs) without excluding any feasible integer solutions, making them a key ingredient in modern MILP solvers. Current state-of-the-art solvers rely on fine-tuned handcrafted cut strategies, which, despite their effectiveness, remain inherently static and can be suboptimal. More recently, learning-based approaches have been proposed to design adaptive cut strategies; however, most of these methods are based on neural networks, offering limited interpretability and providing no guarantees of convergence. In this paper, we propose \\emph{Genetic Programming and Statistics-based Cut Selection} (GPSCS), the first learning-based framework that explicitly generalizes handcrafted cut selection heuristics into a fully interpretable policy. First, a genetic programming model evolves a symbolic scoring function that ranks candidate cuts using features derived from the cuts and the solving context. Second, a lightweight statistics-based mechanism adaptively determines the number of top-ranked cuts to add at each separation round by detecting significant score dropouts. We evaluate GPSCS within the SCIP solver on seven classes of synthetic and real-world benchmark instances, with a strong emphasis on generalization: evaluation instances are on average 41 times harder than those used for training. Experimental results show that GPSCS improves average solving time by $6\\%$ compared to SCIP's default cut selection strategy and achieves a two-fold speedup over both a recent neural-network-based approach and a no-cut baseline, demonstrating strong robustness and generalization across heterogeneous MILP families.",
+      "abstract_zh": "",
+      "authors": "Gwen maudet, Mathis Da Cunha, Gr\\'egoire Danoy",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29311",
+      "pdf_url": "",
+      "tags": [
+        "explainable AI"
+      ],
+      "ai_tags": [
+        "explainable AI"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "772b33a5e2ec83f695f57f2084744213a29c0a0e"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "YingLan: A Multimodal Ocean Foundation Model for Unified Representation Learning from Heterogeneous Observations",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29313v1 Announce Type: new Abstract: Multimodal ocean modeling remains challenging due to substantial heterogeneity in data structures, physical semantics, and spatiotemporal characteristics across satellite imagery, gridded oceanographic fields, and buoy observations. Existing approaches largely focus on task-specific ocean modeling, while learning transferable representations from heterogeneous observations remains an open problem. To address this challenge, we propose YingLan, a multimodal ocean foundation model that integrates physics-attribute-conditioned dynamic encoding, Spatiotemporal Increment Coupling (STIC), and ocean-state evolution-aware pretraining. Specifically, the dynamic encoding mechanism generates adaptive input projections conditioned on physical semantics and observation characteristics, enabling flexible representation of heterogeneous ocean variables. STIC models multiscale spatiotemporal dependencies through cross-scale interactions of latent temporal increments. The pretraining strategy further combines masked observation reconstruction with temporal evolution objectives to facilitate the learning of coherent ocean-state representations across different prediction horizons. YingLan is implemented using MindSpore and trained on Huawei Ascend 910B NPUs, demonstrating its compatibility with domestic AI computing infrastructure. In a seven-day sea surface salinity (SSS) forecasting task conducted in the Shenzhen coastal waters, YingLan achieves an average RMSE of 0.687508 PSU, corresponding to relative error reductions of 0.58%, 5.31%, and 12.42% compared with LangYa, XiHe, and GloNet2, respectively. These results provide initial evidence of the model's effectiveness in regional ocean forecasting, while broader cross-task and cross-regional evaluations remain necessary to assess its generalization capabilities.",
+      "abstract_zh": "",
+      "authors": "Sen Jia, Siqi Wei, Junyu Wang, Zijun Lv, Pan Liu, Meng Xu, Xiyou Fu, Yuxi Sun, Qiang Liu, Shuyu Zhang, Lin Mu",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29313",
+      "pdf_url": "",
+      "tags": [
+        "foundation model",
+        "multimodal learning"
+      ],
+      "ai_tags": [
+        "foundation model",
+        "multimodal learning"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "31607769c7e0f51ab4ff023e53da5c5d9152ec25"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "BrainCodes: A Lightweight EEG Foundation Model over Discrete Neural Codes",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29320v1 Announce Type: new Abstract: Recent electroencephalography (EEG) foundation models increasingly emphasize model scale, potentially limiting their deployment on resource-constrained devices and in everyday environments. We argue that transferable EEG features can instead be learned with a compact architecture and introduce BrainCodes, a lightweight foundation model pretrained through self-supervised learning on more than 800 hours of recordings from over 1,000 participants. Our architecture combines a quantization-based neural tokenizer with a spatiotemporal encoder that supports arbitrary electrode configurations. The pretraining objective explicitly encourages representations that capture spatial connectivity through channel positional encoding, and sensitivity to narrowband neural oscillations through an auxiliary training objective. Our model matches or surpasses the state of the art across diverse neurophysiological monitoring tasks, including sleep staging, attention assessment, and cognitive load estimation. BrainCodes transfers effectively to low-resource wearable devices while using up to 97% fewer trainable parameters than comparable architectures. Beyond predictive accuracy, our evaluation framework characterizes the geometry and invariances of learned EEG representations across measurable spatial, temporal, and spectral signal properties.",
+      "abstract_zh": "",
+      "authors": "Kleanthis Avramidis, Ivan Tashev, Dimitra Emmanouilidou",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29320",
+      "pdf_url": "",
+      "tags": [
+        "foundation model",
+        "self-supervised learning"
+      ],
+      "ai_tags": [
+        "foundation model",
+        "self-supervised learning"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "df5aeca8f642b3484f8608bb1ba404797206637b"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Reader--Writer Coupling in Transformer MLPs",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29340v1 Announce Type: new Abstract: A transformer MLP gives each hidden channel two roles: a reader that decides when the channel responds, and a writer that decides what it adds back to the residual stream. Read as a key--value memory, the layer can be measured one factor set at a time: the pairing of readers to writers is carried only by their shared index, invisible to any quantity computed from one factor set alone. Yet training couples the two factors through their joint update, so we ask what reading them together shows. The block supplies the joint instrument: the MLP writes back into the very stream it reads, so the exact Jacobian of its update is square, and its agreement with its own transpose resolves into reader--writer terms whose inner products give each channel, read as a couple, a signed pairing coordinate. Ranked by this coordinate, each block we measure has a small core of strongly coupled channels; where initialization gives either sign equally, the core is nearly all opposed: each writer points against the direction its reader responds to. This opposed core recurs from the smallest models trained from scratch to released checkpoints; its sign is in place within a few percent of training and holds while the coupling grows. Read as couples, most channels return their contribution against the reader that fired it, and the readers of later blocks take it up; few show in the logits. Training holds the couples in place: flipping the opposed writers moves the output toward common tokens, and a writer permuted onto another reader regrows to fit that reader while the reader stays.",
+      "abstract_zh": "",
+      "authors": "Giyeong Oh, Sunghee Ahn, Youngjae Yu",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29340",
+      "pdf_url": "",
+      "tags": [
+        "transformer"
+      ],
+      "ai_tags": [
+        "transformer"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "5e4e7fab4ba20f729a46107824652858b5f8054d"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Benchmarking and Error Analysis of Deep Search and Deep Research LLM Agents",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29346v1 Announce Type: new Abstract: As Large Language Models (LLMs) evolve into autonomous Deep Search and Deep Research Agents capable of executing long-horizon, multi-step tasks, evaluating their reliability becomes increasingly critical. However, existing evaluation paradigms predominantly focus on final task outcomes, leaving a significant gap in understanding the intermediate execution traces, where agents are highly susceptible to various errors. To address this critical gap, we introduce a comprehensive methodology and analytical framework designed specifically to diagnose errors in intermediate workflows. Building upon this framework, we establish a structured taxonomy that categorizes these vulnerabilities into two primary dimensions: System-Level Errors and Task-Level Errors. Through a systematic examination of step-by-step execution traces and agent-environment interactions, we reveal how these underlying errors affect overall performance. Finally, through empirical experiments and systematic analysis of the identified error types, we provide actionable design guidelines, aiming to enhance the robustness, reasoning capabilities, and reliability of Deep Search and Deep Research agents.",
+      "abstract_zh": "",
+      "authors": "Zixuan Yu, Zhenheng Tang, Xiaowen Chu, Bo Han",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29346",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "551b903cdf265e607de8fa39a43f306398d78b6d"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Data Schedules and Learning Rate Schedules Should Be Designed Together",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29348v1 Announce Type: new Abstract: Mid-training (MT) is a training phase in LLM training pipelines that continues pretraining (PT) on smaller datasets of higher value. Taking the PT and MT phases as a whole, training usually starts with only PT data and then transitions completely to MT data. In this work, we view this complete transition from PT to MT data as a special case of a broader class of data mixing schedules that specify how the proportions of PT and MT tokens in each batch change over training. Under fixed total training compute and MT token budgets, we ask: Is this complete transition to MT data optimal for minimizing final MT loss? We show that the answer depends on the learning rate (LR) schedule: one data schedule may outperform another under one LR schedule, but changing only the LR schedule can reverse the outcome. Specifically, when the LR decays throughout continued training, introducing MT data earlier and mixing it with PT data lowers the final MT loss compared with placing all MT data at the end of training, but this result is reversed if we use constant LR. We therefore study how to jointly choose when to introduce MT data and when to decay the LR through ablation studies, and find that it is better to decay the LR only after MT data enters training. Finally, we develop a theoretical model that explains why the optimal data schedule for a fixed MT token budget depends on the LR schedule.",
+      "abstract_zh": "",
+      "authors": "Haodong Wen, Kairong Luo, Tingkai Yan, Wenguang Chen, Kaifeng Lyu",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29348",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "3b2657cc13dff8c54c566e383b1a7dd436c4f2df"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "GaP-MoE : Explicit Expert Specialization in Mixture-of-Experts via Orthogonal Gradient Accumulation and Projection",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29355v1 Announce Type: new Abstract: Sparse Mixture-of-Experts (SMoE) models improve scalability by routing input tokens to only a subset of expert networks, but they often suffer from representation collapse, in which multiple experts converge toward similar functions and lose their intended diversity. Prior work has addressed this limitation either by improving router architectures or by introducing auxiliary loss terms that implicitly penalize similarity among experts. However, router-based approaches remain vulnerable to routing collapses, and loss-based approaches can conflict with the task's original objective during optimization. In this work, we propose GaP-MoE (Gradient Accumulation and Projection in MoE), which induces expert specialization by directly manipulating expert output gradients rather than modifying the loss function. At each training step, GaP-MoE stochastically selects one of the $TopK$ routed experts as a leader based on normalized routing scores, and projects the gradients of the remaining follower experts onto the orthogonal complement of the subspace spanned by the leader's recent gradients. This removes directional overlap between expert gradients without altering the task loss, allowing specialization to emerge as a direct consequence of the optimization dynamics rather than an externally imposed constraint. We evaluate GaP-MoE in both fine-tuning settings (BERT-based, on GLUE) and from-scratch pretraining settings (GPT-2-based, on WikiText-103, enwik8, and text8), and further confirm its compatibility as a drop-in module for existing SMoE architectures. Experimental results show that GaP-MoE achieves performance comparable to or better than standard SMoE.",
+      "abstract_zh": "",
+      "authors": "Donghyun Jeong, Yoon-Yeong Kim",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29355",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "9c215ba5f27da3bea267f79e586295048963b3fe"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Compositional neural networks for multimodal X-ray and neutron scattering inversion",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29362v1 Announce Type: new Abstract: X-ray and neutron scattering are indispensable for structural characterization across condensed-matter physics and materials science. Yet, because scattering experiments generally record intensities without phase information, distinct structures can yield similar scattering patterns, rendering the corresponding inverse problems non-unique. This ambiguity can be reduced by combining complementary measurements, but their integration into machine-learning frameworks remains challenging. Here we introduce a modular framework for probabilistic multi-measurement analysis based on prior-amortized flow matching. Single-observation posterior estimators are trained separately for individual observation types or physical probes and combined only at inference time through a compositional sampler. This late fusion approach allows pretrained single-observation models to be reused without dedicated joint retraining. As a case in point, we consider reflectometry, which provides depth-resolved, nanometer-scale information about thin films and interfaces. Our single-observation demonstrations span X-ray, time-of-flight neutron and polarized neutron reflectometry. In separate co-refinement studies, task-matched estimators enable homogeneous composition across multiple neutron contrasts and heterogeneous multimodal composition of X-ray and neutron measurements. Together, these results establish compositional flow matching as a modular approach to uncertainty-aware inversion and co-refinement, with potential applicability to other scattering problems in which multiple observations constrain a common physical structure while retaining measurement-specific parameters.",
+      "abstract_zh": "",
+      "authors": "Valentin Munteanu, Alexander Hinderhofer, Dmitry Lapkin, Vladimir Starostin, Frank Schreiber",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29362",
+      "pdf_url": "",
+      "tags": [
+        "multimodal learning"
+      ],
+      "ai_tags": [
+        "multimodal learning"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "10675b55c1463cf77533dce7da7f4e480173f7cc"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Cascading Bandits with Noisy Observations: Algorithms and Regret Bounds",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29381v1 Announce Type: new Abstract: We propose a novel stochastic cascading bandit setup where probing an ordered shortlist of $K$ out of $L$ arms incurs position-dependent costs, and the learner observes only noisy feedback regarding each arm's true output. We identify a sub-class of noise models for which the optimal shortlist can be found by sorting arms according to a per-arm score: such a score exists for both selection and ordering when the channel has no false positives, and for ordering alone (but not selection) when measurements are costless; however in general neither selection nor ordering is separable once noise and cost are both present. For the case where both selection and ordering scores exist, we provide a UCB-based algorithm with $O((L-K)\\log T)$ instance-dependent regret over a time horizon $T$, which matches an algorithm-agnostic lower bound (up to constant factors). For the more challenging scenario where scores don't exist, we develop a new algorithmic template, DP-UCB, that embeds optimism directly inside an exact dynamic program, yielding $O\\big(LK\\log T\\big)$ regret. Finally, we validate our theoretical results through extensive numerical evaluations and simulations over both synthetic and real-world datasets.",
+      "abstract_zh": "",
+      "authors": "Yashaswini Kaluguri, Nikhil Karamchandani",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29381",
+      "pdf_url": "",
+      "tags": [
+        "EHR"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "EHR"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "361adb3103386bd578840684587535a2b7342535"
+    },
+    {
+      "source_name": "arXiv cs.LG",
+      "journal": "arXiv",
+      "title": "Nominate-then-Adjudicate: LLM-Assisted One-Pass and Per-Instance MIP Solver Tuning",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29391v1 Announce Type: new Abstract: Mixed-integer programming solvers expose hundreds or even thousands of parameters whose best setting varies per instance, yet per-instance search is prohibitively expensive. We frame this as configuration for heterogeneous Big Data optimization workloads and propose a nominate-then-adjudicate pipeline built around two design choices. First, a fixed portfolio is sampled once and reused across instances, removing per-instance configuration search at inference; on the evaluated families, the resulting shortlist retains substantial oracle headroom, making selection within it the empirical focus. Second, the fixed 20-feature representation can map structurally different instances to the same vector, preventing a feature-only selector from distinguishing them even when they prefer different configurations. The foundation model receives no task-specific weight updates, and selection is one-pass: one model call and no solver calls at inference. The study represents structural Variety through distinct formulation families and decision Value through solver-performance outcomes; the one-call, zero-solve protocol specifies the decision interface and leaves end-to-end latency unmeasured. Among comparisons exceeding a 20% practical-difference threshold, the complete adjudicator records 538 wins and 185 losses against the top nominee, while its win rate against the default rises from 84.9% to 90.2%. Against per-instance configuration baselines under a matched one-pass protocol it leads the cluster-level methods and the best-performing evaluated per-instance baseline, ISAC+.",
+      "abstract_zh": "",
+      "authors": "Yifan Zhao, Qianyang Zhao, Xinyu Guan, Kai Wei, Yuming Deng",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29391",
+      "pdf_url": "",
+      "tags": [
+        "LLM",
+        "foundation model"
+      ],
+      "ai_tags": [
+        "LLM",
+        "foundation model"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "3766b9e294bb304299562065bdeb0d6b270c7041"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "System-evolutionary view of RNA presence in living cells",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28697v1 Announce Type: new Abstract: Our guiding question for this article was: How did RNA adjust its life when the RNA world era came to an end? RNA has its practical execution side in the whole-cell systems setup serving critical functions in metabolism, compartmentalization, and in the RNA-DNA-Protein network, coupling information handling and different events of macromolecule production into a self-sustaining loop. Aligning with current views of cooperation we find that RNA life is distributed across a population of information-bearing entities persisting by compatibility, with DNA serving as a long-term memory and proteins offering the catalytic reach. We suggest that the reproduction-survival axis, relevant to higher organisms, is also manifested by RNA in many forms, including RNA-primers, mRNAs, tRNAs, and rRNAs. Each of these have contrasting, highly adapted molecular phenotypes. Ultimately, we wish to emphasize the evolutionary narrative where RNA did not lose in exchange for DNA genes or otherwise. Ultimately, RNA just changed strategy and in its various forms has an active and critically important presence in all cells at all times.",
+      "abstract_zh": "",
+      "authors": "Margareta Segerst\\r{a}hl (University of Jyv\\\"askyl\\\"a, Finland), Matti Jalasvuori (University of Jyv\\\"askyl\\\"a, Finland, PrecisionPhage Oy, Finland)",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28697",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "f56f16f470430242ac88f7ab3253d49bb2d719c8"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "An autoencoder outperforms two transformers on prediction of gene expression from chromatin accessibility",
+      "title_zh": "",
+      "abstract": "arXiv:2610.28853v1 Announce Type: new Abstract: Models that predict RNA abundance from chromatin accessibility are rarely compared under the same features, targets and metrics. We built one benchmark on 126,604 paired single-nucleus profiles from 19 human studies with a shared vocabulary of 50,000 peaks and 3,185 genes, ten 5x2 cross-validation folds and one scoring target, and compared seven implemented pipelines and two reference predictors across 70 trained runs; each pipeline keeps its own input normalisation and native training target. The scButterfly-B pipeline, built on dual variational autoencoders, outperformed every transformer pipeline, including an autoregressive Perceiver model (Omic Translator) and a support-free reformulation of Cisformer, on per-gene and within-cell Spearman correlation in all sixty paired fold comparisons, with 3.8 times shorter training. Transformer pipelines come within 0.02-0.04 on within-cell profile shape but lag by 0.10-0.24 on per-gene correlation. On two withheld cell types per-gene correlation is low; controls show the podocyte values are typical of within-type correlation for seen cell types of the same size, whereas Paneth values match a cell-agnostic shuffle for every Omic Translator arm. Within the transformer family, prespecified ablations show the Perceiver encoder was worth +0.0439 in within-donor per-gene correlation over full self-attention, a chromosome-aware genomic attention prior reduced it by 0.0096 (exact donor-level sign-flip test, Holm-adjusted p = 1.2e-4), and decoder output order had no detectable effect. A training-mean profile reaches 0.314 within-cell correlation with no input and a constant at the true expressed-gene positions reaches 0.996 per-gene correlation, so oracle-support protocols are reported only as diagnostics. Code, results and an audited release are provided.",
+      "abstract_zh": "",
+      "authors": "Jesse G. Meyer",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.28853",
+      "pdf_url": "",
+      "tags": [
+        "single-cell",
+        "transformer"
+      ],
+      "ai_tags": [
+        "transformer"
+      ],
+      "bio_tags": [
+        "single-cell"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "8cbfa3a0f7353aaa8b55331cad24d0d88f1f08a4"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Vagus nerve stimulation strengthens beta- and gamma-rate auditory steady-state responses in rat cortex",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29042v1 Announce Type: new Abstract: Background: Gamma entrainment using sensory stimulation (GENUS) is under study as a treatment for neurological disease, but cortical engagement is variable. Vagus nerve stimulation (VNS) modulates cortical state and sound-evoked beta-gamma activity, suggesting that it may strengthen responses to rhythmic sensory input. Objective: To determine whether VNS strengthens auditory steady-state responses across beta and gamma rates and whether the effect depends on cortical region and sensory drive. Methods: Electrocorticography (ECoG) was recorded from core and belt auditory cortex, insular auditory field (IAF), and anterior insular cortex (AIC) in seven isoflurane-anesthetized rats before and 90 min after initiation of 30-Hz cervical VNS. Responses to 500-ms click trains at 20 and 40 Hz were quantified using inter-trial phase clustering (ITPC), event-related spectral perturbation (ERSP), and debiased weighted phase-lag index (WPLI). Results: VNS increased click-evoked P1-N1 amplitude. During 40-Hz trains, 40-Hz ITPC and ERSP increased only in auditory core. During 20-Hz trains, 20-Hz ITPC increased in core, belt, and IAF, whereas ERSP increased only in core; 40-Hz harmonic responses increased only in core. AIC showed no change. Within auditory cortex, WPLI increased selectively at frequencies present in each click train and not in the alpha band. Conclusions: VNS strengthened beta- and gamma-rate stimulus-locked responses in auditory-driven cortex without globally increasing synchrony. VNS may therefore enhance auditory cortical target engagement during GENUS, although effects on disease pathology or clinical outcomes remain untested.",
+      "abstract_zh": "",
+      "authors": "Shinichi Kumagai, Tomoyo Isoguchi Shiramatsu, Karin Oshima, Yohei Ishishita, Kenji Ibayashi, Yoshiyuki Onuki, Naoto Kunii, Kensuke Kawai, Hirokazu Takahashi",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29042",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "ca1ab0af9e59e23517c38341598d724f6047907e"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Learning Epidemic Threshold Equations from Simulation: REEBLRA, an Interpretable Bayesian Classification Framework for Reproduction Numbers",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29399v1 Announce Type: new Abstract: The basic reproduction number, $R_0$, is central to infectious-disease modelling, yet analytic expressions can be difficult to derive for high-dimensional, nonlinear, or structurally complex models. We introduce REEBLRA ($R_0$ Equation Estimation using Bayesian Logistic Regression Algorithm), an interpretable framework that learns explicit surrogate equations for epidemic thresholds from parameter--response data. Rather than directly regressing $R_0$, REEBLRA estimates $\\Pr\\{R_0(\\boldsymbol\\theta)>c\\}$ for parameter vector $\\boldsymbol\\theta$ and threshold $c$. It provides a binary equation for classifying epidemic invasion ($R_0>1$) and successive threshold equations defining ordered brackets that approximate $R_0$, the expected number of secondary infections caused by a typical case in a fully susceptible population. The resulting equations support parameter screening, sensitivity interpretation, threshold classification, and exploratory analysis when analytic derivation is cumbersome. Bayesian logistic regression using standardized polynomial-like features and proper weakly informative priors yields regularized estimates, posterior uncertainty, and finite coefficients under complete or quasi-complete separation. We establish a mechanistic--surrogate concordance principle linking the full fitted-score gradient to the local gradient of $\\log R_0$ under explicit regularity and tangency assumptions, allowing conditional interpretation of threshold directions. Across seven analytic-label benchmarks associated with ODE models, including a 15-compartment five-group SIR system, five-fold binary AUC was 0.999--1.000 and ordered-bracket accuracy was 0.951--0.998. REEBLRA complements rather than replaces mechanistic derivations, bridging simulation, machine learning, and reproduction-number analysis. An accompanying Shiny app supports implementation.",
+      "abstract_zh": "",
+      "authors": "Jomar F. Rabajante, Norvin P. Bansilan, Maria Czarina T. Lagura-Arreza, Destiny SM. Lutero, Emerson R. Rico",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29399",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "071b5e99be1e83d71363286e33356d1731c82832"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Bayesian Comparison of Covid Origins Hypotheses",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29766v1 Announce Type: new Abstract: Applying standard Bayesian methods to the most reliably known unclassified facts about the Covid epidemic allows crude estimation of the odds for research-related vs. purely zoonotic origins. Here a broadly inclusive zoonotic hypothesis is compared with a rather specific subset of the research-related hypothesis defined by known prior work and grant proposals. The important observations are the type of virus, the city of the first outbreak, the lack of known prior hosts, the anomalous early pattern of evolution, and two specific features of the viral sequence. The resulting odds strongly favor research. The odds remain fairly strong under inclusion of uncertainties in prior odds.",
+      "abstract_zh": "",
+      "authors": "Michael B. Weissman",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29766",
+      "pdf_url": "",
+      "tags": [
+        "epidemiology",
+        "infectious disease"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "epidemiology"
+      ],
+      "disease_tags": [
+        "infectious disease"
+      ],
+      "is_preprint": 1,
+      "id": "47a3951a87b286e8f32df1584732ccb9b62d210b"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Unlocking the Full Potential of Taylor Dispersion Analysis Through Advanced Detection",
+      "title_zh": "",
+      "abstract": "arXiv:2610.30039v1 Announce Type: new Abstract: Today, pharmaceutical sciences rely on a wide range of innovative therapeutics of varying sizes: nanoparticles, proteins, antibodies, and nanocarriers for drug delivery. Measuring their size is one of the crucial parameters in their characterization, to ensure drug safety, stability, and effectiveness. Over the past two decades, Taylor Dispersion Analysis has emerged as an important sizing method. Its scope of application is perfectly suited to the sizes of these therapeutics. By design, it can be coupled with a wide range of detectors, and extensive research has been conducted in this field. In this review, we will present an overview of the studies conducted, and discuss how the application drives the choice of one detector or another (size measurement, aggregation studies, interaction studies, and other analyses, performed in both simple biological buffers and in more complex media, particularly serum) and makes Taylor Dispersion Analysis a highly versatile tool.",
+      "abstract_zh": "",
+      "authors": "Rami Laoufi (TechSep), Agn\\`es Hag\\`ege (TechSep)",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.30039",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "cdd0fa8818671cb2d55a2365dfa2c9369d790e61"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "QUBO-Based Conformer Selection with Quantum-Classical Hybrid Optimization for Multiconformer Ligand Modeling",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29058v1 Announce Type: cross Abstract: A ligand can adopt multiple conformations within the same binding site, and these conformations can interact differently with the surrounding protein. Multiconformer modeling must therefore determine which candidate conformations to retain and what occupancies to assign to them. An established automated approach uses mixed-integer quadratic programming (MIQP) with hard occupancy and conformer-count limits for this selection. Here, we reformulated conformer selection as a quadratic unconstrained binary optimization (QUBO) problem with finite penalties and discrete occupancies. We solved the QUBO using a quantum-classical hybrid solver. We compared this workflow with the MIQP-based qFit-ligand workflow across 83 paired X-ray ligand entries using the same experimental inputs and the same qFit-ligand processing protocol. For each entry, both final models were evaluated against the same composite-omit map generated from the common input structure before the two workflows diverged. Quantum-qFit produced higher ligand-region real-space correlation coefficients (RSCC) in 62 entries 74.7% and lower occupancy-weighted torsional strain in 66 entries 79.5%. Similar directional trends remained in the 28 entries with matched final conformer counts. The molecular Electron Density for Individual Atoms score (EDIAm) decreased in most entries. This result shows that higher regional map agreement did not necessarily correspond to stronger atom-level density support. Overall, the results show that the conformer-selection formulation can change which ligand states are represented from the same experimental data and provide a QUBO framework for studying multiconformer ligand selection.",
+      "abstract_zh": "",
+      "authors": "Jiyun Lee, Haeseong Kim, Junho Lee, Joonsuk Huh",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29058",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "8826733cf55a3fb2cfaf944839d98c08e3942f2a"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Bio-Inspired Auditory Processing: Coupling Parallel Resonate-and-Fire Dynamics with Ternary Recurrent Networks for Speech Recognition",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29720v1 Announce Type: cross Abstract: Spiking Neural Networks (SNNs) promise energy-efficient inference through sparse, event-driven computation, yet remain constrained on continuous, context-dependent tasks such as automatic speech recognition (ASR). A key bottleneck is the Leaky Integrate-and-Fire (LIF) neuron, whose membrane decay erases information across pauses and phonetic boundaries while it must both extract features and retain long-range context. Inspired by cortical separation of nonlinear filtering and somatic integration, we introduce the Spiking Ternary GRU (stGRU): a ternary-weight gated recurrent unit performs temporal filtering, while downstream Resonate-and-Fire (RF) neurons generate the binary spike stream driving the next block's event pathway. This makes binary event transmission a native training constraint rather than a separate deployment-time activation quantization step; together with ternary weights, learned projections avoid dense floating-point matrix MACs. Trained end-to-end on LibriSpeech-960, Small, Medium, and Large stGRUs reach 8.09%, 7.04%, and $6.44 \\pm 0.17\\%$ WER on test-clean without an external language model. To our knowledge, these are the first matrix-MAC-free spiking networks without a learned ANN sequence decoder to achieve single-digit WER on LibriSpeech. The architecture also achieves 10.88% test CER on Aishell-1 (9.28% on dev) when trained from scratch. Internally, trained networks develop a depth-graded hierarchy: shallow layers act as fast acoustic filters, while deep layers form slower semantic integrators whose latent representations segregate into part-of-speech manifolds and word-level spike events. Deep-layer firing rates follow lognormal distributions with a sparsity gradient, mirroring hierarchical processing observed in human cortex in vivo. Our biologically grounded architecture combines competitive ASR with favorable modeled compute and memory cost.",
+      "abstract_zh": "",
+      "authors": "Pavlos Poulos, Katelyn Sadorf, Themos Stafylakis, Costas A. Anastassiou",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29720",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "24de11774fb1f253f50c006f330fd89f8c51649a"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Phenotype-structured nonlocal aggregation models I: signal production and response",
+      "title_zh": "",
+      "abstract": "arXiv:2610.29884v1 Announce Type: cross Abstract: Individuals within a cellular or ecological population can exhibit substantial variation in their traits or phenotype. Such heterogeneity can fundamentally alter population-level behaviour, including the ability to aggregate and form spatial patterns. We investigate these effects by extending nonlocal aggregation models, widely used to model cell--cell adhesion and collective animal movement, to incorporate phenotype structure. We characterise how heterogeneity and switching between phenotypes affect whether patterns form, how phenotypes are distributed within them, and whether they are stationary or exhibit spatio-temporal oscillations. We show that pattern formation is promoted when phenotypes that produce stronger interaction signals also respond more strongly to them, whereas specialisation towards either signal production or response inhibits pattern formation. Increasing rates of switching between phenotypes dampen these effects. Heterogeneity can also enable weakly interacting, and even repulsive, individuals to pattern as part of the collective. Furthermore, movement in phenotype and physical space can interact to restructure patterns and generate spatio-temporal oscillations. A further key message of this study is the value of considering both discrete $N$-phenotype and continuous phenotype formulations. We develop both in parallel, demonstrating formal correspondences, but also advantages to each framework in terms of mathematical analyses and interpretability.",
+      "abstract_zh": "",
+      "authors": "Thomas Jun Jewell, Andrew L. Krause, Philip K. Maini, Eamonn A. Gaffney",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.29884",
+      "pdf_url": "",
+      "tags": [
+        "explainable AI"
+      ],
+      "ai_tags": [
+        "explainable AI"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "e3540568346e880589abfe158ae2f55302dc264a"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Interpretable Embeddings of Speech Enhance and Explain Brain Encoding Performance of Audio Models",
+      "title_zh": "",
+      "abstract": "arXiv:2507.16080v3 Announce Type: replace Abstract: Speech foundation models (SFMs) are increasingly hailed as powerful computational models of human speech perception. However, since their representations are inherently black-box, it remains unclear what drives their alignment with brain responses. To remedy this, we built linear encoding models from six interpretable feature families: mel-spectrogram, Gabor filter bank features, speech presence, phonetic, syntactic, and semantic features, and contextualized embeddings from three state-of-the-art SFMs (Whisper, HuBERT, WavLM), quantifying electrocorticography (ECoG) response variance shared between feature classes. Variance-partitioning analyses revealed several key insights: First, the SFMs' alignment with the brain can be mostly explained by their ability to learn and encode simple interpretable speech features. Second, SFMs exhibit a systematic trade-off between encoding of brain-relevant low-level and high-level features across layers. Finally, our results show that SFMs learn brain-relevant semantics which cannot be explained by lower-level speech features, with this capacity increasing with model size and context length. Together, our findings suggest a principled approach to build more interpretable, accurate, and efficient encoding models of the brain by augmenting SFM embeddings with interpretable features.",
+      "abstract_zh": "",
+      "authors": "Riki Shimizu, Richard J. Antonello, Chandan Singh, Nima Mesgarani",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2507.16080",
+      "pdf_url": "",
+      "tags": [
+        "foundation model"
+      ],
+      "ai_tags": [
+        "foundation model"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "4a99189aaeb1cf2d4fdcc8748c3faca232a2041e"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Can synthetic data reproduce real-world findings in epidemiology? A replication study using adversarial random forests",
+      "title_zh": "",
+      "abstract": "arXiv:2508.14936v4 Announce Type: replace Abstract: Synthetic data hold substantial potential to address practical challenges in epidemiology due to restricted data access and privacy concerns. However, many current methods suffer from limited quality, high computational demands, and complexity for non-experts. Furthermore, common evaluation strategies for synthetic data often fail to directly reflect statistical utility and measure privacy risks sufficiently. Against this background, a critical underexplored question is whether synthetic data can reliably reproduce key findings from epidemiological research while preserving privacy. We propose adversarial random forests (ARF) as an efficient and convenient method for synthesizing tabular epidemiological data. To evaluate its performance, we replicated statistical analyses from six epidemiological publications covering blood pressure, anthropometry, myocardial infarction, accelerometry, loneliness, and diabetes, from the German National Cohort (NAKO Gesundheitsstudie), the Bremen STEMI Registry U45 Study, and the Guelph Family Health Study. We further assessed how dataset dimensionality and variable complexity affect the quality of synthetic data, and contextualized ARF's performance by comparison with commonly used tabular data synthesizers in terms of utility, privacy, generalization, and runtime. Across all replicated studies, results on ARF-generated synthetic data consistently aligned with original findings. Even for datasets with relatively low sample size-to-dimensionality ratios, replication outcomes closely matched the original results across descriptive and inferential analyses. Reduced dimensionality and variable complexity further enhanced synthesis quality. ARF demonstrated favourable performance regarding utility, privacy preservation, and generalization relative to other synthesizers and superior computational efficiency.",
+      "abstract_zh": "",
+      "authors": "Jan Kapar, Kathrin G\\\"unther, Lori Ann Vallis, Klaus Berger, Nadine Binder, Hermann Brenner, Stefanie Castell, Beate Fischer, Volker Harth, Bernd Holleczek, Timm Intemann, Till Ittermann, Andr\\'e Karch, Thomas Keil, Lilian Krist, Berit Lange, Michael F. Leitzmann, Katharina Nimptsch, Nadia Obi, Iris Pigeot, Tobias Pischon, Tamara Schikowski, B\\\"orge Schmidt, Carsten Oliver Schmidt, Anja M. Sedlmair, Justine Tanoey, Harm Wienbergen, Andreas Wienke, Claudia Wigmann, Marvin N. Wright",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2508.14936",
+      "pdf_url": "",
+      "tags": [
+        "cardiovascular",
+        "diabetes",
+        "epidemiology"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "epidemiology"
+      ],
+      "disease_tags": [
+        "cardiovascular",
+        "diabetes"
+      ],
+      "is_preprint": 1,
+      "id": "6524e321fae4fb2089930030c8fd2a1490f8d00e"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Bootstrapping Life-Inspired Machine Intelligence: The Biological Route from Chemistry to Cognition and Creativity",
+      "title_zh": "",
+      "abstract": "arXiv:2602.08079v3 Announce Type: replace Abstract: Achieving advanced machine intelligence remains a central challenge in AI research, often approached through scaling neural architectures and generative models. However, biological systems offer a broader repertoire of strategies for adaptive, goal-directed behavior - strategies that emerged long before nervous systems evolved. This paper advocates a genuinely life-inspired approach to machine intelligence, drawing on principles from biology that enable robustness, autonomy, and open-ended problem-solving across scales. We frame intelligence as flexible problem-solving, following William James, and develop the concept of \"cognitive light cones\" to characterize the continuum of intelligence in living systems and machines. We argue that biological evolution has discovered a scalable recipe for intelligence - and the progressive expansion of organisms' \"cognitive light cone\", predictive and control capacities. To explain how this is possible, we distill five design principles - multiscale autonomy, growth through self-assemblage of active components, continuous reconstruction of capabilities, exploitation of physical and embodied constraints, and pervasive signaling enabling self-organization and top-down control from goals - that underpin life's ability to navigate creatively diverse problem spaces. We discuss how these principles contrast with current AI paradigms and outline pathways for integrating them into future autonomous, embodied, and resilient artificial systems.",
+      "abstract_zh": "",
+      "authors": "Giovanni Pezzulo, Michael Levin",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2602.08079",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "acb8a6a321afcec08165f76792a53a00c89389b9"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Predictive and feedback signals differently shape the formation of language representations",
+      "title_zh": "",
+      "abstract": "arXiv:2605.09409v2 Announce Type: replace Abstract: Adults vary greatly in how effectively they learn a new language, but the signals driving the learning processes and individual differences remain unclear. Over seven days, we tracked behavioral learning and collected fMRI data on day 1 from 102 adults as they learned an artificial language with corrective feedback. We trained matched transformer models to predict upcoming linguistic elements, learn grammaticality from corrective supervision or reinforcement-like reward signals in the feedback, and compared their internal representations with human brain activity. Representations derived from the prediction-focused model accounted for the largest share of unique neural variance at the group level, despite the human task being feedback-based. Across model-training stages, alignment between the predictive model and neural representations shifted from sensory to higher-order language and associative networks, indicating a model abstraction process. Conversely, neural patterns related to the feedback model were most useful for predicting individuals' future generalization outcomes on Day 7. Reward signals did not significantly account for learning variance of either type. These findings support a multi-signal model of adult language learning, in which prediction shapes a common neural learning architecture across learners, whereas feedback-related mechanisms better explain individual differences over time.",
+      "abstract_zh": "",
+      "authors": "Shuguang Yang, Shaoyun Yu, Xin Jiang, Suiping Wang, Gangyi Feng",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2605.09409",
+      "pdf_url": "",
+      "tags": [
+        "transformer"
+      ],
+      "ai_tags": [
+        "transformer"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "e0fb9abbcd29b10be1a793a5a5d5894ea335e65f"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Pushing Biomolecular Utility-Diversity Frontiers with Supergroup Relative Policy Optimization",
+      "title_zh": "",
+      "abstract": "arXiv:2605.08659v4 Announce Type: replace-cross Abstract: Biomolecular generators are often adapted with reward feedback to improve task-specific utility, but pushing utility alone can concentrate generation on a narrow family of candidates. Maintaining diversity is difficult because sample diversity is a set-level property. We introduce Supergroup Relative Policy Optimization (SGRPO), a flexible GRPO-style framework that directly constructs rewards from set-level diversity. For each condition, SGRPO samples a supergroup of candidate sets, compares their diversity under the same condition, and redistributes the group diversity reward to individual rollouts through leave-one-out diversity contributions before combining it with rollout-level utility. This design decouples SGRPO from a particular generator, utility reward, or diversity metric, and allows instantiation with different GRPO-style approaches. We evaluate SGRPO on three main settings: de novo small-molecule design, pocket-based small-molecule design, and de novo protein design, instantiating it with both GRPO and Coupled-GRPO across autoregressive and discrete diffusion generators. Across decoding sweeps, SGRPO expands the utility-diversity Pareto frontier and achieves the best frontier-level metrics relative to baselines. Our analyses further show that direct set-level diversity rewards remain effective with small groups and help preserve broader generation-distribution coverage during post-training. The code is available at https://github.com/IDEA-XL/SGRPO.",
+      "abstract_zh": "",
+      "authors": "Xinwu Ye, He Cao, Hao Li, Bin Feng, Zijing Liu, Xiangru Tang, Yu Li, Shenghua Gao",
+      "published_date": "2026-10-22",
+      "updated_date": "2026-10-22",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2605.08659",
+      "pdf_url": "",
+      "tags": [
+        "protein design"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "protein design"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "5200395fc5d506ba9e9c9c59f226b194f5a0d270"
+    },
     {
       "source_name": "arXiv q-bio",
       "journal": "arXiv",
@@ -401,6 +2055,256 @@
       "disease_tags": [],
       "is_preprint": 1,
       "id": "272afeb527cc59d6eecdd5356a6e5ad99d928045"
+    },
+    {
+      "source_name": "Nature Medicine",
+      "journal": "Nature Medicine",
+      "title": "Editorial Expression of Concern: Oncogenic transformation of diverse gastrointestinal tissues in primary organoid culture",
+      "title_zh": "",
+      "abstract": "Nature Medicine, Published online: 21 October 2026; doi:10.1038/s41591-026-04749-0 Editorial Expression of Concern: Oncogenic transformation of diverse gastrointestinal tissues in primary organoid culture",
+      "abstract_zh": "",
+      "authors": "Xingnan Li, Lincoln Nadauld, Akifumi Ootani, David C. Corney, Reetesh K. Pai, Olivier Gevaert, Michael A. Cantrell, Paul G. Rack, James T. Neal, Carol W-M Chan, Trevor Yeung, Xue Gong, Jenny Yuan, Julie Wilhelmy, Sylvie Robine, Laura D. Attardi, Sylvia K. Plevritis, Kenneth E. Hung, Chang-Zheng Chen, Hanlee P. Ji, Calvin J. Kuo",
+      "published_date": "2026-10-21",
+      "updated_date": "2026-10-22",
+      "article_type": "Article",
+      "doi": "10.1038/s41591-026-04749-0",
+      "url": "https://www.nature.com/articles/s41591-026-04749-0",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "751007f7020d99e76b20d3b47707ad01b35d1b9a"
+    },
+    {
+      "source_name": "Nature Medicine",
+      "journal": "Nature Medicine",
+      "title": "The need for resilience in global vaccination programs",
+      "title_zh": "",
+      "abstract": "Nature Medicine, Published online: 21 October 2026; doi:10.1038/s41591-026-04690-2 New studies of trends in the global burden of measles and pertussis offer a reminder of how much vaccination has achieved and a warning of the need to build more resilient and sustainable vaccination programs.",
+      "abstract_zh": "",
+      "authors": "Amy K. Winter, Matthew J. Ferrari",
+      "published_date": "2026-10-21",
+      "updated_date": "2026-10-22",
+      "article_type": "Article",
+      "doi": "10.1038/s41591-026-04690-2",
+      "url": "https://www.nature.com/articles/s41591-026-04690-2",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "b4aa6f3967f861d443da302545ea4e3bd7d5224b"
+    },
+    {
+      "source_name": "Nature Medicine",
+      "journal": "Nature Medicine",
+      "title": "Author Correction: Povorcitinib for hidradenitis suppurativa: the randomized, double-blind, placebo-controlled STOP-HS1 and STOP-HS2 phase 3 trials",
+      "title_zh": "",
+      "abstract": "Nature Medicine, Published online: 21 October 2026; doi:10.1038/s41591-026-04747-2 Author Correction: Povorcitinib for hidradenitis suppurativa: the randomized, double-blind, placebo-controlled STOP-HS1 and STOP-HS2 phase 3 trials",
+      "abstract_zh": "",
+      "authors": "Martina L. Porter, Antonio Martorell, Christopher J. Sayed, Falk G. Bechara, Hadar Lev-Tov, Jennifer L. Hsiao, John W. Frew, Ziad Reguiaï, Melinda J. Gooderham, Noah Goldfarb, Hessel H. van der Zee, Veronique del Marmol, Angelo V. Marzano, Benjamin D. Ehst, Lindsay S. Ackerman, Koremasa Hayama, Chenwei Tian, Jennifer Kelley, Huiling Zhen, Joslyn S. Kirby, Kurt Brown, Leandro L. Santos, Christos C. Zouboulis",
+      "published_date": "2026-10-21",
+      "updated_date": "2026-10-22",
+      "article_type": "Article",
+      "doi": "10.1038/s41591-026-04747-2",
+      "url": "https://www.nature.com/articles/s41591-026-04747-2",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "cc333faa5000ec6554657553cb46b2409f3739f6"
+    },
+    {
+      "source_name": "Nature Medicine",
+      "journal": "Nature Medicine",
+      "title": "Global, regional and national burden of pertussis in 1990–2023: a Global Burden of Disease study",
+      "title_zh": "",
+      "abstract": "Nature Medicine, Published online: 21 October 2026; doi:10.1038/s41591-026-04660-8 Updates to the Global Burden of Disease study showed that while global trends in pertussis (whooping cough) declined from 1990 to 2023, the rebound in incidence and mortality since 2020, particularly in high-income regions, reflects stalled vaccination progress worldwide.",
+      "abstract_zh": "",
+      "authors": "Jonathan F. Mosser, Jue Liu, Qiao Liu, Sijia Wang, Noga Shalev, Ashley A. Harris, Stephanie A. Price, Tuhina Srivastava, Ishu Poudyal, Benn Sartorius, Hasan Aalruz, Sherief Abd-Elsalam, Habtamu Abebe Getahun, Armita Abedi, Olifan Zewdie Abil, Richard Gyan Aboagye, Amr Selim Abu Lila, Aishah Fadila Adamu, Muhammad Sohail Afzal, Saira Afzal, Sajjad Ahmad, Suleiman Idris Ahmad, Tauseef Ahmad, Ayman Ahmed, Jahanzaib Mian Ahmed, Kenni Wojujutari Ajele, Oluwasefunmi Akeju, Akil Akhtar, Karolina Akinosoglou, Damilare Michael Akintunde, Hammad Akram, Tariq Al Zoubi, Yazan Al-Ajlouni, Muath A. Alammar, Mohammad T. AlBataineh, Ali M. Alfalki, Mohammad Daud Ali, Shahid Ali, Montaha Al-Iede, Hamid Alinejad Rokny, Morteza Alipour, Hazim Alkousheh, Sabah Al-Marwani, Joseph Uy Almazan, Ahmad Rajeh Al-Qudimat, Najim Z. Alshahrani, Ali Salman Al-Shami, Awais Altaf, Jaffar A. Al-Tawfiq, Nelson Alvis-Guzman, Hany Aly, Raed M. Al-Zoubi, Isha Amatya, Saeed Amini, Bibin Gnanadhason Anand, Abhishek Anil, Aisha Ansari, Saeid Anvari, Razique Anwer, Jalal Arabloo, Mosab Arafat, Demelash Areda, Muhammad Shahzad Aslam, Seyyed Shamsadin Athari, Lemessa Assefa A. Ayana, Habtamu Molla Ayele, Damilola Jeremiah Ayowole, Maciej Banach, Hiba Jawdat Barqawi, Mohammad-Mahdi Bastan, Narasimha M. Beeraka, Payam Behzadi, Desalegn Weldebrhan Bekru, Alemu Gedefie Belete, Pankaj Bhardwaj, Priyadarshini Bhattacharjee, Trupti Bodhare, Colin Stewart Brown, Jefferson Antonio Antonio Buendia Buendia, Yasser Bustanji, Zahid A. Butt, Felix Carvalho, Rama Mohan Chandika, Vijay Kumar Chattu, Anis Ahmad Chaudhary, Akhilanand Chaurasia, Haiyan Chen, Patrick R. Ching, Devasahayam J. Christopher, Dinh-Toi Chu, Haley Marie Cionfolo, Omid Dadras, Xiaochen Dai, Lalit Dandona, Rakhi Dandona, Samuel Demissie Darcho, Nihar Ranjan Dash, Fernando Pio De la Hoz, Rodrigo DeAntonio, Sindhura Deekonda, Anteneh Assefa Desalegn, Vinoth Gnana Chellaiyan Devanbu, Devananda Devegowda, Premnath Dhanaraj, Giuseppe Di Martino, Marcello Di Pumpo, Sadia Din, Ojas Prakashbhai Doshi, Robert Kokou Dowou, Oyewole Christopher Durojaiye, Siddhartha Dutta, Ferry Efendi, El-Sayed Hemdan Eissa, Muhammed Elhadi, Chadi Eltaha, Abdelgawad Salah Eltahawy, Reham Mokhtar ELTarabili, Majid Eslami, Aisha Farhana, Alireza Feizkhah, Getahun Fetensa, Tommaso Filippini, Claudio Fiorilla, Florian Fischer, Celia Fortuna Rodrigues, Márió Gajdács, Rupesh K. Gautam, Nsikakabasi Samuel George, Manal Hadi Ghaffoori Kanaan, Ramy Mohamed Ghazy, Syed Abdullah Gilani, Gamze Gökulu, Mahaveer Golechha, Davide Golinelli, Sapna Gupta, Ramtin Hajibeygi, Raz Mohammed Hama Salih, Samer Hamidi, Zitta Barrella Harboe, Arief Hargono, Sara Harsini, Mehdi Hoseinzadeh, Md Sabbir Hossain, Segun Emmanuel Ibitoye, Adalia Ikiroma, Olayinka Stephen Ilesanmi, Irena M. Ilic, Milena D. Ilic, Mustafa Alhaji Isa, Mihajlo Jakovljevic, Reza Jalilzadeh Yengejeh, Esmaeil Jarrahi, Gwang Hun Jeong, Nabi Jomehzadeh, Nitin Joseph, Dler Hussein Kadir, Oleksandr Kamyshnyi, Kehinde Kazeem Kanmodi, S. Suthanthira Kannan, Tomasz M. Karpiński, Awoke Amare Kebede, Himanshu Khajuria, Mehdi Khezeli, Pavan Khosla, Fireza Husnul Khotimah, Azhin Mohammed Khudhur, Grace Kim, Min Seo Kim, Shivakumar KM Kondlahalli, Farzad Kompani, Kewal Krishan, Claudia E. Kuehni, Mukhtar Kulimbet, Dewesh Kumar, G. Anil Kumar, Kamal Kumar, Pradeep Kumar, Ville Kytö, Yemane Leake, Hoi Leong Lee, Hwamin Lee, Sergey Vadimovich Lee, Seung Won Lee, Si Li, José Francisco López-Gil, Peng Luo, Ellina Lytvyak, Nozad Hussein Mahmood, Shima Mahmoudi, Ghaseb Naser Makhadmeh, Tabarak Malik, Aseer Manilal, Hossein Masoumi-Asl, Fernanda Penido Matozinhos, Michelangelo Mercogliano, Rahwa Adisu Mesfin, Tomislav Mestrovic, Nouh Saad Mohamed, Mohammad Reza Mohammadi, Mokhtar Mohammadi, Hassen Mohammed, Yahaya Mohammed, Ali H. Mokdad, Lorenzo Monasta, Rohith Motappa, Sumaira Mubarik, Scherko Hama Law Murad, Christopher J. L. Murray, Sani Musa, Ghulam Mustafa, Zuhair S. Natto, Biswa Prakash Nayak, Javad Nazari, Cuong Tat Nguyen, Duy Cao Nguyen, Trang Nguyen, Afewerki Tesfahunegn Nigusse, Tewodros Mulugeta Nigussie, Vikram Niranjan, Ali Aahil Noorali, Chisom Adaobi Nri-Ezedi, Fred Nugen, Akinyemi O. D. Ofakunrin, Anthony Jide Ogunbadewa, Osaretin Christabel Okonji, Vivian N. Onaemo, Aksoltan Shyhdurdyevna Oradova, Verner N. Orish, Amel Ouyahia, P. A. Mahesh, Chulwoo Park, Satyananda Patel, Mohamed Anas Patni, Iuliia Pavlova, Jarmila Pekarcikova, Flavia Pennisi, Gladymar Perez Chacon, Dimitri Poddighe, Roman V. Polibin, Michal Pruc, Xiang Qi, Yashpal Singh Raghav, Fakher Rahim, Mosiur Rahman, Hakim Rahmoune, Mahmoud Mohammed Ramadan, Shakthi Kumaran Ramasamy, Nemanja Rancic, Ashkan Rasouli-Saravani, Salman Rawaf, Karthik Rayapureddi, Elrashdy M. Redwan, Ateeq Rehman, Bhagwan Narayan Rekadwad, Luis Felipe Reyes, Nazila Rezaei, Omid Rezahosseini, Tércia Moreira Ribeiro da Silva, Luca Ronfani, Allen Guy Patrick Ross, Salvatore Rubino, Khaled Saad, Cameron John Sabet, Muhammad Nabeel Saddique, Umar Saeed, Mehdi Safari, Ali Safdari, Amene Saghazadeh, Indranil Saha, Fatemeh Saheb Sharif-Askari, Amirhossein Sahebkar, Durgesh Prasad Sahoo, Nasir Salam, Afeez Abolarinwa Salami, Mohd Saleem, Mohamed A. Saleh, Aswini Saravanan, Murtaja Satea, Chandrabose Selvaraj, Muhammad Ashir Shafique, Sajid Ali Shah, Syed Ali Raza Shah, Syed Monowar Alam Shahid, Endrit Shahini, Sunder Sham, Mohammed Shannawaz, Bereket Beyene Shashamo, Samendra P. Sherchan, Shirindokht Shirazi, Aminu Shittu, Seyed Afshin Shorofi, Jasvinder A. Singh, Shilpy Singh, Surjit Singh, Abhijeet Prasad Sinha, Robert Sinto, Vipul Srivastava, Chandan Kumar Swain, Seyyed Mohammad Tabatabaei, Zanan Mohammed-Ameen Taha, Jabeen Taiba, Mengistie Kassahun Tariku, Mohamad-Hani Temsah, Sagar Tiwari, Madi Tleshev, Giacomo Pietro Vigezzi, Tuan Vinh, Linh Vu, Agnes Wamuyu Wamai, Shimels Getaneh Weldemedhn, Nuwan Darshana Wickramasinghe, Phoebe Catherine May Williams, Sajad Yaghoubi, Galal Yahya, Natsuhiko Yamada, Dong Keon Yon, Mubashir Zafar, Fathiah Zakham, Heather J. Zar, Seema Zargar, Mohammed G. M. Zeariya, Haijun Zhang, Xiyu Zhang, Zhi-Jiang Zhang, Simon I. Hay, Jonathan F. Mosser, Jue Liu",
+      "published_date": "2026-10-21",
+      "updated_date": "2026-10-22",
+      "article_type": "Article",
+      "doi": "10.1038/s41591-026-04660-8",
+      "url": "https://www.nature.com/articles/s41591-026-04660-8",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "6f5e19bf69e0bf344973fb53d911a35216298c5c"
+    },
+    {
+      "source_name": "Nature Medicine",
+      "journal": "Nature Medicine",
+      "title": "Global and regional burden of measles and vaccine coverage among children under 5 years, 1990−2023: a Global Burden of Disease Study",
+      "title_zh": "",
+      "abstract": "Nature Medicine, Published online: 21 October 2026; doi:10.1038/s41591-026-04661-7 Updates to the Global Burden of Disease Study showed that although global measles incidence and mortality had declined in 1990−2019, its resurgence since 2020 reflects stalled vaccination progress worldwide.",
+      "abstract_zh": "",
+      "authors": "Benn Sartorius, Noga Shalev, Ishu Poudyal, Tuhina Srivastava, Samuel Byrne, Emily Haeuser, Bhoomadevi A, Hasan Aalruz, Nadin M. I. Abdel Razeq, Sherief Abd-Elsalam, Wakgari Mosisa Abdisa, Jeza Muhamad Abdul Aziz, Adam Abdullahi, Meklit Girma Abebe, Habtamu Abebe Getahun, Olifan Zewdie Abil, Olumide Abiodun, Richard Gyan Aboagye, Shimaa M. Aboelnaga, Hassan Abolhassani, Abdullahi Tunde Aborode, Khaled M. Aboshanab, Rana Kamal Abu-Farha, Sawsan Abuhammad, Swetha Acharya, Lisa C. Adams, Aishah Fadila Adamu, Babatope Oluwadamilare Adebiyi, Ayo Stephen Adebowale, Oyelola A. Adegboye, Franklin Akwasi Adjei, Qorinah Estiningtyas Sakilah Adnani, Aanuoluwapo Adeyimika Afolabi, Muhammad Sohail Afzal, Saira Afzal, Gizachew Beykaso Agafari, Percival Delali Agordoh, Salome Wumpini Agordoh, Abdul Momin Rizwan Ahmad, Khabir Ahmad, Munir Ahmad, Tauseef Ahmad, Ayman Ahmed, Gasha Salih Ahmed, Meqdad Saleh Ahmed, Mohamed Mustaf Mustaf Ahmed, Mushood Ahmed, Shahzaib Ahmed, Shakeel Ahmed, Dolapo Emmanuel Ajala, Damola Olanipekun Ajisafe, Olukunmi Olatunji Akanni, Oluwasefunmi Akeju, Akil Akhtar, Muhammad Nadeem Akhtar, Karolina Akinosoglou, Damilare Michael Akintunde, Salah Al Awaidy, Ahmed Dawood Al Mahrizi, Mohammad Khaled Al Nawayseh, Yazan Al Thaher, Yasser M. A. A. Al-Shawki, Muath A. Alammar, Amani N. Alansari, Mohammad T. Albataineh, Embay Amare Alemseged, Bekalu Kassie Alemu, Ali M. Alfalki, Abdullah Algaissi, Mohammed Ridha Algethami, Amidu Alhassan, Abid Ali, Inayat Ali, Kamran Ali, Mohammad Daud Ali, Mohammed Usman Ali, Syed Shujait Ali, Mamman Aliyu Na’uzo, Alaa A. A. Aljabali, Hazim Alkousheh, Khaled S. Allemailem, Wesam Taher Almagharbeh, Ahmad Abdulaziz Almatroudi, Joseph Uy Almazan, Mohmmad Minwer Alnaeem, Khaldoon Aied Alnawafleh, Rami H. Al-Rifai, Anas Alsalhani, Najim Z. Alshahrani, Ali Salman Al-Shami, Abdalkarem Fedgash Alsharari, Awais Altaf, Khalid A. Altirkawi, Hany Aly, Mohammad Sharif Ibrahim Alyahya, Raed M. Al-Zoubi, Isha Amatya, Tarek Tawfik Amin, Emanuele Amodio, Kazeem Olanrewaju Olanrewaju Amoo, Abhishek Anil, A. H. Sruthi Anil Kumar, Abdul-Azeez Adeyemi Anjorin, Boluwatife Stephen Anuoluwa, Iyadunni Adesola Anuoluwa, Palwasha Anwari, Razique Anwer, Aleksandr Y. Aravkin, Demelash Areda, Jesu Arockiaraj, Mahwish Arooj, Nurila Aryntayeva, Syed Mohammed Basheeruddin Asdaq, Muhammad Sohaib Asghar, Bernard Kwadwo Yeboah Asiamah-Asare, Olamide Asifat, Moses Asiimwe, Muhammad Shahzad Aslam, Omer Atac, Julie Alaere Atta, Matteo Augello, Zaw Zaw Aung, Euripide Frinel Gbenato Arthur Avokpaho, Sana Javaid Awan, Andargie Abate Awoke, Habtamu Molla Ayele, AKM Azad, Ayman Azhary, Ahmed Y. Azzam, Djibril M. Ba, Valentina Baccolini, Nayereh Baghcheghi, Atif Amin Baig, Ahmed Hassan Bakheit, Marina Balabekova, Wondu Feyisa Feyisa Balcha, Samuel Alemu Bamboro, Ruwanthi Panchali Bandara, Biswajit Banik, Dennis Bardoe, Hiba Jawdat Barqawi, Mohsen Basiri, Quique Bassat, Shazia Batool, Narasimha M. Beeraka, Muhammad Bashir Bello, Apostolos Beloukas, Aliyi Daba Benti, Kenechukwu C. Ben-Umeh, Arushee Bhatnagar, Priyadarshini Bhattacharjee, Jasvinder Singh Bhatti, Md Mehedi Hasan Bhuiyan, Noman Bin Bin Abid, Haftom Birhane, Bijit Biswas, Deepayan Biswas, Monirujjaman Biswas, Trupti Bodhare, Michael Eric Bryan, Felix Busch, Yasser Bustanji, Nadeem Shafique Butt, Zahid A. Butt, Andrea Carugno, Felix Carvalho, Muthia Cenderadewi, Sandip Chakraborty, Sanjoy Kumar Chanda, Subhash Chander, Rama Mohan Chandika, Vijay Kumar Chattu, Anis Ahmad Chaudhary, Sirshendu Chaudhuri, Akhilanand Chaurasia, Snehal Prakash Chavhan, Hana Chen, Patrick R. Ching, Chidozie Williams Chukwu, Erin Chung, Claudia Cosma, Bashir Dabo, Omid Dadras, Hana Mahdi Dahir, Xiaochen Dai, Ngoc Bao Dang, Pojsakorn Danpanichkul, Samuel Demissie Darcho, Aso Mohammad Darwesh, Wadzani Palnam Palnam Dauda, Rodrigo Deantonio, Biruk Demma, Vinoth Gnana Chellaiyan Devanbu, Premnath Dhanaraj, Bibha Dhungel, Giuseppe Di Martino, Daniel Diaz, Sushil Dohare, Ojas Prakashbhai Doshi, Robert Kokou Dowou, Kidist T. Dugassa, Hasan Durmuş, Oyewole Christopher Durojaiye, Siddhartha Dutta, Basil Barth Duwa, Venkata Ravikanth Eddula, Hisham Atan Edinur, El-Sayed Hemdan Hemdan Eissa, Moaheda E. H. Eissa, Michael Ekholuenetale, Seraphine Mojoko Eko, Adebayo ‘abdulateef Ekundayo, Rabie Adel El Arab, Iman El Sayed, Mohamed T. Elabbasy, Muhammed Elhadi, Omar Abdelsadek Abdou Elmeligy, Mohammed Elshaer, Abdallah Elssir Ahmed, Chadi Eltaha, Abdelgawad Salah Eltahawy, Hatem A. Eltaly, Tambe Elvis Akem, Werku Etafa, Dean B. Everett, Amanda Ugochi Ezirim, Adeniyi Francis Fagbamigbe, Ayesha Fahim, Nour Fakih, Ebenezer Gezahegn Fanta, Olufunmilayo Ibitola Fawole, Ulrich Membe Femoe, Getahun Fetensa, Bikila Regassa Feyisa, Tommaso Filippini, Sofia C. Finnemore Capon Diaz, Claudio Fiorilla, Luisa S. Flor, Juluis Visnel Foyet F, Takeshi Fukumoto, Abdelrahman Gamil Gad, Dominic Dormenyo Gadeka, Fernando Barroga Garcia Jr., Jacopo Garlasco, Rupesh K. Gautam, Feven Sahle Gebre, Tsion S. Gebre, Dagem Gebremichael, Mebin George Mathew, Mx Shumiye Shiferaw Gessess, Ali Ghandili, Shakira Ghazanfar, Ramy Mohamed Ghazy, Sailaja Ghimire, Sama Ghoba, Artyom Urievich Gil, Syed Abdullah Gilani, Alem Abera Girmay, Awais Gohar, Najam Gohar, Gamze Gökulu, Mahaveer Golechha, Shirisha Gooty, Yitayal Ayalew Goshu, Sheffali Gulati, Bashar Haruna Gulumbe, Swati Gupta, Swathi Gurajala, Jose Guzman-Esquivel, Awoke Derbie Habteyohannes, Hideharu Hagiya, Kirubel Tesfaye Hailu, Salih Ahmed Hama, Raz Mohammed Hama Salih, Islam M. Hamad, Mohamed Hamed, Samer Hamidi, Harapan Harapan, Zitta Barrella Harboe, Arief Hargono, Sara Harsini, Towhid Hasan, Md Saquib Hasnain, Ibrahim Nagmeldin Hassan, Yusuf Hassan Wada, Rachel Hauser, Simon I. Hay, Zaw Myo Hein, Abdelaziz Hendy, Helal F. Hetta, Kamran Heydaryan, Kamal Hezam, Md Sabbir Hossain, Mehdi Hosseinzadeh, Mohammad Md Hudaib, Ayesha Humayun, Nawfal R. Hussein, Fatma Magdi Ibrahim, Rasha Ibrahim, Anel Ibrayeva, Muhammad Idrees, Sumaira Idrees, Adalia Ikiroma, Olayinka Stephen Ilesanmi, Irena M. Ilic, Milena D. Ilic, Danish Iqbal, Bilal Irfan, Md Rabiul Islam, Nazim Forid Islam, Faisal Ismail, Yerlan Ismoldayev, Hiroshi Ito, Chinwe Juliana Iwu-Jaja, Jaison Jacob, Arshad Jamal, Jazlan Jamaluddin, Jerin James, Sathish Kumar Jayapal, Yovanthi Anurangi Jayasinghe, Jae Joon Jeon, Gwang Hun Jeong, Pauline Mwenje Jomo, Japhet Haruna Jonah, Nitin Joseph, Nitin Kumar Joshi, Charity Ehimwenma Joshua, Divya K L, Dler Hussein Kadir, Oleksandr Kamyshnyi, Mona Kanaan, Kehinde Kazeem Kanmodi, S. Suthanthira Kannan, Ibraheem M. Karaye, Tomasz M. Karpiński, Harmanmeet Kaur, Mariam Mofleh Kawafha, Stella Adejoke Kayode, Awoke Amare Kebede, Varekan Keishing, Peter Njenga Keiyoro, Yousef Saleh Khader, Sidra Khalid, Anees Ahmed Khalil, Nouman Khalique, Ahmad Khan, Muhammad Arslan Khan, Qamar Uz Zaman Khan, Pavan Khosla, Jagdish Khubchandani, Min Seo Kim, Adnan Kisa, Sezer Kisa, Shivakumar KM, Sonali Kochhar, Hamid Reza Koohestani, Ayan Hussien Korse, Vladimir Andreevich Korshunov, Archana Koul, Kewal Krishan, Nitya Krishnasamy, Md Abdul Kuddus, Mukhtar Kulimbet, Ashwini Kumar, Dewesh Kumar, Jogender Kumar, Laksh Kumar, Neeraj Kumar, Pradeep Kumar, Sumit Kumar, Abigail Kusi Amponsah, Dian Kusuma, Mavis Pearl Kwabla, Frank Kyei-Arthur, Ville Kytö, Pallavi L C, Muhammad Awwal Ladan, Chandrakant Lahariya, Dharmesh Kumar Lal, Faris Hasan Lami, Tamás Lantos, Colleen L. Lau, Thao Thi Thu Le, Thu Huynh Minh Le, Yemane Leake, Hoi Leong Lee, Hwamin Lee, Ka Yiu Lee, Seung Won Lee, Bati Leta, Yanxue Lian, Xuefeng Liu, Erand Llanaj, Madeeha Shahzad Lodhi, Niroshan Chandrajith Lokunarangoda, Bruno Silvester Lopes, José Francisco López-Gil, Platon D. Lopukhov, Pincheng Luo, Ellina Lytvyak, Sahil Mahfooz, Nozad Hussein Mahmood, Shima Mahmoudi, Birhanemaskal Malkamu, Kaleem Maqsood, Bishnu P. Marasini, Bernardo Alfonso Martinez-Guerra, Roy Rillera Marzo, Mansi Mathur, Medha Mathur, Fernanda Penido Matozinhos, Suleiman Mayaki, Lord Tadesse Mekonnen, Muayad Aghali Merza, Rahwa Adisu Mesfin, Tomislav Mestrovic, Gregorio Paolo Milani, Long Chiau Ming, Andreea Mirica, Bhagyashree Mishra, Farduus Ibraahim Mohamed, Nouh Saad Mohamed, Mokhtar Mohammadi, Yahaya Mohammed, Zaidan Mohammed, Ranjan Kumar Mohapatra, Ali H. Mokdad, Lorenzo Monasta, Yousef Moradi, Paula Moraga, Mahdis Morovvati, Rohith Motappa, Hagar L. Mowafy, Sumaira Mubarik, Sumoni Mukherjee, Christopher J. L. Murray, Yahye Hassan Muse, Saima Mushtaq, Ghulam Mustafa, Zhadyra Mustafa, Claude Mambo Muvunyi, Muhammad Muzaffar, Asif Naeem, Firzan Nainu, Shumaila Nargus, Zuhair S. Natto, Zakira Naureen, Muhammad Naveed, Biswa Prakash Nayak, Kinjal Nayak, Tam Thi Ngo, Cuong Tat Nguyen, Hien Thu Nguyen, Huong Lan Thi Nguyen, Nghia Phu Nguyen, Thanh Van Nguyen, Trang Nguyen, Chisom Adaobi Nri-Ezedi, Fred Nugen, Mengistu H. Nunemo, Anna Odone, Alex Odoom, Rasaq A. Ojasanya, Hassan Okati-Aliabad, Akinkunmi Paul Okekunle, Olalekan John Okesanya, Osaretin Christabel Okonji, Michael Chinyem Okonkwo, Godwin Okoye, David Bamidele Olawade, Amanuel Mesfin Oljira, Adetayo Olorunlana, Comfort Z. Olorunsaiye, Bolajoko Olubukunola Olusanya, Augustus Osborne, Thompson Osei, Olutosin Ademola Otekunrin, Mohamed S. Othman, Amel Ouyahia, Irene Amoakoh Owusu, Mega Obukohwo Oyovwi, Ilker Ozsahin, Jagadish Rao Padubidri, Ashok Pandey, Romil R. Parikh, Chulwoo Park, Tae Hwan Park, Sameena Parveen, Maja Pasovic, Vipin Patidar, Shankargouda Patil, Mohamed Anas Patni, Uttam Paudel, Iuliia Pavlova, Jarmila Pekarcikova, Prince Peprah, David M. Pigott, Zahra Zahid Piracha, Dimitri Poddighe, Roman V. Polibin, Ramesh Poluru, Rifky Octavia Pradipta, Ira Praharaj, Michal Pruc, Xiang Qi, Nuzul Qur’aniati, Ali Qureshi, Igor Radenkov, Yashpal Singh Raghav, Fakher Rahim, Hawbash Mohammed-Amin Rahim, Bilal Ahmad Rahimi, Mahbubur Rahman, Md Sazedur Rahman, Mosiur Rahman, Sunil Kumar Raina, Jeffrey Pradeep Raj, Gunaseelan Rajendran, Raji Rajesh Lenin, Nurgali Amanbaiuly Rakhymbayev, Mahmoud Mohammed Ramadan, Shakthi Kumaran Ramasamy, Nemanja Rancic, Asad Gul Rao, Rajath Rao, Isha Rathi, Santosh Kumar Rauniyar, Lokesh Ravi, Ramya Kundayi Ravi, Murali Mohan Rama Krishna Reddy, Elrashdy M. Redwan, Tércia Moreira Ribeiro Da Silva, Hermano Alexandre Lima Rocha, Jefferson Antonio Buendia Rodriguez, Chanapong Rojanaworarit, Luca Ronfani, Allen Guy Patrick Ross, Kunle Rotimi, Himanshu Sekhar Rout, Guilherme De Andrade Ruela, Aly M. A. Saad, Khaled Saad, Ahmad Sabbah, Umar Saeed, Fatemeh Saheb Sharif-Askari, Durgesh Prasad Sahoo, Haruka Sakamoto, Joseph W. Sakshaug, Rehab Salah, Samreen Saleem, Mohamed A. Saleh, AADN Samandika Saparamadu, Fasineh Shekuba Samura, Milena M. Santric-Milicevic, Adekunle Sanyaolu, Aswini Saravanan, Michele Sassano, Ganesh Kumar Saya, Chandrabose Selvaraj, Yashendra Sethi, Sajid Ali Shah, Syed Ali Raza Shah, Shazlin Shaharudin, Samiah Shahid, Moyad Jamal Shahwan, Masood Ali Shaikh, Sunder Sham, Alfiya Shamsutdinova, Mohd Shanawaz, Nadim Sharif, Sumaira Sharif, Avimanu Sharma, Bereket Beyene Shashamo, Samrawit Shawel, Robert Adamu Shey, Aminu Shittu, Km Shivangi, Seyed Afshin Shorofi, Muhammad Irfan Siddique, Surjit Singh, Robert Sinto, Farrukh Sobia, Yizhe Song, Younseong Song, Adebayo Emmanuel Sopeju, Reed J. D. Sorensen, Ireneous N. Soyiri, Muhammad Haroon Stanikzai, Chen-Yang Su, Sahabi K. Sulaiman, Muritala Suleiman Odidi, Marjia Sultana, Herry Susanto, Tri Nugraha Nugraha Susilawati, Tarun Kumar Suvvari, Chandan Kumar Swain, Sreena T V, Celine Tabche, Ramin Tabibi, Mircea Tampa, Sosina Tamre, Jacques Lukenze Tamuzi, Tanya Tanu, Mengistie Kassahun Tariku, Nebyu Lakew Tefera, Emre Tel, Mohamad-Hani Temsah, Azimeraw Arega Tesfu, Chandan Kumar Thakur, Mohammad R. Thalji, Lakshmi Thangavelu, Kavumpurathu Raman Thankappan, Christina S. Thornton, Shibabaw Tedla Tiruneh, Sagar Tiwari, Madi Tleshev, Marcos Roberto Tovani-Palone, Thang Huu Tran, Nguyen Tran Minh Duc, Manjari Tripathi, Lawrence Sena Tuglo, Munkhtuya Tumurkhuu, Biruk Shalmeno Tusa, Irfan Ullah, Riaz Ullah, Sheela Upendra, Jibrin Sammani Usman, Olivier Uwishema, Sameer Uz Zaman, Levin Jake Varghese, Anshu Varma, Baskar Venkidasamy, Kapil Verma, Giacomo Pietro Vigezzi, Vignesh Vikram, Simone Villa, Tuan Vinh, Yasir Waheed, Agnes Wamuyu Wamai, Tanveer A. Wani, Saad Arsalan Wasti, Desalegn Desalegn Weldebrhan, Nuwan Darshana Wickramasinghe, Phoebe Catherine May Williams, Charles Shey Wiysonge, Camillus Abawiera Wongnaa, Florence Gyembuzie Wongnaah, Tadele Kassahun Wudu, Zemenu Shiferaw Shiferaw Yadita, Musa Yahaya, Galal Yahya, Natsuhiko Yamada, Yuichiro Yano, Haiqiang Yao, Ali Cem Yekdeş, Saber Yezli, Siyan Yi, Vahit Yiğit, Seyifemickael Amare Yilema, Dong Keon Yon, Naohiro Yonemoto, Mubashir Zafar, Muhammad Sohail Zafar, Fathiah Zakham, Giulia Zamagni, Seema Zargar, Michael Zastrozhin, Mohammed Zawiah, Mohammed G. M. Zeariya, Ruba A. Zenati, Eyael M. Zeru, Basit Zeshan, Haijun Zhang, Abzal Zhumagaliuly, Akmal Zubair, Alimuddin Zumla, Ashley A. Harris, Jonathan F. Mosser",
+      "published_date": "2026-10-21",
+      "updated_date": "2026-10-22",
+      "article_type": "Article",
+      "doi": "10.1038/s41591-026-04661-7",
+      "url": "https://www.nature.com/articles/s41591-026-04661-7",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "2696ea6062dc78a3ecc342171dbe00463a17e600"
+    },
+    {
+      "source_name": "Nature Biotechnology",
+      "journal": "Nature Biotechnology",
+      "title": "Deep dynamical models of single-cell multiomic velocities predict loss-of-function and rescue perturbations in B cells",
+      "title_zh": "",
+      "abstract": "Nature Biotechnology, Published online: 21 October 2026; doi:10.1038/s41587-026-03348-1 DynaVelo integrates single-cell omics data to infer cell state dynamics and regulatory interactions.",
+      "abstract_zh": "",
+      "authors": "Alireza Karbalayghareh, Benedikt Pelzer, Christopher R. Chin, Ari Melnick, Darko Barisic, Christina S. Leslie",
+      "published_date": "2026-10-21",
+      "updated_date": "2026-10-22",
+      "article_type": "Article",
+      "doi": "10.1038/s41587-026-03348-1",
+      "url": "https://www.nature.com/articles/s41587-026-03348-1",
+      "pdf_url": "",
+      "tags": [
+        "single-cell"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "single-cell"
+      ],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "1e6a4048d4d92610e4487cfc22e337ec913595ab"
+    },
+    {
+      "source_name": "Nature Biotechnology",
+      "journal": "Nature Biotechnology",
+      "title": "Recordanelles for transcriptome-wide single-cell RNA recording in human cells",
+      "title_zh": "",
+      "abstract": "Nature Biotechnology, Published online: 21 October 2026; doi:10.1038/s41587-026-03327-6 Recordanelles continuously and unbiasedly record the transcriptome throughout time in living mammalian cells.",
+      "abstract_zh": "",
+      "authors": "Christopher D. Reinkemeier, Marcos Manero-Carranza, Rick Farouni, Federica Filice, Alexander Klotz, Konstantin Schneider-Heieck, Tim L. Andermann, Randall J. Platt",
+      "published_date": "2026-10-21",
+      "updated_date": "2026-10-22",
+      "article_type": "Article",
+      "doi": "10.1038/s41587-026-03327-6",
+      "url": "https://www.nature.com/articles/s41587-026-03327-6",
+      "pdf_url": "",
+      "tags": [
+        "single-cell"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "single-cell"
+      ],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "0723898311925826e8110703df78a9cd1144896a"
+    },
+    {
+      "source_name": "npj Digital Medicine",
+      "journal": "npj Digital Medicine",
+      "title": "Silent evaluation reveals context-dependent validity of automated metrics for AI-generated clinical messages",
+      "title_zh": "",
+      "abstract": "npj Digital Medicine, Published online: 21 October 2026; doi:10.1038/s41746-026-03211-2 Silent evaluation reveals context-dependent validity of automated metrics for AI-generated clinical messages",
+      "abstract_zh": "",
+      "authors": "Gavin Hui, Laura Prichard, Taylor Martin, Sitaram Vangala, Joshua Khalili, Sun M. Yoo, Hawkin E. Woo, Paul J. Lukac",
+      "published_date": "2026-10-21",
+      "updated_date": "2026-10-22",
+      "article_type": "Article",
+      "doi": "10.1038/s41746-026-03211-2",
+      "url": "https://www.nature.com/articles/s41746-026-03211-2",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "5942227a27d182a940efc3b4694dbe494f380649"
+    },
+    {
+      "source_name": "npj Digital Medicine",
+      "journal": "npj Digital Medicine",
+      "title": "Towards reliable morphological subtyping and cancer detection on Barrett’s esophagus pathology through ensembling foundation models",
+      "title_zh": "",
+      "abstract": "npj Digital Medicine, Published online: 21 October 2026; doi:10.1038/s41746-026-03329-3 Towards reliable morphological subtyping and cancer detection on Barrett’s esophagus pathology through ensembling foundation models",
+      "abstract_zh": "",
+      "authors": "Azar Kazemi, Camillo Saueressig, Jingsong Liu, Han Li, Julius Shakhtour, Bianca Grosser, Fabian Stögbauer, Julia Horstmann, Nassir Navab, Saeid Eslami, Michael Quante, Julia Slotta-Huspenina, Peter J. Schüffler",
+      "published_date": "2026-10-21",
+      "updated_date": "2026-10-22",
+      "article_type": "Article",
+      "doi": "10.1038/s41746-026-03329-3",
+      "url": "https://www.nature.com/articles/s41746-026-03329-3",
+      "pdf_url": "",
+      "tags": [
+        "cancer",
+        "foundation model"
+      ],
+      "ai_tags": [
+        "foundation model"
+      ],
+      "bio_tags": [],
+      "disease_tags": [
+        "cancer"
+      ],
+      "is_preprint": 0,
+      "id": "ec9c0ae9aed27de225fe386b894c94d54c1ac404"
+    },
+    {
+      "source_name": "npj Digital Medicine",
+      "journal": "npj Digital Medicine",
+      "title": "A Generative AI-powered navigation system for precision CBCT-guided lung biopsies: a randomized controlled trial",
+      "title_zh": "",
+      "abstract": "npj Digital Medicine, Published online: 21 October 2026; doi:10.1038/s41746-026-03355-1 A Generative AI-powered navigation system for precision CBCT-guided lung biopsies: a randomized controlled trial",
+      "abstract_zh": "",
+      "authors": "Lei Chen, Dongqiao Xiang, Linxia Wu, Siyang Pan, Qin Shi, Xuhua Duan, Wei-Hua Zhang, Tao Sun, Yiliang Wan, Guangliang Ju, Xiaoyun Liang, Yi Li, Wenjuan Tang, Bobin Mi, Yuan Xiong, Yong Luo, Lefei Zhang, Chengcheng Zhu, Huangxuan Zhao, Gao-Jun Teng, Zhenwei Zou, Bo Du",
+      "published_date": "2026-10-21",
+      "updated_date": "2026-10-22",
+      "article_type": "Article",
+      "doi": "10.1038/s41746-026-03355-1",
+      "url": "https://www.nature.com/articles/s41746-026-03355-1",
+      "pdf_url": "",
+      "tags": [
+        "LLM"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "9a563fa75f394cad906de473a55bbb5a2135e941"
+    },
+    {
+      "source_name": "npj Digital Medicine",
+      "journal": "npj Digital Medicine",
+      "title": "Multi-site real-world performance of commercial AI for pulmonary and incidental pulmonary embolism detection",
+      "title_zh": "",
+      "abstract": "npj Digital Medicine, Published online: 21 October 2026; doi:10.1038/s41746-026-03418-3 Multi-site real-world performance of commercial AI for pulmonary and incidental pulmonary embolism detection",
+      "abstract_zh": "",
+      "authors": "Aawez Mansuri, Mohammadreza Chavoshi, Theodorus Dapamede, Wasif Bala, Beatrice Brown-Mulry, Rohan Satya Isaac, Bardia Khosravi, Hanzhou Li, Frank Li, John T. Moon, Chad Robichaux, Dan I. G. Cohen-Addad, Ninad V. Salastekar, Janice Newsome, Judy W. Gichoya, Hari Trivedi",
+      "published_date": "2026-10-21",
+      "updated_date": "2026-10-22",
+      "article_type": "Article",
+      "doi": "10.1038/s41746-026-03418-3",
+      "url": "https://www.nature.com/articles/s41746-026-03418-3",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "6486893c95fbe55b187d2554ee45efc810ae6262"
     },
     {
       "source_name": "arXiv cs.LG",
