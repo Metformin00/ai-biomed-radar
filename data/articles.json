@@ -1,6 +1,828 @@
 {
-  "generated_at": "2026-10-26T08:48:33.212612Z",
+  "generated_at": "2026-10-27T08:54:19.877774Z",
   "articles": [
+    {
+      "source_name": "npj Digital Medicine",
+      "journal": "npj Digital Medicine",
+      "title": "Radiographer fracture detection with and without AI assistance in prospective emergency department use",
+      "title_zh": "",
+      "abstract": "npj Digital Medicine, Published online: 27 October 2026; doi:10.1038/s41746-026-03313-x Radiographer fracture detection with and without AI assistance in prospective emergency department use",
+      "abstract_zh": "",
+      "authors": "Jin Rong Tan, Anh Nguyen Tuan Tran, Wei Yow Sim, Jia Rong Jonathan Mok, Felicia Hui Min Thng, Jason Hong Seng Toh, May San Mak, Siew Kune Wong, Meng Ai Png",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Article",
+      "doi": "10.1038/s41746-026-03313-x",
+      "url": "https://www.nature.com/articles/s41746-026-03313-x",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "8598b55c9f3fa07c2196707d7ab1741f5205e2d9"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "TIAgent: From Natural Language to Grounded Agentic Workflows for Computational Pathology",
+      "title_zh": "",
+      "abstract": "arXiv:2610.32993v1 Announce Type: new Abstract: Computational pathology (CPath) analyses increasingly depend on multi-step computational workflows that require substantial programming expertise, limiting their accessibility to pathologists and other domain experts without extensive coding experience. Although large language models (LLMs) provide a promising natural-language interface for constructing such analyses, hallucinated operations and incorrect workflow specifications limit their reliability in scientific settings. We introduce Tissue Image Analysis Agent (TIAgent), an automated CPath workflow generation framework that, given a natural-language prompt specifying a complex analytical task together with an input dataset, automatically constructs a verifiable computational graph employing existing CPath operations. The resulting graph can be inspected and executed, enabling natural-language construction of complex CPath workflows for applications including automated biomarker discovery and tissue analysis. We demonstrate end-to-end workflow generation and execution and systematically benchmark 14 backbone LLMs across 90 unit tasks spanning 18 CPath operation types. The ability of each LLM to generate a complete and correct unit workflow is quantified using Unit Workflow Success (UWS). Performance varied substantially across backbone models, with Kimi-K2.7-Code achieving the highest UWS of 0.967 (95% CI: 0.907-0.989). Analysis of node and parameter correctness further revealed that selecting the appropriate computational operation and correctly configuring it represent distinct challenges for LLM-based workflow generation. TIAgent provides a foundation for making complex CPath workflow construction more accessible while enabling systematic evaluation of LLM-driven scientific workflow generation.",
+      "abstract_zh": "",
+      "authors": "Aakash Madhav Rao, Mark Eastwood, Danielle Belgrave, Fayyaz Minhas",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.32993",
+      "pdf_url": "",
+      "tags": [
+        "LLM",
+        "biomarker discovery"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [
+        "biomarker discovery"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "f0c83a3960b8f527c7297cb3582b01f29d8c17b9"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "CausalOdyssey: Multi-Agent Local LLM Reasoning with Per-Patient Causal Structure for Rare Disease Retrieval",
+      "title_zh": "",
+      "abstract": "arXiv:2610.32995v1 Announce Type: new Abstract: Patients with rare diseases often wait years for a diagnosis. Existing HPO-based retrieval tools narrow the differential to a shortlist, but a clinician reading that shortlist has no signal for which candidate to trust or what to test next. We present CausalOdyssey, a local four-agent pipeline on Gemma 4 26B built over a classical IC-weighted gene-rescue backbone: a Diagnostician reranks the slate via chain-of-thought over per-patient FCI causal edges and Reactome mechanism context; a Verifier computes deterministic evidence against the top-1 (missing pathognomonic phenotypes, pathway chain closure) and has Gemma issue a confirm/flag/refute verdict over it; an Interrogator selects one follow-up HPO by split-variance scoring; a Narrator emits citation-validated clinical prose. Only the Diagnostician changes the ranking; the other three agents annotate it. On RareBench n=1,122, reranking a top-30 slate lifts R@1 by +12.57 pp over our structural baseline ([+10.07, +14.97]; p=8.3e-24). A no-LLM variant of that baseline, without its inverse disease-count weight, reaches a similar pooled R@1 (36.3% vs 35.3%): the LLM rerank is far better on metabolic cases (RAMEDIS, +16.0 pp) and far worse on case-report corpora (LIRICAL, MME), so its value is corpus-dependent. We also propose a masked-phenotype protocol for evaluating follow-up suggestions without an annotation-based oracle; under it, the Interrogator asks for a patient's hidden phenotypes no more often than simple baselines (0.6% vs 1.2%), although a perfect follow-up would add 11 pp at top-1. The Verifier's verdict separates correct from incorrect top-1s (51.4% vs 12.1% top-1 accuracy under confirm vs refute). For 30% of patients the gold diagnosis is outside our top-30, though LIRICAL retrieves over half of these. All inference is local; no patient data leaves the machine. Demo code and a live demo are public.",
+      "abstract_zh": "",
+      "authors": "Xueer Chen",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.32995",
+      "pdf_url": "",
+      "tags": [
+        "LLM",
+        "rare disease"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [],
+      "disease_tags": [
+        "rare disease"
+      ],
+      "is_preprint": 1,
+      "id": "010a6493fdca6b06e3453fee05546bd447c7eee5"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "A Multimodal Machine Learning Framework Integrating Genomic, Epidemiological, Environmental, and Clinical Imaging Data for Accelerated Measles Detection and Transmission Inference",
+      "title_zh": "",
+      "abstract": "arXiv:2610.32996v1 Announce Type: new Abstract: Background: Measles resurged in the United States during 2025-2026, with more than 4,600 reported cases. Timely detection and transmission inference require integrated genomic, epidemiological, environmental, and clinical data. We developed a multimodal machine learning (ML) framework integrating genomic sequences, epidemiological indicators, wastewater surveillance, and clinical rash images. Methods: We evaluated a three-stage pipeline using public data. Stage 1 classified transmission linkage among 903 sequence pairs from the 2021 Ohio-Arizona-Washington outbreak using k-mer TF-IDF-SVD embeddings and pairwise single-nucleotide polymorphism (SNP) distances with leave-one-cluster-out cross-validation. Stage 2 predicted state-week outbreak risk using logistic regression and XGBoost with wastewater, mobility, and vaccination features under leave-one-year-out cross-validation. Stage 3 used BiomedCLIP ViT-B/16 embeddings and a fine-tuned multilayer perceptron for rash classification on MSLD v2.0 (755 images, 6 classes). InfoNCE contrastive learning aligned genomic and imaging embeddings. Results: Transmission-linkage classification achieved AUC 0.924 and F1 0.912 with logistic regression. Outbreak-risk prediction achieved AUC 0.707 with logistic regression across 2025-2026 leave-one-year-out folds. Contrastive alignment achieved Recall@1 = 0.985 on held-out paired data. Ablation showed genomic features dominated transmission-linkage prediction (genomic-only AUC 0.983), whereas wastewater positivity was the strongest outbreak-risk predictor (importance 0.402). Conclusions: Multimodal ML integrating genomic, epidemiological, wastewater, and clinical imaging data can support measles surveillance and transmission inference using public data. Prospective validation with paired clinical-genomic data, expanded wastewater coverage, and real-world workflows is needed before deployment.",
+      "abstract_zh": "",
+      "authors": "Jiada Li",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.32996",
+      "pdf_url": "",
+      "tags": [
+        "clinical prediction",
+        "epidemiology",
+        "multimodal learning",
+        "self-supervised learning"
+      ],
+      "ai_tags": [
+        "multimodal learning",
+        "self-supervised learning"
+      ],
+      "bio_tags": [
+        "clinical prediction",
+        "epidemiology"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "c4e99865368a6aa18b2443d5a0f0da5a4b99321b"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "ARMD-Predict: multi-site machine learning to predict antibiotic resistance before culture results",
+      "title_zh": "",
+      "abstract": "arXiv:2610.32998v1 Announce Type: new Abstract: Clinicians select empiric antibiotics before culture susceptibility results are available. Electronic health record (EHR) models could inform that choice, but most are developed at a single hospital and transport poorly to others. We developed ARMD-Predict using 7.5 million culture-antibiotic observations from four academic medical centers. One set of models estimates susceptibility to individual antibiotics; a second, hierarchical set predicts the infecting organism and then organism-specific resistance phenotypes. Across 23 pooled susceptibility models evaluated in same-period, patient-grouped test partitions, median area under the receiver operating characteristic curve (AUROC) was 0.77 for inpatient urine and 0.70 for inpatient blood cultures; chronological retraining reduced AUROC by approximately 0.04. At an exploratory threshold with 95% positive predictive value, derived and evaluated on the same test observations, the model identified 55% of ceftriaxone-susceptible inpatient urine observations as suitable for narrower therapy and flagged 60% of ceftriaxone-resistant observations for broader coverage. Organism classifiers achieved top-3 accuracy of 51.3-83.3%; phenotype AUROCs were conditional on the observed organism. Research applications are available at https://armd-predict.stanford.edu. Independent calibration, threshold and end-to-end prospective validation are required before clinical use.",
+      "abstract_zh": "",
+      "authors": "Fateme Nateghi Haredasht, Nicholas P. Marshall, Wenyuan Chen, Lauren N. Cooper, Ziming Wei, Harrison Konsker, Jacob S. Chen, Michael Klompas, Cara McKenna, Richard J. Medford, Sanjat Kanjilal, Austin J. Schoeffler, Stephen P. Ma, Niaz Banaei, Steven M. Asch, Amy Chang, Stanley C. Deresinski, Mary K. Goldstein, Robert Tibshirani, Jonathan H. Chen",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.32998",
+      "pdf_url": "",
+      "tags": [
+        "EHR"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "EHR"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "dfd17d8652ae859f79371960a53e186befcf44bf"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "An Exploratory Multiome Analysis of a BCG-Associated HSPC Signature: Trained-Immunity Marker in Blood and an Adverse Prognostic Association in Tumour",
+      "title_zh": "",
+      "abstract": "arXiv:2610.32999v1 Announce Type: new Abstract: Intravesical Bacillus Calmette--Gu\\'erin (BCG) is an established treatment for non-muscle-invasive bladder cancer (NMIBC), and recent evidence indicates that bladder BCG induces transcriptional and chromatin changes in hematopoietic stem and progenitor cells (HSPCs). However, the joint multi-omic structure of these BCG-associated changes and its potential to define transferable molecular signatures remain less well characterized. This study performed an exploratory integrative analysis of paired single-cell RNA-seq and ATAC-seq data from two NMIBC patients sampled before and after BCG treatment. Following preprocessing and barcode-level integration, 653 HSPCs were analysed using Multi-Omics Factor Analysis (MOFA+) with 2,000 HSPC-specific variable genes and 25,000 variable chromatin-accessibility peaks. Of ten latent factors, Factor~1 showed the strongest association with BCG status ($r=0.495$) and captured variation across both molecular views. RNA weights from Factor~1 were used to derive candidate gene signatures that showed partial consistency across patient-specific models. Cross-context evaluation showed associations with overall survival in TCGA-BLCA and recurrence in GSE199471, while a subset of signature genes showed consistent directional changes in monocytes following BCG vaccination in GSE184241. Together, these findings identify a candidate multi-omic axis associated with BCG exposure and suggest that its derived molecular signatures exhibit context-dependent behaviour across distinct biological and clinical settings.",
+      "abstract_zh": "",
+      "authors": "Sadia Ruhama",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.32999",
+      "pdf_url": "",
+      "tags": [
+        "cancer",
+        "multi-omics",
+        "single-cell"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "multi-omics",
+        "single-cell"
+      ],
+      "disease_tags": [
+        "cancer"
+      ],
+      "is_preprint": 1,
+      "id": "46546ce67e2f25063620233e28d1576dc718d450"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Canonical residual physics-informed neural networks and algorithmic perturbation landscapes map cell-fate transitions in longitudinal H3K27M glioma",
+      "title_zh": "",
+      "abstract": "arXiv:2610.33000v1 Announce Type: new Abstract: Pediatric high-grade glioma is a dynamically heterogeneous disease in which therapeutic selection pressures, microenvironmental selection and developmental plasticity can reorganize cellular-state structure over time. Here we investigated these adaptive behaviors in glioma dynamics from single-cell ecologies by merging physics-driven artificial intelligence and complex systems theory. Specifically, this study explores canonical residual-based physics-informed neural networks (PINNs), dynamical systems modelling comparators, explainable artificial intelligence (XAI), and Block Decomposition Method (BDM) perturbation analysis to understand glioma cell fate decisions. The primary analyses distinguished longitudinal initial from recurrent H3K27M cells and, within the recurrent specimen set, stem/progenitor-like from differentiated/glial-like annotation-derived states. Across five-fold cross-validation, RD achieved AUC $0.995 \\pm 0.005$ and macro-F1 $0.973 \\pm 0.016$ for initial--recurrence discrimination, and AUC $0.698 \\pm 0.012$ and macro-F1 $0.629 \\pm 0.014$ for recurrent-state subtype discrimination. FP achieved AUC $0.931 \\pm 0.018$ and $0.665 \\pm 0.012$, respectively. Cross-model XAI repeatedly prioritized PTGDS, CHI3L1, IGFBP7, SPARCL1 and NRXN3 in longitudinal progression. BDM perturbation rankings emphasized heat-shock/stress-response and immune-associated network signatures. These findings are candidate computational network biomarkers rather than experimentally established causal signatures. The study provides a reproducible bridge between physics-constrained latent dynamics, interpretable gene attribution, and data-driven algorithmic perturbation landscapes for in silico pattern generation about glioma cell fate plasticity and early recurrence detection.",
+      "abstract_zh": "",
+      "authors": "Abicumaran Uthamacumaran",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.33000",
+      "pdf_url": "",
+      "tags": [
+        "biomarker discovery",
+        "single-cell"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "biomarker discovery",
+        "single-cell"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "bca05f8eff491f34cab5c020fc1e75b4d1ab2c54"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "TargetAgent: Mathematical AI Co-Scientist for Drug Target Identification",
+      "title_zh": "",
+      "abstract": "arXiv:2610.33003v1 Announce Type: new Abstract: Given the challenges of pharmaceutical development, there is increasing interest in computational approaches for identifying novel drug targets. Transcriptomics technologies enable the analysis of disease mechanisms at unprecedented resolution, while spatially resolved platforms further preserve the spatial organization of cells within tissues, allowing analysis to focus on specific regions of disease localization. To derive actionable therapeutic targets from these data, it is necessary to identify mechanisms that recur across a population rather than those observed in individual patients, which requires integrated analysis across disease conditions and donor cohorts. Here, we present the groundwork for an AI co-scientist framework for the sequential analysis of multi-batch spatial transcriptomics data that integrates interpretable mathematical models, including optimal transport, tensor factorizations, and topological data analysis, with LLM-powered agentic interpretation. Leveraging the complementary information provided by these mathematical models, the agents sequentially identify regions in which the disease is localized, molecular targets within these regions, and the direction in which each target should be modulated. Applied as a proof of concept to a public Stereo-seq study of the Alzheimer's disease (AD)-affected prefrontal cortex, we demonstrate that the agents converge on the white matter as the primary locus of the moderate-disease signal and identify a loss of myelin programme usage despite increasing oligodendrocyte abundance. The agents subsequently propose 29 candidate therapeutic targets, led by an oligodendrocyte differentiation module on which multiple mathematical perspectives converge, and flag 20 genes whose relevance to AD has not been previously reported. These results are hypothesis-generating and motivate further validation in larger, independent cohorts.",
+      "abstract_zh": "",
+      "authors": "Sean Cottrell, Guo-Wei Wei",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.33003",
+      "pdf_url": "",
+      "tags": [
+        "LLM",
+        "multi-omics",
+        "neurodegenerative",
+        "spatial transcriptomics"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [
+        "multi-omics",
+        "spatial transcriptomics"
+      ],
+      "disease_tags": [
+        "neurodegenerative"
+      ],
+      "is_preprint": 1,
+      "id": "7ca1bedb8f56dbae2e56247e0d64b238c838069b"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "RADAgent: Automating RADseq Pipelines with Private Open-Source LLMs",
+      "title_zh": "",
+      "abstract": "arXiv:2610.33009v1 Announce Type: new Abstract: Restriction site-associated DNA sequencing (RADseq) is a family of reduced-representation sequencing methods. It uses restriction enzymes to sample subsets of the genome, therefore allowing multiple individuals to be sequenced and genotyped together at low cost. RADseq is widely used for population genomics, evolutionary biology, marker discovery, and the development of SNP panels, but complete analysis still requires expert coordination across multiple tools and processing stages. Traditional RADseq analysis requires expert coordination of heterogeneous bioinformatics tools, intermediate artifacts, quality-control checks, and parameter-dependent decisions across multiple stages. Although individual steps can be scripted, executing the complete workflow still requires human oversight for state tracking, result validation, and failure handling. To automate this expert-driven coordination, we present RADAgent, which introduces a modular agentic method for reliable RADseq workflow execution with an open-weight LLM. RADAgent maps the natural boundaries of the RADseq workflow into 16 independently executable and verifiable agent modules and uses a model-independent runtime for bounded tool execution, on-disk verification, and failure recovery. We evaluate RADAgent on a real population-genomics dataset containing 476 samples from 19 populations. The results demonstrate that RADAgent reliably automates the complete RADseq workflow with an open-weight LLM while keeping genomic data and model execution within the local computing environment. The code is publicly available at https://github.com/wenlu-lab/RADAgent.",
+      "abstract_zh": "",
+      "authors": "Qiming Guo, Malaka Sudhakara Bava Sukruth Reddy, Honggang Zhao, Ye Wang, Chen Pan, Wenlu Wang",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.33009",
+      "pdf_url": "",
+      "tags": [
+        "LLM",
+        "genomics"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [
+        "genomics"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "cdcaff816e6695d842c2e91aa372ceca917e2340"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Cohort Effects, Not Treatment Response, Dominate Public Immunotherapy Cohorts: Evidence from Microbiome and Tumor Genomic Data",
+      "title_zh": "",
+      "abstract": "arXiv:2610.33010v1 Announce Type: new Abstract: Researchers often pool public gut microbiome datasets from immunotherapy studies to get around small sample sizes, assuming that adding cohorts adds statistical power faster than it adds differences between studies. We test that assumption. We processed four public shotgun metagenomic cohorts of patients receiving immune checkpoint blockade through one pipeline and pooled them step by step, from 39 to 283 patients. Because the PERMANOVA effect size R^2 is above zero even when there is no real effect, we compared every result with its exact chance expectation. Measured as raw variance explained, cohort membership accounted for 8 to 27 times more variance than treatment response, although much of that ratio comes from sample size alone. At every pooling step, treatment response explained no more variance than chance (within 0.2 percentage points) and was never significant, while cohort membership explained 6.0 to 9.5 percentage points beyond chance (p = 0.001 each time). Classification stayed at chance across three model types, none of six leak-free batch-correction strategies recovered signal, and no genus reached significance in a random-effects meta-analysis. The largest single cohort (n = 165) was also non-significant, although simulation shows it had at least 90% power to detect an effect at its own 95% upper bound; within it, recruiting site alone explained 7.0 percentage points beyond chance. In three tumor genomic cohorts (n = 223), a small but real response effect sat next to a cohort effect about eighteen times larger, so the problem is not specific to microbiome data. We release batch_detector, an open tool that reports chance-corrected cohort and response effects before pooling, and test it on an independent colorectal cancer meta-analysis.",
+      "abstract_zh": "",
+      "authors": "Amey Garg",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.33010",
+      "pdf_url": "",
+      "tags": [
+        "cancer",
+        "microbiome"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "microbiome"
+      ],
+      "disease_tags": [
+        "cancer"
+      ],
+      "is_preprint": 1,
+      "id": "1a75905a8f3ead825325bb932a34403e10dcf6bf"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Agent-guided epitope excision enables economical de novo binder design",
+      "title_zh": "",
+      "abstract": "arXiv:2610.33195v1 Announce Type: new Abstract: De novo protein design campaigns remain bottlenecked by the inference compute time required to generate and rank candidates, limiting wider functional exploration. Here, we introduce and evaluate an epitope excision approach that truncates targets to local interface windows to accelerate both backbone diffusion and structure prediction. Across 15 targets and 3,666 designs, excised windows closely reproduced full-target binding interfaces (median C\\alpha RMSD of 0.37 \\AA) and made it practical to design binders against the 719-residue extracellular domain of fibroblast activation protein alpha (FAP) by cutting RFdiffusion and AlphaFold3 GPU time by ~ 88% in one of the epitopes. Pairing this workflow with an agentic optimization loop allowed the system to autonomously identify catalytic-site targeting strategies. Under a fixed compute budget, a human-in-the-loop (HITL) workflow raised the computational hit rate from 5.06% to 9.33% while further cutting GPU hours by ~ 42%. We also found that omitting target multiple sequence alignments during refolding roughly substantially increased the apparent yield. Wet-lab validation with yeast display identified nanomolar binders from the generated designs with the HITL and the fully autonomous agent (human-out-of-the-loop, HOOTL) arms recovering more enriched designs than the PI-alone baseline. Together, target excision and agent-guided search offer a practical way to scale de novo binder design to large, therapeutically relevant proteins.",
+      "abstract_zh": "",
+      "authors": "Jun W. Kim, Artiom Myaskovsky, Oscar Donosa, Lawrence Chan, Jamie Rogers, Avinatan Hassidim, Yossi Matias, Annalisa Pawlosky",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.33195",
+      "pdf_url": "",
+      "tags": [
+        "protein design"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "protein design"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "1f6836c15a41bcac96958cc5677781a0705ec393"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Multiscale Topology-Regulated Nonlinear Dynamics for Protein B-Factor Prediction and Single-Cell Type Classification",
+      "title_zh": "",
+      "abstract": "arXiv:2610.33727v1 Announce Type: new Abstract: Protein B-factor prediction and single-cell type classification are important for characterizing structural variability and cellular heterogeneity, with applications in biological function analysis and drug discovery. However, static geometric descriptors do not directly capture how multiscale connectivity shapes responses to local perturbations. Here, we introduce multiscale graph-coupled Burgers response learning (MGCBRL), a framework integrating algebraic topology and nonlinear dynamics to construct predictive biological representations. Specifically, a filtration converts protein coordinates or cellular principal component scores into weighted graphs at ten neighborhood scales. Independent unit impulses initiate node-specific responses governed by nonlinear Burgers dynamics. Statistical summaries or sampled source-node trajectories then encode the influence of structural neighborhoods on transient signal evolution. The simulated responses serve as computational probes rather than models of biological motion. For cross-protein prediction, multiscale response statistics are combined with spectral perturbation descriptors measuring changes in Laplacian spectra after node removal. For single-cell classification, principal component scores augment these features to retain explicit expression-space information, and the resulting descriptors support downstream supervised learning. Across 104 proteins and 13 single-cell datasets, MGCBRL achieved configuration-selected mean scores of 0.888 for within-protein Pearson correlation and 0.950 for transductive cell classification balanced accuracy, with leave-one-protein-out mean correlations of 0.496-0.558. Our framework provides a shared strategy for transforming multiscale biological connectivity into informative response descriptors, supporting predictive analysis of protein structures and transcriptomic profiles.",
+      "abstract_zh": "",
+      "authors": "Zihan Wang, Mushal Zia, Xiaoqi Wei, Li Shen, Jian Jiang",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.33727",
+      "pdf_url": "",
+      "tags": [
+        "drug discovery",
+        "single-cell"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "drug discovery",
+        "single-cell"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "5340a607570c93aff329f8423c980b11d2b012fd"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "ProtAgent: Post-Training Compact Protein Tool Agents with Interaction-Level Credit Assignment",
+      "title_zh": "",
+      "abstract": "arXiv:2610.33746v1 Announce Type: new Abstract: Protein annotation agents must choose suitable bioinformatics tools, interpret their outputs, and use the resulting evidence in the final answer. Most existing systems rely on frontier-scale models. We ask whether a compact model can instead learn this behavior through post-training with real tool interaction. We present ProtAgent, a two-stage pipeline that uses supervised fine-tuning (SFT) to learn the tool interface and standard on-policy REINFORCE to improve the interaction policy. Intermediate tool calls receive action rewards, and the final response receives a terminal answer reward. Step-level returns assign these rewards to the responses that produced them and to preceding actions. The episode-level baseline instead assigns one episode return to every action. On a fixed closed-loop protocol with real bioinformatics tools, ProtAgent-8B achieves 61.00% success under the annotation-coverage metric, compared with 41.60% for DeepSeek-V3.2-Thinking 671B and 60.80% for the strongest evaluated frontier system. In the three-seed comparison, mean success is 42.70% with episode-level returns and 61.40% with step-level returns under identity return normalization; the corresponding group-relative results are 36.50% and 58.20%. The metric measures recovery of reference annotations under this protocol; it does not by itself establish biological correctness or complete evidence grounding.",
+      "abstract_zh": "",
+      "authors": "Yuxiang Wang, Baojian Zhou, Qifang Zhao, Keyue Jiang, Yanghua Xiao, Xiaoxiao Xu",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.33746",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "109e101f0f0c8e850b8e362f2f406a7a5dbc18c5"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "MechGate: combining mechanism-derived measures of permeation and efflux to screen small molecule drugs targeting Escherichia coli",
+      "title_zh": "",
+      "abstract": "arXiv:2610.33809v1 Announce Type: new Abstract: Most antibiotic molecules must cross the cell membrane and escape efflux pumps before hitting their targets. For de novo antibiotic design, very few of the in-silico-generated drug molecules can successfully pass these two steps. Existing evaluations of generated molecules do not separate these steps. Therefore, we introduce MechGate, a mechanism-resolved screening tool evaluating small drug molecules against E. coli, measuring permeation, efflux and antibacterial activity. After SMILES input, five measures are reported side by side: two for permeation via porins, one for permeation via the phospholipid membrane, one for efflux and one for activity. Each measure is read on its own, so a molecule that fails can be traced to the step that stops it. All features are taken from papers that state their mechanism rather than selected by importance ranking. On an external set of marketed antibacterials the measures give a precision of 0.789 to 0.873 against baselines near 0.44, and combining them the way the mechanism predicts raises precision to 0.92. We also find that the four public source libraries are separable from one another using physicochemical features alone; every measure here therefore draws both classes from a single library. All code is open-source and requires no commercial software.",
+      "abstract_zh": "",
+      "authors": "Lang Qin, Jagath C Rajapakse",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.33809",
+      "pdf_url": "",
+      "tags": [
+        "infectious disease"
+      ],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [
+        "infectious disease"
+      ],
+      "is_preprint": 1,
+      "id": "0bbe9017e139e2f798b071eff5aa2722ccc7a16e"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Tau creates spatially moving hotspots of amyloid-$\\beta$ secondary nucleation: a reaction-diffusion model",
+      "title_zh": "",
+      "abstract": "arXiv:2610.33981v1 Announce Type: new Abstract: Tau-amyloid-$\\beta$ cross-seeding creates a spatial paradox. Bioavailable tau can promote A$\\beta$42 nucleation, thereby increasing local fibril number and catalytic-site burden; yet the same fibrils consume the free A$\\beta$ monomer required for homotypic secondary nucleation. The region containing the most tau or fibrillar material therefore need not be the region with the highest secondary-nucleation rate. We test this idea with a reaction-diffusion model that tracks a propagating effective tau catalyst, free A$\\beta$ monomer, elongation-competent fibrils, fibril mass, and the catalytic sites exposed to monomer. The model reduces the spatial competition to two quantities: accessible catalytic sites and free monomer. Their balance yields an exact condition for an interior kinetic maximum: the logarithmic decrease in accessible catalytic sites must equal twice the logarithmic increase in free monomer. Two Damkohler numbers then separate the relevant competitions-elongation versus clearance, and elongation versus diffusive redistribution-while a monomer screening length sets the physical scale over which depletion can persist. Independent transport and turnover estimates place this length near 0.44-0.54 mm. Simulations show that tau first raises secondary nucleation near its source; continued fibril growth then produces a monomer-depleted wake, and the maximum shifts to a region with fewer catalytic sites but more available monomer. Oligomer transport and sustained reversible exchange can weaken or eliminate this contrast, whereas growth-history-dependent site density can strengthen it. The robust prediction is therefore a spatial separation among tau burden, fibril-mass growth, and instantaneous A$\\beta$ secondary-nucleation activity, rather than a universal hotspot speed.",
+      "abstract_zh": "",
+      "authors": "Andrey V. Kuznetsov",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.33981",
+      "pdf_url": "",
+      "tags": [
+        "diffusion model"
+      ],
+      "ai_tags": [
+        "diffusion model"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "1a74ae5f1ca4a65002d895e2f1fdd376d212c501"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Analysis of Biomarkers from Visual Explorations in Individuals Suspected to Be in the Prodromal Phase of Parkinson's Disease",
+      "title_zh": "",
+      "abstract": "arXiv:2610.34524v1 Announce Type: new Abstract: Identifying prodromal Parkinson's Disease is a precondition for any future treatment that modifies the course of the disease, since such therapies would ideally act on the initial pathogenic events, early enough to delay the clinical onset of the disease rather than only slow its progression. In this work, a visual exploration model is retrained on an expanded corpus. Without any further training or threshold recalibration, it is then tested on an enriched cohort of patients with high risk of being in the prodromal phase of Parkinson's Disease, testing whether the learned signal follows a continuum of disease rather than only separating patients from controls. The resulting score distribution is analysed as an external evaluation of the hypothesis that the oculomotor signature targeted by the model is already partly present before clinical diagnosis. With every subject scored on data not used to train the model, the scores are ordered as controls < high-risk patients < Parkinson's Disease, with 42% of the high-risk patients exceeding the decision threshold. A SHAP decomposition of the scores into classifiers and gaze features shows that high scores in this cohort are driven mainly by reduced saccadic excursion, fewer fixations and longer fixations, the hypokinetic oculomotor profile that characterises Parkinson's Disease. The model score is also compared against the prodromal markers used for recruitment. The score is not correlated with hyposmia, constipation, depression or REM sleep behaviour disorder; these results, interpreted in the context of the selection induced by the recruitment criteria, are discussed as evidence that within the high-risk cohort the score is largely not explained by the available ancillary clinical variables. The results suggest that the visual biomarkers analysed are a complementary indicator to identify patients at risk of being in the prodromal stage.",
+      "abstract_zh": "",
+      "authors": "Maria F. Alcala-Durand, J. Camilo Puerta-Acevedo, Valle P\\'erez del Olmo, Elisa Luque-Buzo, Juli\\'an D. Arias-Londo\\~no, Francisco J. Grandas-P\\'erez, Juan I. Godino-Llorente",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.34524",
+      "pdf_url": "",
+      "tags": [
+        "biomarker discovery",
+        "infectious disease",
+        "mental health",
+        "neurodegenerative"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "biomarker discovery"
+      ],
+      "disease_tags": [
+        "infectious disease",
+        "mental health",
+        "neurodegenerative"
+      ],
+      "is_preprint": 1,
+      "id": "c2dc04638cc46e97f2fe0e4206fd4c92179b7b42"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Retrieval-Augmented Parkinson's Disease Classification from Resting-State Functional Connectivity",
+      "title_zh": "",
+      "abstract": "arXiv:2610.35107v1 Announce Type: new Abstract: Altered resting-state functional connectivity (FC) is a candidate marker for the diagnosis of Parkinson's disease (PD). Publicly available PD datasets, however, are small and fragmented across sites, scanners and clinical criteria. Transfer learning mitigates data scarcity by reusing a model trained on larger cohorts, but represents their knowledge primarily through a single set of weights shared by all individuals. Motivated by precision neuroimaging, we propose a retrieval-augmented classification (RAC) framework that additionally places each target individual in the context of similar individuals from external cohorts. A graph convolutional autoencoder (GAE), trained on external PD and control cohorts, encodes these cohorts into a neuro-knowledge base. Each target individual is encoded using the pretrained GAE, and its nearest neighbors are retrieved from the external knowledge base. Their embeddings are combined with the target embedding using mean aggregation or attention for classification. A systematic comparison on the TaoWu cohort separated the contributions of encoder pretraining, retrieval, attention and partial fine-tuning. Pretraining improved mean classification accuracy from 60.5% to 66.0%. However, retrieval and attention did not consistently improve performance over the pretrained-only variants. Several retrieval-based configurations nevertheless showed modestly higher ROC-AUC than the randomly initialized baseline. Varying the number of retrieved neighbors and partially fine-tuning the encoder provided no consistent additional gains. Retrieval-neighborhood analysis further showed diagnostically mixed neighborhoods. These findings provide initial evidence that population-learned representations can be complemented by individual-specific retrieval in neuroimaging, although larger datasets are needed to determine when such contextual information improves classification.",
+      "abstract_zh": "",
+      "authors": "Tara Niknam, Sana Hassan Imam, Daniel Kristanto",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.35107",
+      "pdf_url": "",
+      "tags": [
+        "neurodegenerative"
+      ],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [
+        "neurodegenerative"
+      ],
+      "is_preprint": 1,
+      "id": "25f6eda03d24370aa6e675d5ff6d89bda83b840f"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Escaping cells dilute CRISPR screen responses unequally across cell types",
+      "title_zh": "",
+      "abstract": "arXiv:2610.35508v1 Announce Type: new Abstract: Single-cell CRISPR screens run in many cell types are used to compare how cell types respond to perturbation, to train models that transfer effects between them and to score such models. These uses assume that cells carrying a guide RNA had their target knocked down. Yet cells grow for days before sequencing: when an essential gene is knocked down, knocked-down cells are depleted or stop dividing while cells that escaped knockdown keep growing, and the measured response, an average over all cells carrying the guide, is diluted. We define the escape fraction of a perturbation as the share of its measured cells whose target was not effectively knocked down, and estimate it from each cell's counts of the targeted gene with a two-group mixture that recovers known fractions in simulated mixtures. In most cell types the escape fraction rises with how essential the gene is, it is higher in a later screen of the same cells, and it reaches about half of the measured cells in human embryonic stem cells (hESCs). It predicts how much each response is diluted: the response size falls to (1 - e)^2 of that of the knocked-down cells. Because the escape fraction differs between cell types, it changes all three uses: hESCs respond like K562 cells unless knockdown depletes them, the coefficient a simple transfer model learns is lowered by the dilution of the cell type it predicts, and a benchmark scored on all cells rewards predictions shrunk towards no change, partly because that ground truth is itself diluted. Where cells stop dividing instead, the response also contains expression differences between cell-cycle stages. Response sizes should be compared on knocked-down cells or corrected for the escape fraction.",
+      "abstract_zh": "",
+      "authors": "Xuanrui Huang",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.35508",
+      "pdf_url": "",
+      "tags": [
+        "single-cell"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "single-cell"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "88a9d7281d5ffd758117bec2a5de24becb1aab09"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Multiscale MIGHT: Modeling Local and Systemic Particle Transport in the Cardiovascular System",
+      "title_zh": "",
+      "abstract": "arXiv:2610.35618v1 Announce Type: new Abstract: Analytical models of signaling molecule (SM) transport in the cardiovascular system (CVS) force a choice between whole-body scope and vessel-level resolution: Pharmacokinetic models for systemic transport lump each organ and lack small-scale structure, whereas synthetic molecular communication (MC) channel models resolve branched vessel networks (VNs) only for a single pass or capture recirculation only in topologically simple loops, and only partially include SM degradation. To close this gap, we propose Multiscale MIGHT, an extension of the Mixture of Inverse Gaussians for Hemodynamic Transport (MIGHT) model that jointly captures branched topologies, closed-loop circulation, organ clearance, and chemical degradation of SMs. First, we connect the ends of a branched VN to form a closed loop with local and global SM degradation, model the closed-loop channel impulse response for arbitrary transmitter (Tx) and receiver (Rx) positions as a Laplace-domain feedback system, and approximate it in closed form by an inverse Gaussian mixture over multi-pass trajectories. The model is validated against finite-element simulations in COMSOL. Second, we set up a whole-body model, where an exemplary local VN, resolved at vessel-level detail, is embedded into the remaining systemic circulation, represented by lumped organ blocks. We simulate whole-body SM transport for various Tx sites and SM species. Our results show that, at an Rx in a local VN, only the initial pass produces a distinct peak in the SM concentration, significantly shaped by the local vasculature in case of small Tx-Rx distances; subsequent passes arrive strongly dispersed and are shaped almost entirely by organ clearance and chemical degradation rather than by the local VN topology.",
+      "abstract_zh": "",
+      "authors": "Theofilos Symeonidis, Timo Jakumeit, Fardad Vakilipoor, Robert Schober, Maximilian Sch\\\"afer",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.35618",
+      "pdf_url": "",
+      "tags": [
+        "cardiovascular"
+      ],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [
+        "cardiovascular"
+      ],
+      "is_preprint": 1,
+      "id": "372a35ceb5825bcd87d9d8d56848661a23b77f13"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "On the stability of learning",
+      "title_zh": "",
+      "abstract": "arXiv:2610.35856v1 Announce Type: new Abstract: Learning algorithms are usually analyzed under the assumption that informative gradients are continuously available. But this is not always true---learning signals in biological neural networks, for example, may be sparse, local, and only intermittently available at any given synapse. In this work, we show that if gradient information is noisy and only intermittently available, learning may be unstable. In particular, even if average learning dynamics converge to the correct optimum, variance in learning may be asymptotically infinite. We explore this point in a number of analytically tractable settings, including single-layer and multi-layer linear networks, and derive explicit conditions under which learning is stable. These conditions complement, but are conceptually distinct from, existing conditions related to the stability of stochastic gradient descent. Our work demonstrates that unbiased credit assignment is not enough for reliable learning; sufficiently frequent and informative feedback is also required, which yields an additional constraint on models of biologically plausible learning.",
+      "abstract_zh": "",
+      "authors": "John J. Vastola",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.35856",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "8f0d1a23fd073b85d9febbb0c01b0fcafb0bca25"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Predicting center of mass position in non-cyclic activities: The influence of acceleration, prediction horizon, and ground reaction forces",
+      "title_zh": "",
+      "abstract": "arXiv:2411.16891v1 Announce Type: cross Abstract: The whole-body center of mass (CoM) plays an important role in quantifying human movement. Prediction of future CoM trajectory, modeled as a point mass under influence of external forces, can be a surrogate for inferring intent. Given the current CoM position and velocity, predicting the future CoM position by forward integration requires a forecast of CoM accelerations during the prediction horizon. However, it is unclear how assumptions about the acceleration, prediction horizon length, and information from ground reaction forces (GRFs), which provide the instantaneous acceleration, affect the prediction. We study these factors by analyzing data of 10 healthy young adults performing 14 non-cyclic activities. We assume that the acceleration during a horizon will be 1) zero, 2) remain constant, or 3) converge to zero as a cubic trajectory, and perform predictions for horizons of 125 to 625 milliseconds. We quantify the prediction performance by comparing the position error and accuracy of identifying the main direction of displacement against trajectories obtained from a whole-body marker set. For all the assumed accelerations profiles, position errors grow quadratically with horizon length ($R^2 > 0.930$) while the accuracy of the predicted direction decreases linearly ($R^2>0.615$). Post-hoc tests reveal that the constant and cubic profiles, which utilize the GRFs, outperform the zero-acceleration assumption in position error ($p 3.23$) and accuracy ($p 1.44)$ at horizons of 125 and 250$\\,ms$. The results provide evidence for benefits of incorporating GRFs into predictions and point to 250$\\,ms$ as a threshold for horizon length in predictive applications.",
+      "abstract_zh": "",
+      "authors": "Mohsen Alizadeh Noghani, Edgar Bol\\'ivar-Nieto",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2411.16891",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "47cf5a613c2a89e272dcf6d7cbef370402f9975f"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "TGAge: A Phenotypic Aging Clock Based on Tabular Foundation Models and the Gompertz Law for Assisted Living Facility Residents",
+      "title_zh": "",
+      "abstract": "arXiv:2610.32994v1 Announce Type: cross Abstract: Biological age captures overall health status beyond chronological age, yet existing biological aging clocks are difficult to apply to assisted living facility (ALF) residents due to scarce epigenetic data. We propose TGAge, a second-generation phenotypic aging clock that estimates risk-equivalent biological age from routinely collected clinical measurements. TGAge employs a tabular foundation model to predict all-cause mortality risks over discrete time-to-death intervals and converts the resulting mortality-risk ratio into biological age acceleration via the Gompertz law. We develop and evaluate TGAge on a large cohort of ALF residents curated from a proprietary, multi-state long-term care database. TGAge outperforms clinical indices and established biological aging clocks in survival prediction. Moreover, TGAge-derived age acceleration is significantly associated with multiple aging-related comorbidities. These findings support TGAge as a practical, interpretable, and highly predictive biological aging clock for vulnerable ALF populations using only routinely collected clinical measurements.",
+      "abstract_zh": "",
+      "authors": "Chengzhuo Li, Rongjia Zhou, Shanshan Wang, Runze Yan, Carl Yang, Xiaobo Sun, Huiwen Xu, Jiaying Lu",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.32994",
+      "pdf_url": "",
+      "tags": [
+        "foundation model"
+      ],
+      "ai_tags": [
+        "foundation model"
+      ],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "d680dcd59b0b37eaa2a1257442ad883ca265b8cd"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "A unified and composable framework for modeling packed-bed liquid chromatography",
+      "title_zh": "",
+      "abstract": "arXiv:2610.33269v1 Announce Type: cross Abstract: Packed-bed chromatography is a cornerstone of bioseparation, yet its modeling landscape remains fragmented by numerous model variants, inconsistent terminology, and limited structural clarity. While prior work has categorized and contrasted individual variants, our approach shifts the focus to unification. We present a unified, modular, and composable framework that integrates diverse mechanistic packed-bed chromatography models into a coherent structure. Starting from a high-resolution three-dimensional model, the framework systematically derives a hierarchy of reduced-order models through formal model order reduction. It encompasses a broad range of bulk transport phenomena, intraparticle mass transfer processes, binding mechanisms, and chemical reactions. Formulated orthogonally, these modules are independently meaningful and can be systematically combined into mathematically consistent models tailored to specific applications. The framework recovers and generalizes existing models, establishes a consistent taxonomy, and enables novel model combinations and extensions, including alternative column and particle geometries, particle-size and particle-type distributions, component-specific pore accessibility, rapid-equilibrium binding and reaction formulations, and size-exclusion with simultaneous binding. The framework is accessible through CADET-Equations, an interactive web application for model assembly and automatic generation of governing equations in LaTeX, promoting standardization and transparency. Its design principles are increasingly reflected throughout the CADET ecosystem, whose modular architecture supports the majority of the proposed model family. The generality and composable design of the framework provide a foundation for extending chromatography modeling software toward integrated bioseparation processes and advanced computational biotechnology applications.",
+      "abstract_zh": "",
+      "authors": "Jan Michael Breuer, Samuel Leweke, Johannes Schm\\\"older, Antonia Berger, Gregor J. Gassner, Eric von Lieres",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.33269",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "c76ee3af2fee585580e8a7ce373b31b592247183"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Automated screening of Parkinson's Disease using Smooth Pursuit Eye Movements",
+      "title_zh": "",
+      "abstract": "arXiv:2610.33359v1 Announce Type: cross Abstract: Smooth pursuit eye movements are frequently altered in Parkinson's disease, but previous studies have relied mainly on conventional parameters that describe the relationship between gaze and target. This study investigates whether complexity and nonlinear dynamics measures of the gaze position sequences can support the automatic screening of Parkinson's disease. Gaze position sequences were recorded with a video eye tracker in 41 participants with early Parkinson's disease and 47 healthy controls during 12 smooth pursuit tasks. Four experimental frameworks and four embedding delay strategies were compared. The selected experimental setting combined baseline wander removal with a fixed embedding delay. After feature selection, a support vector machine was trained for each task and axis and their outputs were combined in a mixture of experts. The pipeline was developed in 70 participants and evaluated on an external test set of 18 participants. On the external test set, the pipeline obtained an area under the receiver operating characteristic curve of 0.86. The most informative features described less persistent and more irregular gaze position sequences in Parkinson's disease, mainly along the horizontal axis. These results support complexity and nonlinear dynamics measures of smooth pursuit as candidate markers for Parkinson's disease screening, pending validation in larger independent cohorts.",
+      "abstract_zh": "",
+      "authors": "J. Camilo Puerta-Acevedo, Maria F. Alcala-Durand, Juli\\'an D. Arias-Londo\\~no, Elisa Luque-Buzo, Francisco Grandas-P\\'erez, Juan I. Godino-Llorente",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.33359",
+      "pdf_url": "",
+      "tags": [
+        "neurodegenerative"
+      ],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [
+        "neurodegenerative"
+      ],
+      "is_preprint": 1,
+      "id": "eff8c45c8cba963d8a95025287a41f1028c21bce"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Efficiency--Complexity Tradeoff and Constrained Percolation",
+      "title_zh": "",
+      "abstract": "arXiv:2610.33864v1 Announce Type: cross Abstract: We study the efficiency--complexity tradeoff for resource-limited agents through directed first-passage percolation. Nonnegative i.i.d. edge weights represent physical energy expenditure, while the logarithmic size of a constrained path family measures representational complexity. For translation-invariant families, a path-joining property yields deterministic large-distance costs in rational directions and joint convexity in constraint parameter and direction, under suitable moment and feasibility assumptions. Our main result concerns the limiting cost parameterized by path-family entropy. Using techniques from analytic combinatorics in several variables (ACSV), we establish its almost-sure existence and joint continuity in entropy and direction for nested families satisfying additional generating-function conditions, on the corresponding entropy range. Path-count asymptotics supply the change of parameter linking this cost to the constraint-parameterized cost. Two planar examples constrain the number of turns or the number of East-runs of length at least two.",
+      "abstract_zh": "",
+      "authors": "Yuliy Baryshnikov, Efe Onaran",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.33864",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "9a40d3359092c0e2fc6014de0286436812d47a83"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Multitask Interactions in Recurrent Dynamics across 100 Cognitive Tasks",
+      "title_zh": "",
+      "abstract": "arXiv:2610.33926v1 Announce Type: cross Abstract: The brain continually learns tasks with very different computational demands. Recurrent neural networks (RNNs) have been used as dynamical surrogates for studying task solutions, with recent work extending this approach to joint training on multitask batteries. However, it remains unclear how tasks interact as these batteries grow in scale and heterogeneity: under what conditions do they transfer or interfere with one another, and how do these effects relate to task complexity and model structure? We study this question by simultaneously training hierarchical Almost-Linear RNNs (AL-RNNs) on 100 tasks spanning a wide range of cognitive demands. AL-RNNs allow us to vary the amount of nonlinearity in the recurrence, while hierarchical task features provide a low-dimensional interface for task-specific adaptation within shared dynamics. On this task battery, performance improves with both nonlinear capacity and task-feature dimensionality, with the joint hierarchical model outperforming both individually trained models and a single unstructured joint model. Many tasks are individually solvable with linear dynamics, yet cannot be solved together by a shared linear model. Through hierarchical task features, task-specific linear region usage, and task geometry, the trained model provides several related but distinct measures of task similarity that capture how computations are separated and combined within the shared backbone. Across a series of experiments, we relate these representations to individual task complexity, joint solvability, pairwise transfer learning, and leave-one-out adaptation. Together, our experiments characterize task interactions in multitask recurrent learning while demonstrating both the potential and the challenges of reusable dynamical backbones for cognitive computation.",
+      "abstract_zh": "",
+      "authors": "S\\'ilvia Garc\\'ia-Hern\\'andez, Leema Hamid, Manuel Brenner",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.33926",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "2da2369818ab216e3db40be9b5b3babf74f24751"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Regional prediction of hematoma expansion from non-contrast computed tomography in spontaneous intracerebral hemorrhage patients",
+      "title_zh": "",
+      "abstract": "arXiv:2610.34645v1 Announce Type: cross Abstract: Background The combination of hematoma location, expansion and final volume influence neurological outcome. The aim of this study was to derive and validate a quantitative and interpretable region-based NCCT image feature model for predicting hematoma expansion. Methods The Ethnic/Racial Variations of Intracerebral Hemorrhage(ERICH) study was used for derivation and the Virtual International Trials in Stroke Archive(VISTA) was used for validation. NCCT images at presentation and 24+/-6hours were pre-processed, segmented and categorized into lobar, basal ganglia or thalamic regions. Hematoma expansion was defined by region and according to its effect on clinical outcome. Transport-based morphometry (TBM) produced a unique transport-based representation from each NCCT hematoma image. Linear classifiers applied to transport representations were used to derive a predictive model. The regional TBM model's performance was compared to alternate methods using AUROC analyses. Results The derivation dataset included 574 patients, comprising 162 lobar, 257 basal ganglia and 155 thalamic hematomas. The validation dataset included 196 patients, comprising 31 lobar, 119 basal ganglia and 46 thalamic hematomas. A combined regional model predicted hematoma expansion in the validation dataset with an AUROC of 0.787. The principal image features which varied by location were size, heterogeneity, eccentricity and density distribution towards the hematoma periphery. The regional TBM model outperformed alternative clinician based and machine-learning methods. Conclusions TBM discriminated and visualized regional features of hematoma expansion from presentation NCCT scans. This provides preliminary evidence for regional radiographic features of hematoma expansion. It has the potential to improve hematoma expansion prediction and understanding of hematoma expansion pathophysiology.",
+      "abstract_zh": "",
+      "authors": "Natasha Ironside, Hongyu Kan, Kristofor Pas, Mohammad Shifat-E-Rabbi, Benjamin Newman, Shinjini Kundu, Kareem El Naamani, Tanvir Rizvi, Andrea Becerril-Gaitan, Harrison Snyder, Aarathi Manchikalapudi, Sarah Ratcliffe, Stacie L. Demel, Carl D. Langefeld, Daniel Woo, Stephan Mayer, E. Sander Connolly, Gustavo Rohde, for the ERICH Investigators, the VISTA-ICH collaboration",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.34645",
+      "pdf_url": "",
+      "tags": [
+        "cardiovascular"
+      ],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [
+        "cardiovascular"
+      ],
+      "is_preprint": 1,
+      "id": "321bda276c6a8f2f7104fe4050cc61ece065927a"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Multivariate Augmented Prediction-Powered Survival Inference for EHR Association Studies With Limited Chart Review",
+      "title_zh": "",
+      "abstract": "arXiv:2610.34749v1 Announce Type: cross Abstract: Objective: To reduce bias and improve precision in survival association studies using electronic health record (EHR) data when computational phenotypes (CPs) for outcomes and covariates are error-prone and chart review is limited. Materials and Methods: We developed Multivariate Augmented Prediction-Powered Survival (MAPS) regression, which combines chart-reviewed and CP-derived labels across different validation patterns. MAPS uses a discrete-time survival model with a complementary log-log link to estimate hazard ratios (HRs). It incorporates data-adaptive augmentation weights, inverse-probability sampling weights, and patient-level cluster-robust variance estimation. We compared MAPS with chart-reviewed data (CRD) and CP-only analyses in simulation studies and a masked-validation study of immune-related adverse events (irAEs) among 1,026 patients receiving immune checkpoint inhibitors. Results: In the main simulations, MAPS produced approximately unbiased estimates and generally near-nominal 95% confidence interval (CI) coverage, with narrower intervals than CRD. CP-only estimates became increasingly biased as CP errors increased. In the EHR analysis, MAPS estimates closely agreed with fully validated estimates and improved precision over CRD, particularly at lower validation rates. CP-only analysis suggested increased irAE risk associated with pre-existing autoimmune disease (AID; HR=1.53; 95% CI, 1.12-2.09), whereas the fully validated analysis did not (HR=0.93; 95% CI, 0.67-1.29). Discussion: Precision gains depended on CP quality and validation rates, while small validation samples may affect confidence interval coverage. Conclusion: MAPS provides a flexible and efficient approach to EHR-based survival inference by combining limited chart-reviewed data with error-prone CPs across different validation patterns.",
+      "abstract_zh": "",
+      "authors": "Xicheng Xie, Katherine Fiona Simpson, Hyojung Jang, Theresa L. Walunas, Lili Zhao",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.34749",
+      "pdf_url": "",
+      "tags": [
+        "EHR",
+        "autoimmune"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "EHR"
+      ],
+      "disease_tags": [
+        "autoimmune"
+      ],
+      "is_preprint": 1,
+      "id": "5d2803993eeb5e0ec157a0f2b3b1ad6541841ba1"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "A theory of noisy linear recurrent neural network learning dynamics",
+      "title_zh": "",
+      "abstract": "arXiv:2610.35785v1 Announce Type: cross Abstract: Biological neural networks are noisy: their dynamics involve difficult-to-predict fluctuations which are likely due not just to chaos, but also to a variety of low-level biophysical processes. Despite the omnipresence of intrinsic noise, its theoretical consequences are incompletely understood, especially in the context of learning. For example, does noise meaningfully shape representation learning, or is it better viewed as a nuisance factor whose presence or absence changes little about what solution is found and when? Here, we argue that intrinsic noise can significantly modulate representation learning in recurrent neural networks (RNNs), since it can strongly break solution-space degeneracies and in some cases control whether a non-degenerate solution exists at all. We show that this is true for an analytically tractable model of noisy RNN learning with a linear activation function and white noise inputs. We find that, in the so-called rich regime (where weights are initialized with small values), noise strongly modulates the directions in which the read-in, readout, and recurrent weights align. Moreover, we find that noise produces a kind of phase transition: for sufficiently high noise, a non-degenerate solution is not even optimal if parameter scales are limited (e.g., via regularization). These results extend recent analytic work on RNN representation learning and show that noise can act as a fundamental determinant of representations.",
+      "abstract_zh": "",
+      "authors": "John J. Vastola, Kanaka Rajan",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.35785",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "86cfa8af1fdffe8d7699918891dac78f811b4ce2"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Randomness-aware multiscale models of glioma invasion and treatment",
+      "title_zh": "",
+      "abstract": "arXiv:2602.08008v2 Announce Type: replace Abstract: In this work, we develop a stochastic multiscale model for glioma growth and invasion in the brain, incorporating the effects of therapeutic interventions. The model accounts for tumor cell migration influenced by brain tissue heterogeneity and anti-crowding mechanisms, while explicitly addressing treatment-related uncertainties through stochastic processes. Starting from a microscopic description of individual cell dynamics, we derive the corresponding system of macroscopic random reaction-diffusion-taxis equations governing cell density and tissue evolution. Finally, we conduct several numerical experiments to assess the efficacy of different treatment protocols, evaluated with respect to both established and newly proposed clinical criteria and measurable outcomes.",
+      "abstract_zh": "",
+      "authors": "Martina Conte, Sandesh Athni Hiremath, Christina Surulescu",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2602.08008",
+      "pdf_url": "",
+      "tags": [
+        "cancer"
+      ],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [
+        "cancer"
+      ],
+      "is_preprint": 1,
+      "id": "3a8bed1ce6d5e274fb5b35d10375aa49afb7a02c"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "OmicsLM: A Multimodal Large Language Model for Multi-Sample Omics Reasoning",
+      "title_zh": "",
+      "abstract": "arXiv:2605.06728v2 Announce Type: replace Abstract: Large language models can reason over biological knowledge, but they are not naturally equipped to work with quantitative omics measurements. Existing approaches either convert expression profiles into long textual representations, often losing quantitative information, or connect omics encoders to language models for narrow tasks. We introduce OmicsLM, a 9B multimodal language model that represents each bulk or single-cell transcriptome as a compact continuous embedding that can be interleaved with natural-language instructions and with other samples in the same context. An key contribution is a training corpus that connects experimental measurements with biological knowledge and task supervision. We combine templates linking transcriptomic profiles to annotations and experimental outcomes, reasoning examples connecting evidence across sources, and LLM-generated supervision with task-specific quality checks. The instruction-tuning corpus spans 157 biological and general-purpose task groups. Training includes continued pretraining on 20 billion tokens and supervised fine-tuning on 5.21 million conversations. We further introduce GEO-OmicsQA, a publication-disjoint benchmark of 3,000 questions requiring models to interpret and compare expression profiles from real GEO studies. OmicsLM achieves the best results among the evaluated models on three of four held-out annotation tasks and on all six GEO-OmicsQA variants, and the best average performance among compared methods on PerturbQA perturbation-response prediction. Ablations show a clear advantage for continuous omics representations over a text-only gene-list representation. Together, these results show that quantitative transcriptomic measurements and biological language can be integrated within a general conversational model, enabling both predictive tasks and language-guided interpretation of experimental samples.",
+      "abstract_zh": "",
+      "authors": "Maciej Sypetkowski, {\\L}ukasz Smoli{\\'n}ski, Remigiusz Kinas, Joanna Krawczyk, Bart{\\l}omiej Hofman, Aleksandra Mo{\\.z}wi{\\l}{\\l}o, Micha{\\l} Pikusa, Tomasz Jetka, Rafa{\\l} Powalski",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2605.06728",
+      "pdf_url": "",
+      "tags": [
+        "LLM",
+        "multimodal learning",
+        "single-cell"
+      ],
+      "ai_tags": [
+        "LLM",
+        "multimodal learning"
+      ],
+      "bio_tags": [
+        "single-cell"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "daa294b62056dc94334f7e46cdfcf39946fd5dbf"
+    },
+    {
+      "source_name": "arXiv q-bio",
+      "journal": "arXiv",
+      "title": "Coder as Editor: Code-driven Interpretable Molecular Editing",
+      "title_zh": "",
+      "abstract": "arXiv:2510.14455v2 Announce Type: replace-cross Abstract: Molecular design is a central task in drug discovery that requires precise structural reasoning and domain knowledge. While large language models (LLMs) have shown promise in generating high-level editing intentions in natural language, they often struggle to faithfully execute these modifications, particularly when operating on non-intuitive representations like SMILES. We introduce MECo, a framework that bridges reasoning and execution by translating editing actions into executable code. MECo reformulates molecular modification for LLMs as a cascaded framework: generating human-interpretable editing intentions from a molecule and design objective, followed by translating those intentions into executable structural edits via code generation. Our approach achieves over 98% accuracy in reproducing held-out realistic edits derived from chemical reactions and target-specific compound pairs. On downstream benchmarks spanning physicochemical properties and target activities, MECo substantially improves consistency by 38-86 percentage points to 90%+ and achieves higher success rates over SMILES-based baselines while preserving structural similarity. By aligning intention with execution, MECo enables consistent, controllable and interpretable molecular design, laying the foundation for high-fidelity feedback loops and collaborative human-AI workflows in drug discovery.",
+      "abstract_zh": "",
+      "authors": "Wenyu Zhu, Chengzhu Li, Xiaohe Tian, Yifan Wang, Yinjun Jia, Jianhui Wang, Bowen Gao, Haichuan Tan, Ya-Qin Zhang, Wei-Ying Ma, Yanyan Lan",
+      "published_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "article_type": "Preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2510.14455",
+      "pdf_url": "",
+      "tags": [
+        "LLM",
+        "drug discovery"
+      ],
+      "ai_tags": [
+        "LLM"
+      ],
+      "bio_tags": [
+        "drug discovery"
+      ],
+      "disease_tags": [],
+      "is_preprint": 1,
+      "id": "07b2070f242c5f478fac398e23294c5153d935f6"
+    },
     {
       "source_name": "npj Digital Medicine",
       "journal": "npj Digital Medicine",
@@ -1471,6 +2293,219 @@
       "disease_tags": [],
       "is_preprint": 1,
       "id": "ca37affecef7cff0d61469ac0e7b9aee82cb5990"
+    },
+    {
+      "source_name": "Nature Medicine",
+      "journal": "Nature Medicine",
+      "title": "Publisher Correction: Phenomic profiles and disease patterns of 1.9 million participants from Our Future Health",
+      "title_zh": "",
+      "abstract": "Nature Medicine, Published online: 26 October 2026; doi:10.1038/s41591-026-04774-z Publisher Correction: Phenomic profiles and disease patterns of 1.9 million participants from Our Future Health",
+      "abstract_zh": "",
+      "authors": "Vincent J. Straub, Stefania Benonisdottir, Giovanni Scotti Bentivoglio, Neil Wary, Robert Campbell, Augustine Kong, Melinda C. Mills",
+      "published_date": "2026-10-26",
+      "updated_date": "2026-10-27",
+      "article_type": "Article",
+      "doi": "10.1038/s41591-026-04774-z",
+      "url": "https://www.nature.com/articles/s41591-026-04774-z",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "0bb51d4a9dfaeff06a7390e4c143284b46e62072"
+    },
+    {
+      "source_name": "Nature Medicine",
+      "journal": "Nature Medicine",
+      "title": "Author Correction: Sex-specific biological aging clocks across organs and omics",
+      "title_zh": "",
+      "abstract": "Nature Medicine, Published online: 26 October 2026; doi:10.1038/s41591-026-04776-x Author Correction: Sex-specific biological aging clocks across organs and omics",
+      "abstract_zh": "",
+      "authors": "Zhiyuan Song, Derek Fong, Naowal Azraf Rahman, Michael R. Duggan, Qu Tian, Jian Zeng, Xia Zhou, Chunrui Zou, Michael S. Rafii, Li Shen, Paul Thompson, Eleanor M. Simonsick, Keenan A. Walker, Andrew Zalesky, Christos Davatzikos, Paul Aisen, Luigi Ferrucci, Susan M. Resnick, Junhao Wen",
+      "published_date": "2026-10-26",
+      "updated_date": "2026-10-27",
+      "article_type": "Article",
+      "doi": "10.1038/s41591-026-04776-x",
+      "url": "https://www.nature.com/articles/s41591-026-04776-x",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "e3a3684f84d7aef26ef8b114fa781a5531ff7e0d"
+    },
+    {
+      "source_name": "Nature Medicine",
+      "journal": "Nature Medicine",
+      "title": "Author Correction: Liquid biopsy for early detection of pancreatic ductal adenocarcinoma",
+      "title_zh": "",
+      "abstract": "Nature Medicine, Published online: 26 October 2026; doi:10.1038/s41591-026-04775-y Author Correction: Liquid biopsy for early detection of pancreatic ductal adenocarcinoma",
+      "abstract_zh": "",
+      "authors": "Caiming Xu, Alessandro Mannucci, Haiyong Han, Ruben M. Munoz, Derek Cridebring, Sourat Darabi, Yuji Toiyama, Yoshinaga Okugawa, Gagandeep Singh, Mustafa Raoof, Joon Oh Park, James Lin, Gregory Idos, Michael J. Demeure, Erkut Borazanci, Douglas B. Evans, Susan Tsai, Eunsung Jun, Carlos Becerra, Scott A. Celinski, Laleh Melstrom, Vincent Chung, Guixin Zhang, Dong Shang, David L. Bartlett, Mitsuro Kanda, Song Cheol Kim, Valsamo Anagnostou, Giulia Martina Cavestro, John S. Bolton, Ali H. Zaidi, Daniel Von Hoff, Ajay Goel",
+      "published_date": "2026-10-26",
+      "updated_date": "2026-10-27",
+      "article_type": "Article",
+      "doi": "10.1038/s41591-026-04775-y",
+      "url": "https://www.nature.com/articles/s41591-026-04775-y",
+      "pdf_url": "",
+      "tags": [
+        "cancer"
+      ],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [
+        "cancer"
+      ],
+      "is_preprint": 0,
+      "id": "57ad3956b558be985a62842a27e5b557a0112d4b"
+    },
+    {
+      "source_name": "Nature Medicine",
+      "journal": "Nature Medicine",
+      "title": "Neoadjuvant durvalumab plus chemotherapy in resectable or borderline resectable non-small-cell lung cancer: the phase 2 MDT-BRIDGE trial",
+      "title_zh": "",
+      "abstract": "Nature Medicine, Published online: 26 October 2026; doi:10.1038/s41591-026-04742-7 As presented at the ESMO Congress 2026: In the global phase 2 MDT-BRIDGE trial, neoadjuvant durvalumab plus chemotherapy in patients with resectable and borderline resectable non-small-cell lung cancer, followed by multidisciplinary reassessment, enabled surgery in most patients, leading to encouraging pathological complete response rates, and no additional safety concerns were reported when patients with unresectable tumors continued with chemoradiotherapy and consolidative durvalumab.",
+      "abstract_zh": "",
+      "authors": "Martin Reck, Ernest Nadal, Carl M. Gay, Nicolas Girard, Andrea Riccardo Filippi, Linda W. Martin, Cordula Petersen, David A. Cairns, Margarita Majem, Andrea Ardizzoni, Rosa Alvarez Alvarez, Andrew Robinson, Benoit Roch, Arnaud Boyer, Ilaria Attili, Maximilian Diehn, David Kurtz, Ugochinyere A. Emeribe, Ignacio Diaz Perez, Matteo Giaj Levra, Davina Gale, Zhou Zhu, Nefeli Georgoulia, Jonathan Spicer",
+      "published_date": "2026-10-26",
+      "updated_date": "2026-10-27",
+      "article_type": "Article",
+      "doi": "10.1038/s41591-026-04742-7",
+      "url": "https://www.nature.com/articles/s41591-026-04742-7",
+      "pdf_url": "",
+      "tags": [
+        "cancer"
+      ],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [
+        "cancer"
+      ],
+      "is_preprint": 0,
+      "id": "8af7f138bf65a04c1903a78e0d1f163d94512480"
+    },
+    {
+      "source_name": "Nature Computational Science",
+      "journal": "Nature Computational Science",
+      "title": "Machine learning dataset and benchmark for accurate T cell receptor–pHLA binding prediction",
+      "title_zh": "",
+      "abstract": "Nature Computational Science, Published online: 26 October 2026; doi:10.1038/s43588-026-01073-y Hi-TPH is a large-scale hierarchical dataset that enables more accurate prediction of T cell receptor binding to antigens using protein language models and reveals how molecular components jointly contribute to prediction.",
+      "abstract_zh": "",
+      "authors": "Xinyuan Zhu, Jiadong Lu, Yeqing Lu, Yuyan Zhang, Fuli Feng",
+      "published_date": "2026-10-26",
+      "updated_date": "2026-10-27",
+      "article_type": "Article",
+      "doi": "10.1038/s43588-026-01073-y",
+      "url": "https://www.nature.com/articles/s43588-026-01073-y",
+      "pdf_url": "",
+      "tags": [
+        "protein design"
+      ],
+      "ai_tags": [],
+      "bio_tags": [
+        "protein design"
+      ],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "fb04ba4e415115f23cb56802c02b92f772dd7f8f"
+    },
+    {
+      "source_name": "Nature Biomedical Engineering",
+      "journal": "Nature Biomedical Engineering",
+      "title": "Retraction Note: Engineered outer membrane vesicles enhance solid tumour CAR-T cell therapy",
+      "title_zh": "",
+      "abstract": "Nature Biomedical Engineering, Published online: 26 October 2026; doi:10.1038/s41551-026-01838-w Retraction Note: Engineered outer membrane vesicles enhance solid tumour CAR-T cell therapy",
+      "abstract_zh": "",
+      "authors": "Xianjun Li, Xuehan Li, Jiaqi Shi, Yingjing Li, Hanyu Zhang, Tianjun Chen, Hui Pang, Shuyuan Zhang, Shengnan Luo, Fengyi Liu, Shuang Li, Chujie Ding, Linlin Sun, Fan Xing, Tongsen Zheng",
+      "published_date": "2026-10-26",
+      "updated_date": "2026-10-27",
+      "article_type": "Article",
+      "doi": "10.1038/s41551-026-01838-w",
+      "url": "https://www.nature.com/articles/s41551-026-01838-w",
+      "pdf_url": "",
+      "tags": [
+        "cancer"
+      ],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [
+        "cancer"
+      ],
+      "is_preprint": 0,
+      "id": "f8559478c75441d50bf6b6319daac72ef3116c59"
+    },
+    {
+      "source_name": "npj Digital Medicine",
+      "journal": "npj Digital Medicine",
+      "title": "Multicentre benchmark of PSMA PET/CT and mpMRI fusion for non-invasive clinically significant prostate cancer diagnosis",
+      "title_zh": "",
+      "abstract": "npj Digital Medicine, Published online: 26 October 2026; doi:10.1038/s41746-026-03358-y Multicentre benchmark of PSMA PET/CT and mpMRI fusion for non-invasive clinically significant prostate cancer diagnosis",
+      "abstract_zh": "",
+      "authors": "Jian Chen, Zhangcheng Liao, Yuhang Wang, Haoran Sha, Yiran Wei, Kanglung Lee, Shuncong Wang, Shouzhen Chen, Lin Qi, Di Gu, Zeyu Gao, Kai He, Yi Cai",
+      "published_date": "2026-10-26",
+      "updated_date": "2026-10-27",
+      "article_type": "Article",
+      "doi": "10.1038/s41746-026-03358-y",
+      "url": "https://www.nature.com/articles/s41746-026-03358-y",
+      "pdf_url": "",
+      "tags": [
+        "cancer"
+      ],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [
+        "cancer"
+      ],
+      "is_preprint": 0,
+      "id": "9789f8a690ed41ddd52344acb0528568ac306a94"
+    },
+    {
+      "source_name": "npj Digital Medicine",
+      "journal": "npj Digital Medicine",
+      "title": "GliaDose: An alternative approach for clinical CAR-T dose prediction via PBPK–glioblastoma-on-a-chip integration",
+      "title_zh": "",
+      "abstract": "npj Digital Medicine, Published online: 26 October 2026; doi:10.1038/s41746-026-03311-z GliaDose: An alternative approach for clinical CAR-T dose prediction via PBPK–glioblastoma-on-a-chip integration",
+      "abstract_zh": "",
+      "authors": "Su Liu, Jimeng Wu, Andreas Zingg, Fiona Gerster, Timo Schenker, Anna Maria Zeitlberger, Vanesa Ayala-Nunez, Marian Christoph Neidert, Gregor Hutter, Peter Wick",
+      "published_date": "2026-10-26",
+      "updated_date": "2026-10-27",
+      "article_type": "Article",
+      "doi": "10.1038/s41746-026-03311-z",
+      "url": "https://www.nature.com/articles/s41746-026-03311-z",
+      "pdf_url": "",
+      "tags": [],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [],
+      "is_preprint": 0,
+      "id": "5997c86e131f0ec1adad613438148ab265228a8f"
+    },
+    {
+      "source_name": "npj Digital Medicine",
+      "journal": "npj Digital Medicine",
+      "title": "Visual-affective decoding enhances neurofunctional objective and generalizable signatures in unseen adolescent depression diagnosis",
+      "title_zh": "",
+      "abstract": "npj Digital Medicine, Published online: 26 October 2026; doi:10.1038/s41746-026-03413-8 Visual-affective decoding enhances neurofunctional objective and generalizable signatures in unseen adolescent depression diagnosis",
+      "abstract_zh": "",
+      "authors": "Jingxu Liu, Ke Liu, Mei Tang, Zhuo Xi, Hanggai Taorigen, Yichen Liu, Le Xu, Dehua Liu, Kun Yi, Liang Hu, Lei Zhu, Duoqian Miao, Qi Zhang, Zhi Yang",
+      "published_date": "2026-10-26",
+      "updated_date": "2026-10-27",
+      "article_type": "Article",
+      "doi": "10.1038/s41746-026-03413-8",
+      "url": "https://www.nature.com/articles/s41746-026-03413-8",
+      "pdf_url": "",
+      "tags": [
+        "mental health"
+      ],
+      "ai_tags": [],
+      "bio_tags": [],
+      "disease_tags": [
+        "mental health"
+      ],
+      "is_preprint": 0,
+      "id": "5841c880a7d4447c517b93d06b3688ff88086011"
     },
     {
       "source_name": "Nature Medicine",
